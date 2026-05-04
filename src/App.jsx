@@ -219,20 +219,17 @@ ${userText}
   "improvedSummary": "<受験者の文体を活かしつつ改善した英文要約（英語のみ）>"
 }`;
 
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 1500,
-      messages: [{ role: 'user', content: prompt }],
-    }),
-  });
+  const res = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { maxOutputTokens: 1500 },
+      }),
+    }
+  );
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
@@ -240,7 +237,7 @@ ${userText}
   }
 
   const data = await res.json();
-  const raw = (data.content || []).map(b => b.text || '').join('');
+  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
   return JSON.parse(raw.replace(/```json|```/g, '').trim());
 }
 
@@ -292,8 +289,8 @@ function ApiKeyModal({ onClose, onSave }) {
             <KeyRound size={20} style={{ color: C.ai }} />
           </div>
           <div>
-            <h2 className="font-bold text-base" style={{ color: C.text }}>Anthropic APIキーの設定</h2>
-            <p className="text-xs" style={{ color: C.textMuted }}>AI添削機能を使うために必要です</p>
+            <h2 className="font-bold text-base" style={{ color: C.text }}>Google AI APIキーの設定</h2>
+            <p className="text-xs" style={{ color: C.textMuted }}>AI添削機能を使うために必要です（無料）</p>
           </div>
           <button onClick={onClose} className="ml-auto" style={{ color: C.textMuted }}>
             <X size={20} />
@@ -313,15 +310,15 @@ function ApiKeyModal({ onClose, onSave }) {
             type="password"
             value={key}
             onChange={e => setKey(e.target.value)}
-            placeholder="sk-ant-..."
+            placeholder="AIza..."
             className="w-full px-4 py-3 rounded-xl outline-none text-sm transition-all"
             style={{ border: `1px solid ${C.border}`, color: C.text, backgroundColor: C.bg }}
             onFocus={e => e.target.style.borderColor = C.primary}
             onBlur={e => e.target.style.borderColor = C.border}
           />
           <p className="text-xs mt-2" style={{ color: C.textMuted }}>
-            <a href="https://console.anthropic.com/" target="_blank" rel="noopener noreferrer"
-              style={{ color: C.primary }}>console.anthropic.com</a> でAPIキーを取得できます
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer"
+              style={{ color: C.primary }}>aistudio.google.com</a> で無料APIキーを取得できます
           </p>
         </div>
 
@@ -514,7 +511,7 @@ function ProgressView({ all, draftedN, answers, apiKey, setShowKeyModal }) {
         </div>
         {!apiKey && (
           <p className="text-xs leading-relaxed" style={{ color: C.textMuted }}>
-            Anthropic APIキーを設定すると、書いた要約をAIが採点・添削できます。
+            Google AI APIキー（無料）を設定すると、書いた要約をAIが採点・添削できます。
           </p>
         )}
       </div>
