@@ -219,17 +219,18 @@ ${userText}
   "improvedSummary": "<受験者の文体を活かしつつ改善した英文要約（英語のみ）>"
 }`;
 
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { maxOutputTokens: 1500 },
-      }),
-    }
-  );
+  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({
+      model: 'llama-3.3-70b-versatile',
+      max_tokens: 1500,
+      messages: [{ role: 'user', content: prompt }],
+    }),
+  });
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
@@ -237,7 +238,7 @@ ${userText}
   }
 
   const data = await res.json();
-  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  const raw = data.choices?.[0]?.message?.content || '';
   return JSON.parse(raw.replace(/```json|```/g, '').trim());
 }
 
@@ -289,8 +290,8 @@ function ApiKeyModal({ onClose, onSave }) {
             <KeyRound size={20} style={{ color: C.ai }} />
           </div>
           <div>
-            <h2 className="font-bold text-base" style={{ color: C.text }}>Google AI APIキーの設定</h2>
-            <p className="text-xs" style={{ color: C.textMuted }}>AI添削機能を使うために必要です（無料）</p>
+            <h2 className="font-bold text-base" style={{ color: C.text }}>Groq APIキーの設定</h2>
+            <p className="text-xs" style={{ color: C.textMuted }}>AI添削機能を使うために必要です（完全無料）</p>
           </div>
           <button onClick={onClose} className="ml-auto" style={{ color: C.textMuted }}>
             <X size={20} />
@@ -310,15 +311,15 @@ function ApiKeyModal({ onClose, onSave }) {
             type="password"
             value={key}
             onChange={e => setKey(e.target.value)}
-            placeholder="AIza..."
+            placeholder="gsk_..."
             className="w-full px-4 py-3 rounded-xl outline-none text-sm transition-all"
             style={{ border: `1px solid ${C.border}`, color: C.text, backgroundColor: C.bg }}
             onFocus={e => e.target.style.borderColor = C.primary}
             onBlur={e => e.target.style.borderColor = C.border}
           />
           <p className="text-xs mt-2" style={{ color: C.textMuted }}>
-            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer"
-              style={{ color: C.primary }}>aistudio.google.com</a> で無料APIキーを取得できます
+            <a href="https://console.groq.com/keys" target="_blank" rel="noopener noreferrer"
+              style={{ color: C.primary }}>console.groq.com</a> で無料APIキーを取得できます
           </p>
         </div>
 
@@ -511,7 +512,7 @@ function ProgressView({ all, draftedN, answers, apiKey, setShowKeyModal }) {
         </div>
         {!apiKey && (
           <p className="text-xs leading-relaxed" style={{ color: C.textMuted }}>
-            Google AI APIキー（無料）を設定すると、書いた要約をAIが採点・添削できます。
+            Groq APIキー（完全無料）を設定すると、書いた要約をAIが採点・添削できます。
           </p>
         )}
       </div>
