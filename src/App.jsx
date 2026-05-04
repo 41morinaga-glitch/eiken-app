@@ -879,10 +879,34 @@ export default function App() {
     <div className="min-h-screen pb-24"
       style={{ backgroundColor: C.bg, fontFamily: '"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif', color: C.text }}>
 
+      {/* ── アプリ間ナビゲーション ── */}
+      <nav className="sticky top-0 z-20 flex items-center h-11 px-2 gap-1 text-[13px] font-semibold"
+        style={{ backgroundColor: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #e2e8f0' }}>
+        <a href="https://41morinaga-glitch.github.io/eiken-portal/" target="_self"
+          style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
+          onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
+          🎓 TOP
+        </a>
+        <span style={{ color:'#e2e8f0' }}>|</span>
+        <a href="https://eiken-vocab2026423.web.app" target="_self"
+          style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
+          onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
+          📚 単語
+        </a>
+        <a href="https://41morinaga-glitch.github.io/eiken-mondai-app/" target="_self"
+          style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
+          onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
+          📝 長文
+        </a>
+        <span style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, color:'#10b981', background:'#ecfdf5', fontWeight:700, whiteSpace:'nowrap' }}>
+          ✍️ 要約
+        </span>
+      </nav>
+
       {showKeyModal && <ApiKeyModal onClose={() => setShowKeyModal(false)} onSave={saveApiKey} />}
 
       {view === 'list' && (
-        <header className="sticky top-0 z-10 px-4 sm:px-6 py-3 flex items-center gap-3"
+        <header className="sticky top-11 z-10 px-4 sm:px-6 py-3 flex items-center gap-3"
           style={{ backgroundColor: C.bg, borderBottom: `1px solid ${C.borderLight}` }}>
           <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
             style={{ backgroundColor: C.primary }}>英</div>
