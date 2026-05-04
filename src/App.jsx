@@ -184,7 +184,7 @@ const C = {
 const SH = '0 1px 3px rgba(15,23,42,0.05),0 1px 2px rgba(15,23,42,0.04)';
 
 // ============================================================
-// AI 添削関数（APIキーをパラメータとして受け取る）
+// AI 添削関数
 // ============================================================
 async function fetchCorrection({ passage, sampleAnswer, userText, wordCount, targetMin, targetMax, grade, apiKey }) {
   const gl = grade === 'grade1' ? '英検1級' : '英検2級';
@@ -363,7 +363,6 @@ function CorrectionPanel({ result, onClose }) {
       </div>
 
       <div className="p-6 sm:p-7 space-y-5">
-        {/* 総合スコア */}
         <div className="flex items-center gap-4 p-4 rounded-xl" style={{ backgroundColor: C.bg }}>
           <div className="text-center min-w-[60px]">
             <div className="text-4xl font-bold tabular-nums" style={{ color: scoreColor }}>{result.totalScore}</div>
@@ -377,7 +376,6 @@ function CorrectionPanel({ result, onClose }) {
           </div>
         </div>
 
-        {/* カテゴリ別 */}
         <div>
           <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.ai }}>採点内訳</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -393,7 +391,6 @@ function CorrectionPanel({ result, onClose }) {
           </div>
         </div>
 
-        {/* 修正箇所 */}
         {result.corrections?.length > 0 && (
           <div>
             <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.ai }}>修正ポイント</div>
@@ -417,7 +414,6 @@ function CorrectionPanel({ result, onClose }) {
           </div>
         )}
 
-        {/* 改善版要約 */}
         {result.improvedSummary && (
           <div>
             <button onClick={() => setShowImproved(!showImproved)}
@@ -470,6 +466,313 @@ function ProblemCard({ problem, drafted, onClick }) {
 }
 
 // ============================================================
+// 進捗ビュー
+// ============================================================
+function ProgressView({ all, draftedN, answers, apiKey, setShowKeyModal }) {
+  const g2t = problemsData.grade2.length, g1t = problemsData.grade1.length;
+  const g2d = problemsData.grade2.filter(p => (answers[p.id] || '').trim()).length;
+  const g1d = problemsData.grade1.filter(p => (answers[p.id] || '').trim()).length;
+  const tot = all.length;
+  return (
+    <div className="space-y-4">
+      {[
+        { l: '全体の進捗', d: draftedN, t: tot, c: C.primary },
+        { l: '英検2級', d: g2d, t: g2t, c: C.g2Text, g: 'grade2' },
+        { l: '英検1級', d: g1d, t: g1t, c: C.g1Text, g: 'grade1' },
+      ].map((r, i) => (
+        <div key={i} className="p-6 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
+          <div className="flex items-center gap-3 mb-4">
+            {r.g && <GradeBadge grade={r.g} />}
+            <span className="font-bold" style={{ color: C.text }}>{r.l}</span>
+            <span className="ml-auto text-sm font-medium" style={{ color: C.textMuted }}>{r.d}/{r.t}問</span>
+            <span className="text-xl font-bold" style={{ color: r.c }}>
+              {r.t > 0 ? Math.round((r.d / r.t) * 100) : 0}%
+            </span>
+          </div>
+          <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: C.borderLight }}>
+            <div className="h-full rounded-full" style={{ width: `${r.t > 0 ? (r.d / r.t) * 100 : 0}%`, backgroundColor: r.c }} />
+          </div>
+        </div>
+      ))}
+
+      <div className="p-6 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
+        <div className="flex items-center gap-3 mb-3">
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: C.aiBg }}>
+            <KeyRound size={18} style={{ color: C.ai }} />
+          </div>
+          <div>
+            <div className="font-bold text-sm" style={{ color: C.text }}>AI添削 APIキー</div>
+            <div className="text-xs" style={{ color: C.textMuted }}>
+              {apiKey ? '✓ 設定済み' : '未設定'}
+            </div>
+          </div>
+          <button onClick={() => setShowKeyModal(true)}
+            className="ml-auto px-4 py-2 rounded-xl text-sm font-bold text-white"
+            style={{ backgroundColor: C.ai }}>
+            {apiKey ? '変更' : '設定する'}
+          </button>
+        </div>
+        {!apiKey && (
+          <p className="text-xs leading-relaxed" style={{ color: C.textMuted }}>
+            Anthropic APIキーを設定すると、書いた要約をAIが採点・添削できます。
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ============================================================
+// リストビュー
+// ============================================================
+function ListView({ navTab, gf, setGf, filtered, answers, goDetail, all, draftedN, apiKey, setShowKeyModal }) {
+  if (navTab === 'progress') return (
+    <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
+      <ProgressView all={all} draftedN={draftedN} answers={answers} apiKey={apiKey} setShowKeyModal={setShowKeyModal} />
+    </div>
+  );
+  if (navTab === 'add') return (
+    <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
+      <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: C.card, boxShadow: SH }}>
+        <PlusCircle size={48} className="mx-auto mb-4" style={{ color: C.primary }} />
+        <div className="text-lg font-bold mb-2" style={{ color: C.text }}>問題追加機能</div>
+        <div className="text-sm" style={{ color: C.textSub, lineHeight: 1.7 }}>現在は組み込みの練習問題のみご利用いただけます。</div>
+      </div>
+    </div>
+  );
+  return (
+    <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
+      {navTab === 'list' && (
+        <div className="p-4 sm:p-5 rounded-2xl mb-5 flex flex-wrap items-center gap-3"
+          style={{ backgroundColor: C.card, boxShadow: SH }}>
+          <span className="text-sm font-medium" style={{ color: C.textMuted }}>級</span>
+          {[{ k: 'all', l: '全て' }, { k: 'grade1', l: '1級' }, { k: 'grade2', l: '2級' }].map(o => {
+            const active = gf === o.k;
+            return (
+              <button key={o.k} onClick={() => setGf(o.k)}
+                className="px-4 py-1.5 rounded-lg text-sm font-bold transition-colors"
+                style={{ backgroundColor: active ? C.primary : C.borderLight, color: active ? '#FFF' : C.textSub }}>
+                {o.l}
+              </button>
+            );
+          })}
+          <span className="ml-auto text-sm font-medium" style={{ color: C.textMuted }}>{filtered.length}件</span>
+        </div>
+      )}
+      {filtered.length === 0
+        ? (
+          <div className="p-10 rounded-2xl text-center" style={{ backgroundColor: C.card, boxShadow: SH }}>
+            <Bookmark size={40} className="mx-auto mb-3" style={{ color: C.textMuted }} />
+            <div className="text-base font-medium" style={{ color: C.textSub }}>
+              {navTab === 'bookmark' ? 'ブックマークした問題はまだありません' : '該当する問題がありません'}
+            </div>
+          </div>
+        )
+        : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+            {filtered.map(p => (
+              <ProblemCard key={p.id} problem={p}
+                drafted={(answers[p.id] || '').trim().length > 0}
+                onClick={() => goDetail(p.id)} />
+            ))}
+          </div>
+        )}
+    </div>
+  );
+}
+
+// ============================================================
+// 詳細ビュー
+// ============================================================
+function DetailView({
+  cur, goBack, bookmarks, toggleBookmark,
+  txt, wc, inRange, over, updateAns,
+  correcting, corrResult, setCorrResult, corrErr, doCorrect,
+  setShowKeyModal, showAns, setShowAns, ansTab, setAnsTab,
+}) {
+  if (!cur) return null;
+  const bm = !!bookmarks[cur.id];
+  return (
+    <div className="px-4 sm:px-6 py-6 max-w-3xl mx-auto space-y-4">
+      <button onClick={goBack} className="flex items-center gap-2 text-sm font-medium" style={{ color: C.textSub }}>
+        <ArrowLeft size={18} />問題一覧に戻る
+      </button>
+
+      <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
+        <div className="flex items-center gap-3 mb-4 flex-wrap">
+          <GradeBadge grade={cur.grade} />
+          <span className="text-xs font-medium" style={{ color: C.textMuted }}>{cur.label} · {cur.type}</span>
+          <button onClick={() => toggleBookmark(cur.id)} className="ml-auto p-1.5 rounded-lg transition-colors"
+            style={{ backgroundColor: bm ? C.primaryBg : 'transparent', color: bm ? C.primary : C.textMuted }}>
+            <Bookmark size={18} fill={bm ? C.primary : 'transparent'} />
+          </button>
+        </div>
+        <h1 className="text-2xl sm:text-[1.7rem] font-bold leading-tight mb-1" style={{ color: C.text }}>{cur.title}</h1>
+        <p className="text-sm" style={{ color: C.textSub }}>{cur.titleJa}</p>
+      </div>
+
+      <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
+        <div className="flex items-center gap-2 mb-4">
+          <BookOpen size={18} style={{ color: C.primary }} />
+          <h2 className="text-base font-bold" style={{ color: C.text }}>本文</h2>
+        </div>
+        <div className="text-[15px] leading-[1.9] whitespace-pre-line" style={{ color: C.text }}>{cur.passage}</div>
+      </div>
+
+      <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          <h2 className="text-base font-bold" style={{ color: C.text }}>あなたの要約</h2>
+          <div className="ml-auto flex items-baseline gap-1.5">
+            <span className="text-xs font-medium" style={{ color: C.textMuted }}>語数</span>
+            <span className="text-2xl font-bold tabular-nums"
+              style={{ color: inRange ? C.ok : over ? C.ng : C.text }}>{wc}</span>
+            <span className="text-xs font-medium" style={{ color: C.textMuted }}>/ {cur.targetMin}–{cur.targetMax}</span>
+          </div>
+        </div>
+        <div className="h-1.5 rounded-full overflow-hidden mb-4" style={{ backgroundColor: C.borderLight }}>
+          <div className="h-full rounded-full transition-all"
+            style={{ width: `${Math.min(100, (wc / cur.targetMax) * 100)}%`, backgroundColor: inRange ? C.ok : over ? C.ng : C.primary }} />
+        </div>
+        <textarea value={txt} onChange={e => updateAns(e.target.value)}
+          placeholder="Type your English summary here…"
+          className="w-full resize-y outline-none p-4 rounded-xl text-[15px] leading-[1.85] transition-all"
+          style={{ minHeight: cur.grade === 'grade1' ? '220px' : '160px', backgroundColor: C.bg, border: `1px solid ${C.border}`, color: C.text }}
+          onFocus={e => e.target.style.borderColor = C.primary}
+          onBlur={e => e.target.style.borderColor = C.border} />
+
+        <div className="flex flex-wrap items-center justify-between gap-3 mt-4 pt-4"
+          style={{ borderTop: `1px solid ${C.borderLight}` }}>
+          <button onClick={() => { updateAns(''); setCorrResult(null); }} disabled={!txt}
+            className="flex items-center gap-1.5 text-sm font-medium disabled:opacity-40" style={{ color: C.textSub }}>
+            <RotateCcw size={14} />クリア
+          </button>
+          <div className="flex flex-wrap gap-2">
+            <button onClick={doCorrect} disabled={!txt.trim() || correcting}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all disabled:opacity-50"
+              style={{ backgroundColor: correcting ? '#A78BFA' : C.ai }}
+              onMouseEnter={e => { if (!correcting && txt.trim()) e.currentTarget.style.backgroundColor = C.aiH; }}
+              onMouseLeave={e => { e.currentTarget.style.backgroundColor = correcting ? '#A78BFA' : C.ai; }}>
+              {correcting
+                ? <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin inline-block" />添削中…</>
+                : <><Sparkles size={16} />AIに添削してもらう</>}
+            </button>
+            <button onClick={() => setShowAns(!showAns)}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all"
+              style={{ backgroundColor: C.primary }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = C.primaryH}
+              onMouseLeave={e => e.currentTarget.style.backgroundColor = C.primary}>
+              {showAns ? <><EyeOff size={16} />隠す</> : <><Eye size={16} />解答例・解説</>}
+            </button>
+          </div>
+        </div>
+
+        {corrErr && (
+          <div className="mt-3 p-3 rounded-xl flex items-center gap-2 text-sm"
+            style={{ backgroundColor: '#FEE2E2', color: '#991B1B' }}>
+            <AlertCircle size={16} />
+            <span className="flex-1">{corrErr}</span>
+            {corrErr.includes('APIキー') && (
+              <button onClick={() => setShowKeyModal(true)} className="font-bold underline">設定する</button>
+            )}
+          </div>
+        )}
+      </div>
+
+      {corrResult && <CorrectionPanel result={corrResult} onClose={() => setCorrResult(null)} />}
+
+      {showAns && (
+        <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: C.card, boxShadow: SH }}>
+          <div className="flex overflow-x-auto" style={{ borderBottom: `1px solid ${C.borderLight}` }}>
+            {[{ k: 'answer', l: '解答例' }, { k: 'structure', l: '構成と要点' }, { k: 'paraphrase', l: '言い換え' }, { k: 'phrases', l: '使える表現' }].map(t => {
+              const active = ansTab === t.k;
+              return (
+                <button key={t.k} onClick={() => setAnsTab(t.k)}
+                  className="px-5 py-4 text-sm font-bold whitespace-nowrap relative transition-colors"
+                  style={{ color: active ? C.primary : C.textSub }}>
+                  {t.l}
+                  {active && <span className="absolute bottom-0 left-3 right-3 h-0.5 rounded-t" style={{ backgroundColor: C.primary }} />}
+                </button>
+              );
+            })}
+          </div>
+          <div className="p-6 sm:p-7">
+            {ansTab === 'answer' && (
+              <div>
+                <div className="flex items-baseline justify-between mb-3">
+                  <span className="text-xs font-bold uppercase tracking-wider" style={{ color: C.primary }}>Sample Answer</span>
+                  <span className="text-xs font-medium" style={{ color: C.textMuted }}>{cur.sampleWordCount} words</span>
+                </div>
+                <div className="p-5 rounded-xl text-[15px] leading-[1.9]"
+                  style={{ backgroundColor: C.primaryBg, color: C.text, borderLeft: `3px solid ${C.primary}` }}>
+                  {cur.sampleAnswer}
+                </div>
+                {txt.trim() && (
+                  <div className="mt-5 pt-5" style={{ borderTop: `1px solid ${C.borderLight}` }}>
+                    <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.textSub }}>あなたの解答</div>
+                    <div className="p-5 rounded-xl text-[15px] leading-[1.9] whitespace-pre-wrap"
+                      style={{ backgroundColor: C.bg, color: C.text }}>{txt}</div>
+                    <div className="text-xs font-medium mt-2" style={{ color: C.textMuted }}>
+                      {wc}語 {inRange ? '· 目標範囲内 ✓' : over ? '· オーバー' : '· 不足'}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+            {ansTab === 'structure' && (
+              <div>
+                <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: C.primary }}>全体構成</div>
+                <div className="text-[15px] leading-[1.85] mb-6 pb-5"
+                  style={{ color: C.text, borderBottom: `1px solid ${C.borderLight}` }}>{cur.structure}</div>
+                <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.primary }}>要点</div>
+                <ul className="space-y-3">
+                  {cur.keyPoints.map((pt, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold"
+                        style={{ backgroundColor: C.primaryBg, color: C.primary }}>{i + 1}</span>
+                      <span className="text-[14px] leading-[1.8] flex-1" style={{ color: C.text }}>{pt}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {ansTab === 'paraphrase' && (
+              <div>
+                <p className="text-sm mb-5" style={{ color: C.textSub, lineHeight: 1.7 }}>
+                  本文の表現をそのまま写すのは減点対象です。下記のような言い換えで自分の英語にしましょう。
+                </p>
+                <div className="space-y-4">
+                  {cur.paraphraseTips.map((tip, i) => (
+                    <div key={i} className="p-4 rounded-xl" style={{ backgroundColor: C.bg }}>
+                      <div className="text-xs font-bold mb-1" style={{ color: C.textMuted }}>原文</div>
+                      <div className="text-sm mb-3 italic" style={{ color: C.textSub }}>{tip.original}</div>
+                      <div className="text-xs font-bold mb-1" style={{ color: C.primary }}>言い換え</div>
+                      <div className="text-sm font-medium" style={{ color: C.text }}>→ {tip.alt}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            {ansTab === 'phrases' && (
+              <div>
+                <p className="text-sm mb-5" style={{ color: C.textSub, lineHeight: 1.7 }}>
+                  この問題で使えるディスコースマーカーや決まり文句です。
+                </p>
+                <ul className="space-y-2.5">
+                  {cur.usefulPhrases.map((ph, i) => (
+                    <li key={i} className="p-4 rounded-xl text-[14px] leading-[1.7]"
+                      style={{ backgroundColor: C.primaryBg, color: C.text, borderLeft: `3px solid ${C.primary}` }}>{ph}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ============================================================
 // メインアプリ
 // ============================================================
 export default function App() {
@@ -488,7 +791,6 @@ export default function App() {
   const [showKeyModal, setShowKeyModal] = useState(false);
   const saveTimer = useRef(null);
 
-  // localStorage から読み込み
   useEffect(() => {
     try { const a = localStorage.getItem('eiken_answers'); if (a) setAnswers(JSON.parse(a)); } catch {}
     try { const b = localStorage.getItem('eiken_bookmarks'); if (b) setBookmarks(JSON.parse(b)); } catch {}
@@ -566,302 +868,6 @@ export default function App() {
 
   const draftedN = Object.values(answers).filter(v => v?.trim()).length;
 
-  // ── 進捗 ──
-  function ProgressView() {
-    const tot = all.length;
-    const g2t = problemsData.grade2.length, g1t = problemsData.grade1.length;
-    const g2d = problemsData.grade2.filter(p => (answers[p.id] || '').trim()).length;
-    const g1d = problemsData.grade1.filter(p => (answers[p.id] || '').trim()).length;
-    return (
-      <div className="space-y-4">
-        {[
-          { l: '全体の進捗', d: draftedN, t: tot, c: C.primary },
-          { l: '英検2級', d: g2d, t: g2t, c: C.g2Text, g: 'grade2' },
-          { l: '英検1級', d: g1d, t: g1t, c: C.g1Text, g: 'grade1' },
-        ].map((r, i) => (
-          <div key={i} className="p-6 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
-            <div className="flex items-center gap-3 mb-4">
-              {r.g && <GradeBadge grade={r.g} />}
-              <span className="font-bold" style={{ color: C.text }}>{r.l}</span>
-              <span className="ml-auto text-sm font-medium" style={{ color: C.textMuted }}>{r.d}/{r.t}問</span>
-              <span className="text-xl font-bold" style={{ color: r.c }}>
-                {r.t > 0 ? Math.round((r.d / r.t) * 100) : 0}%
-              </span>
-            </div>
-            <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: C.borderLight }}>
-              <div className="h-full rounded-full" style={{ width: `${r.t > 0 ? (r.d / r.t) * 100 : 0}%`, backgroundColor: r.c }} />
-            </div>
-          </div>
-        ))}
-
-        {/* APIキー設定カード */}
-        <div className="p-6 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ backgroundColor: C.aiBg }}>
-              <KeyRound size={18} style={{ color: C.ai }} />
-            </div>
-            <div>
-              <div className="font-bold text-sm" style={{ color: C.text }}>AI添削 APIキー</div>
-              <div className="text-xs" style={{ color: C.textMuted }}>
-                {apiKey ? '✓ 設定済み' : '未設定'}
-              </div>
-            </div>
-            <button onClick={() => setShowKeyModal(true)}
-              className="ml-auto px-4 py-2 rounded-xl text-sm font-bold text-white"
-              style={{ backgroundColor: C.ai }}>
-              {apiKey ? '変更' : '設定する'}
-            </button>
-          </div>
-          {!apiKey && (
-            <p className="text-xs leading-relaxed" style={{ color: C.textMuted }}>
-              Anthropic APIキーを設定すると、書いた要約をAIが採点・添削できます。
-            </p>
-          )}
-        </div>
-      </div>
-    );
-  }
-
-  // ── リスト ──
-  function ListView() {
-    if (navTab === 'progress') return <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto"><ProgressView /></div>;
-    if (navTab === 'add') return (
-      <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
-        <div className="p-8 rounded-2xl text-center" style={{ backgroundColor: C.card, boxShadow: SH }}>
-          <PlusCircle size={48} className="mx-auto mb-4" style={{ color: C.primary }} />
-          <div className="text-lg font-bold mb-2" style={{ color: C.text }}>問題追加機能</div>
-          <div className="text-sm" style={{ color: C.textSub, lineHeight: 1.7 }}>現在は組み込みの練習問題のみご利用いただけます。</div>
-        </div>
-      </div>
-    );
-    return (
-      <div className="px-4 sm:px-6 py-6 max-w-5xl mx-auto">
-        {navTab === 'list' && (
-          <div className="p-4 sm:p-5 rounded-2xl mb-5 flex flex-wrap items-center gap-3"
-            style={{ backgroundColor: C.card, boxShadow: SH }}>
-            <span className="text-sm font-medium" style={{ color: C.textMuted }}>級</span>
-            {[{ k: 'all', l: '全て' }, { k: 'grade1', l: '1級' }, { k: 'grade2', l: '2級' }].map(o => {
-              const active = gf === o.k;
-              return (
-                <button key={o.k} onClick={() => setGf(o.k)}
-                  className="px-4 py-1.5 rounded-lg text-sm font-bold transition-colors"
-                  style={{ backgroundColor: active ? C.primary : C.borderLight, color: active ? '#FFF' : C.textSub }}>
-                  {o.l}
-                </button>
-              );
-            })}
-            <span className="ml-auto text-sm font-medium" style={{ color: C.textMuted }}>{filtered.length}件</span>
-          </div>
-        )}
-        {filtered.length === 0
-          ? (
-            <div className="p-10 rounded-2xl text-center" style={{ backgroundColor: C.card, boxShadow: SH }}>
-              <Bookmark size={40} className="mx-auto mb-3" style={{ color: C.textMuted }} />
-              <div className="text-base font-medium" style={{ color: C.textSub }}>
-                {navTab === 'bookmark' ? 'ブックマークした問題はまだありません' : '該当する問題がありません'}
-              </div>
-            </div>
-          )
-          : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
-              {filtered.map(p => (
-                <ProblemCard key={p.id} problem={p}
-                  drafted={(answers[p.id] || '').trim().length > 0}
-                  onClick={() => goDetail(p.id)} />
-              ))}
-            </div>
-          )}
-      </div>
-    );
-  }
-
-  // ── 詳細 ──
-  function DetailView() {
-    if (!cur) return null;
-    const bm = !!bookmarks[cur.id];
-    return (
-      <div className="px-4 sm:px-6 py-6 max-w-3xl mx-auto space-y-4">
-        <button onClick={goBack} className="flex items-center gap-2 text-sm font-medium" style={{ color: C.textSub }}>
-          <ArrowLeft size={18} />問題一覧に戻る
-        </button>
-
-        {/* ヘッダー */}
-        <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
-          <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <GradeBadge grade={cur.grade} />
-            <span className="text-xs font-medium" style={{ color: C.textMuted }}>{cur.label} · {cur.type}</span>
-            <button onClick={() => toggleBookmark(cur.id)} className="ml-auto p-1.5 rounded-lg transition-colors"
-              style={{ backgroundColor: bm ? C.primaryBg : 'transparent', color: bm ? C.primary : C.textMuted }}>
-              <Bookmark size={18} fill={bm ? C.primary : 'transparent'} />
-            </button>
-          </div>
-          <h1 className="text-2xl sm:text-[1.7rem] font-bold leading-tight mb-1" style={{ color: C.text }}>{cur.title}</h1>
-          <p className="text-sm" style={{ color: C.textSub }}>{cur.titleJa}</p>
-        </div>
-
-        {/* 本文 */}
-        <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
-          <div className="flex items-center gap-2 mb-4">
-            <BookOpen size={18} style={{ color: C.primary }} />
-            <h2 className="text-base font-bold" style={{ color: C.text }}>本文</h2>
-          </div>
-          <div className="text-[15px] leading-[1.9] whitespace-pre-line" style={{ color: C.text }}>{cur.passage}</div>
-        </div>
-
-        {/* 解答入力 */}
-        <div className="p-6 sm:p-7 rounded-2xl" style={{ backgroundColor: C.card, boxShadow: SH }}>
-          <div className="flex flex-wrap items-center gap-3 mb-4">
-            <h2 className="text-base font-bold" style={{ color: C.text }}>あなたの要約</h2>
-            <div className="ml-auto flex items-baseline gap-1.5">
-              <span className="text-xs font-medium" style={{ color: C.textMuted }}>語数</span>
-              <span className="text-2xl font-bold tabular-nums"
-                style={{ color: inRange ? C.ok : over ? C.ng : C.text }}>{wc}</span>
-              <span className="text-xs font-medium" style={{ color: C.textMuted }}>/ {cur.targetMin}–{cur.targetMax}</span>
-            </div>
-          </div>
-          <div className="h-1.5 rounded-full overflow-hidden mb-4" style={{ backgroundColor: C.borderLight }}>
-            <div className="h-full rounded-full transition-all"
-              style={{ width: `${Math.min(100, (wc / cur.targetMax) * 100)}%`, backgroundColor: inRange ? C.ok : over ? C.ng : C.primary }} />
-          </div>
-          <textarea value={txt} onChange={e => updateAns(e.target.value)}
-            placeholder="Type your English summary here…"
-            className="w-full resize-y outline-none p-4 rounded-xl text-[15px] leading-[1.85] transition-all"
-            style={{ minHeight: cur.grade === 'grade1' ? '220px' : '160px', backgroundColor: C.bg, border: `1px solid ${C.border}`, color: C.text }}
-            onFocus={e => e.target.style.borderColor = C.primary}
-            onBlur={e => e.target.style.borderColor = C.border} />
-
-          <div className="flex flex-wrap items-center justify-between gap-3 mt-4 pt-4"
-            style={{ borderTop: `1px solid ${C.borderLight}` }}>
-            <button onClick={() => { updateAns(''); setCorrResult(null); }} disabled={!txt}
-              className="flex items-center gap-1.5 text-sm font-medium disabled:opacity-40" style={{ color: C.textSub }}>
-              <RotateCcw size={14} />クリア
-            </button>
-            <div className="flex flex-wrap gap-2">
-              <button onClick={doCorrect} disabled={!txt.trim() || correcting}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all disabled:opacity-50"
-                style={{ backgroundColor: correcting ? '#A78BFA' : C.ai }}
-                onMouseEnter={e => { if (!correcting && txt.trim()) e.currentTarget.style.backgroundColor = C.aiH; }}
-                onMouseLeave={e => { e.currentTarget.style.backgroundColor = correcting ? '#A78BFA' : C.ai; }}>
-                {correcting
-                  ? <><span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin inline-block" />添削中…</>
-                  : <><Sparkles size={16} />AIに添削してもらう</>}
-              </button>
-              <button onClick={() => setShowAns(!showAns)}
-                className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-white transition-all"
-                style={{ backgroundColor: C.primary }}
-                onMouseEnter={e => e.currentTarget.style.backgroundColor = C.primaryH}
-                onMouseLeave={e => e.currentTarget.style.backgroundColor = C.primary}>
-                {showAns ? <><EyeOff size={16} />隠す</> : <><Eye size={16} />解答例・解説</>}
-              </button>
-            </div>
-          </div>
-
-          {corrErr && (
-            <div className="mt-3 p-3 rounded-xl flex items-center gap-2 text-sm"
-              style={{ backgroundColor: '#FEE2E2', color: '#991B1B' }}>
-              <AlertCircle size={16} />
-              <span className="flex-1">{corrErr}</span>
-              {corrErr.includes('APIキー') && (
-                <button onClick={() => setShowKeyModal(true)} className="font-bold underline">設定する</button>
-              )}
-            </div>
-          )}
-        </div>
-
-        {corrResult && <CorrectionPanel result={corrResult} onClose={() => setCorrResult(null)} />}
-
-        {showAns && (
-          <div className="rounded-2xl overflow-hidden" style={{ backgroundColor: C.card, boxShadow: SH }}>
-            <div className="flex overflow-x-auto" style={{ borderBottom: `1px solid ${C.borderLight}` }}>
-              {[{ k: 'answer', l: '解答例' }, { k: 'structure', l: '構成と要点' }, { k: 'paraphrase', l: '言い換え' }, { k: 'phrases', l: '使える表現' }].map(t => {
-                const active = ansTab === t.k;
-                return (
-                  <button key={t.k} onClick={() => setAnsTab(t.k)}
-                    className="px-5 py-4 text-sm font-bold whitespace-nowrap relative transition-colors"
-                    style={{ color: active ? C.primary : C.textSub }}>
-                    {t.l}
-                    {active && <span className="absolute bottom-0 left-3 right-3 h-0.5 rounded-t" style={{ backgroundColor: C.primary }} />}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="p-6 sm:p-7">
-              {ansTab === 'answer' && (
-                <div>
-                  <div className="flex items-baseline justify-between mb-3">
-                    <span className="text-xs font-bold uppercase tracking-wider" style={{ color: C.primary }}>Sample Answer</span>
-                    <span className="text-xs font-medium" style={{ color: C.textMuted }}>{cur.sampleWordCount} words</span>
-                  </div>
-                  <div className="p-5 rounded-xl text-[15px] leading-[1.9]"
-                    style={{ backgroundColor: C.primaryBg, color: C.text, borderLeft: `3px solid ${C.primary}` }}>
-                    {cur.sampleAnswer}
-                  </div>
-                  {txt.trim() && (
-                    <div className="mt-5 pt-5" style={{ borderTop: `1px solid ${C.borderLight}` }}>
-                      <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.textSub }}>あなたの解答</div>
-                      <div className="p-5 rounded-xl text-[15px] leading-[1.9] whitespace-pre-wrap"
-                        style={{ backgroundColor: C.bg, color: C.text }}>{txt}</div>
-                      <div className="text-xs font-medium mt-2" style={{ color: C.textMuted }}>
-                        {wc}語 {inRange ? '· 目標範囲内 ✓' : over ? '· オーバー' : '· 不足'}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
-              {ansTab === 'structure' && (
-                <div>
-                  <div className="text-xs font-bold uppercase tracking-wider mb-2" style={{ color: C.primary }}>全体構成</div>
-                  <div className="text-[15px] leading-[1.85] mb-6 pb-5"
-                    style={{ color: C.text, borderBottom: `1px solid ${C.borderLight}` }}>{cur.structure}</div>
-                  <div className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: C.primary }}>要点</div>
-                  <ul className="space-y-3">
-                    {cur.keyPoints.map((pt, i) => (
-                      <li key={i} className="flex gap-3">
-                        <span className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold"
-                          style={{ backgroundColor: C.primaryBg, color: C.primary }}>{i + 1}</span>
-                        <span className="text-[14px] leading-[1.8] flex-1" style={{ color: C.text }}>{pt}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {ansTab === 'paraphrase' && (
-                <div>
-                  <p className="text-sm mb-5" style={{ color: C.textSub, lineHeight: 1.7 }}>
-                    本文の表現をそのまま写すのは減点対象です。下記のような言い換えで自分の英語にしましょう。
-                  </p>
-                  <div className="space-y-4">
-                    {cur.paraphraseTips.map((tip, i) => (
-                      <div key={i} className="p-4 rounded-xl" style={{ backgroundColor: C.bg }}>
-                        <div className="text-xs font-bold mb-1" style={{ color: C.textMuted }}>原文</div>
-                        <div className="text-sm mb-3 italic" style={{ color: C.textSub }}>{tip.original}</div>
-                        <div className="text-xs font-bold mb-1" style={{ color: C.primary }}>言い換え</div>
-                        <div className="text-sm font-medium" style={{ color: C.text }}>→ {tip.alt}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-              {ansTab === 'phrases' && (
-                <div>
-                  <p className="text-sm mb-5" style={{ color: C.textSub, lineHeight: 1.7 }}>
-                    この問題で使えるディスコースマーカーや決まり文句です。
-                  </p>
-                  <ul className="space-y-2.5">
-                    {cur.usefulPhrases.map((ph, i) => (
-                      <li key={i} className="p-4 rounded-xl text-[14px] leading-[1.7]"
-                        style={{ backgroundColor: C.primaryBg, color: C.text, borderLeft: `3px solid ${C.primary}` }}>{ph}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
-      </div>
-    );
-  }
-
   const NAV = [
     { k: 'list', l: '問題一覧', I: BookOpen },
     { k: 'progress', l: '進捗', I: BarChart3 },
@@ -892,7 +898,21 @@ export default function App() {
         </header>
       )}
 
-      {view === 'list' ? <ListView /> : <DetailView />}
+      {view === 'list'
+        ? <ListView
+            navTab={navTab} gf={gf} setGf={setGf}
+            filtered={filtered} answers={answers} goDetail={goDetail}
+            all={all} draftedN={draftedN} apiKey={apiKey} setShowKeyModal={setShowKeyModal}
+          />
+        : <DetailView
+            cur={cur} goBack={goBack} bookmarks={bookmarks} toggleBookmark={toggleBookmark}
+            txt={txt} wc={wc} inRange={inRange} over={over} updateAns={updateAns}
+            correcting={correcting} corrResult={corrResult} setCorrResult={setCorrResult}
+            corrErr={corrErr} doCorrect={doCorrect}
+            setShowKeyModal={setShowKeyModal} showAns={showAns} setShowAns={setShowAns}
+            ansTab={ansTab} setAnsTab={setAnsTab}
+          />
+      }
 
       <nav className="fixed bottom-0 left-0 right-0 grid grid-cols-4"
         style={{ backgroundColor: C.card, borderTop: `1px solid ${C.borderLight}`, boxShadow: '0 -1px 3px rgba(15,23,42,0.03)' }}>
