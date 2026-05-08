@@ -100,6 +100,156 @@ Still, paper books continue to have many fans. Some people enjoy the feeling of 
         'the experience of ~ing （～する体験）',
       ],
     },
+    {
+      id: 'g2-4', label: 'オリジナル No.4', type: '要約問題 A',
+      title: 'Working from Home', titleJa: 'テレワーク',
+      passage: `In recent years, working from home, also called remote work or telework, has become more common in Japan and other countries. Many companies now allow their employees to work at home instead of coming to the office every day.
+
+There are several benefits to working from home. Employees can save time because they do not need to commute to work. They can also work in a comfortable environment and spend more time with their families. For companies, remote work can reduce the cost of office space.
+
+However, working from home also has some disadvantages. Some employees find it difficult to concentrate when there are family members or other distractions at home. In addition, because workers do not meet their colleagues in person, it can be harder to share ideas and work as a team.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Working from home has become increasingly common in many companies. It benefits employees by saving commuting time and allowing them to work in a comfortable setting, while also reducing office costs for companies. On the other hand, distractions at home can make it difficult to focus, and the lack of face-to-face contact may reduce teamwork.`,
+      sampleWordCount: 53,
+      structure: '①導入（テレワークの普及）→ ②利点（通勤時間の節約・快適・コスト削減）→ ③欠点（集中しにくい・チームワーク低下）',
+      keyPoints: [
+        '第1段落：「テレワークが多くの企業で広まっている」という状況を一文でまとめる',
+        '第2段落：利点を2〜3点（①通勤不要、②快適な環境、③オフィスコスト削減）',
+        '第3段落：欠点を2点（①自宅での集中困難、②対面コミュニケーションの減少）',
+        'On the other hand や However で利点と欠点を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'do not need to commute to work', alt: 'save commuting time / avoid traveling to the office' },
+        { original: 'comfortable environment', alt: 'comfortable setting / relaxed atmosphere' },
+        { original: 'difficult to concentrate', alt: 'hard to focus / struggle to stay focused' },
+        { original: 'meet their colleagues in person', alt: 'have face-to-face contact / see coworkers directly' },
+      ],
+      usefulPhrases: [
+        'has become increasingly common （ますます一般的になっている）',
+        'On the other hand, ~ （一方で）',
+        'the lack of ~ （～の欠如）',
+      ],
+    },
+    {
+      id: 'g2-5', label: 'オリジナル No.5', type: '要約問題 A',
+      title: 'Sports and Health', titleJa: 'スポーツと健康',
+      passage: `Playing sports is a popular activity for people of all ages in Japan. Many schools encourage students to join sports clubs, and local communities also offer a variety of sports programs.
+
+Doing sports regularly has many advantages. First, it helps people stay physically fit and maintain a healthy body weight. Regular exercise also strengthens the heart and reduces the risk of serious diseases. In addition, team sports teach players how to cooperate with others and develop important social skills.
+
+However, playing sports also carries some risks. Athletes may experience injuries such as sprains or broken bones, especially during intense competitions. Furthermore, young people who practice sports too seriously sometimes feel under pressure and may lose their enjoyment of the activity.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Sports are popular among people of all ages and offer many health benefits, including maintaining a healthy weight and reducing disease risk. Team sports also help develop social skills through cooperation. However, injuries are a potential risk, especially in competitive settings, and putting too much pressure on young players can cause them to stop enjoying sports.`,
+      sampleWordCount: 52,
+      structure: '①導入（スポーツの人気）→ ②利点（体の健康・病気予防・社会性の発達）→ ③欠点（怪我のリスク・プレッシャー）',
+      keyPoints: [
+        '第1段落：「スポーツはあらゆる年齢に人気がある」という導入を一文で書く',
+        '第2段落：利点を3点（①健康維持、②病気リスク低下、③チームワーク・社会性）',
+        '第3段落：欠点を2点（①怪我のリスク、②過度のプレッシャー）',
+        'offering many benefits と However で対比の構造を作る',
+      ],
+      paraphraseTips: [
+        { original: 'stay physically fit', alt: 'keep the body healthy / maintain physical fitness' },
+        { original: 'reduces the risk of serious diseases', alt: 'helps prevent illnesses / lowers the chance of disease' },
+        { original: 'cooperate with others', alt: 'work together / develop teamwork' },
+        { original: 'feel under pressure', alt: 'experience stress / feel stressed' },
+      ],
+      usefulPhrases: [
+        'offer many health benefits （多くの健康上の利点をもたらす）',
+        'especially in ~ （特に～において）',
+        'cause them to ~ （彼らに～させる）',
+      ],
+    },
+    {
+      id: 'g2-6', label: 'オリジナル No.6', type: '要約問題 B',
+      title: 'Recycling and the Environment', titleJa: 'リサイクルと環境',
+      passage: `Environmental problems such as global warming and pollution are serious concerns around the world. Many governments and organizations are encouraging people to recycle their waste in order to protect the environment.
+
+Recycling has several important benefits. When people recycle materials such as paper, plastic, and glass, fewer natural resources need to be used. This also reduces the amount of waste sent to landfills, which helps keep the environment cleaner. Moreover, recycling requires less energy than producing new products from scratch, which helps lower carbon emissions.
+
+Despite these benefits, recycling also faces some challenges. Sorting different types of waste can be time-consuming and complicated for many people. In some regions, the systems for collecting and processing recyclable materials are not well developed, which limits how effective recycling programs can be.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Recycling is promoted by governments to protect the environment. It reduces the use of natural resources, decreases landfill waste, and requires less energy than manufacturing new products, which helps lower carbon emissions. However, the sorting process can be complicated and time-consuming, and in some areas, the lack of proper facilities limits the effectiveness of recycling programs.`,
+      sampleWordCount: 53,
+      structure: '①導入（環境問題とリサイクルの推進）→ ②利点（資源節約・廃棄物削減・CO2削減）→ ③課題（分別の手間・インフラ不足）',
+      keyPoints: [
+        '第1段落：「環境問題を受けてリサイクルが奨励されている」と一文でまとめる',
+        '第2段落：利点を3点（①天然資源の節約、②埋立地の廃棄物削減、③エネルギー節約とCO2削減）',
+        '第3段落：課題を2点（①分別の複雑さ・時間、②地域によるインフラ不足）',
+        'However で利点と課題を明確に対比する',
+      ],
+      paraphraseTips: [
+        { original: 'fewer natural resources need to be used', alt: 'saves natural resources / reduces the use of raw materials' },
+        { original: 'reduces the amount of waste sent to landfills', alt: 'decreases landfill waste / cuts down on waste disposal' },
+        { original: 'time-consuming and complicated', alt: 'difficult and takes a lot of time' },
+        { original: 'not well developed', alt: 'lacking / insufficient / underdeveloped' },
+      ],
+      usefulPhrases: [
+        'is promoted to ~ （～するために推進されている）',
+        'the lack of ~ （～の不足）',
+        'limits the effectiveness of ~ （～の効果を制限する）',
+      ],
+    },
+    {
+      id: 'g2-7', label: 'オリジナル No.7', type: '要約問題 B',
+      title: 'Tourism and Local Communities', titleJa: '観光と地域社会',
+      passage: `Tourism is one of the largest industries in the world, and it plays an important role in the economies of many countries. In Japan, the number of foreign tourists has increased greatly in recent years.
+
+Tourism can bring many benefits to local communities. When visitors come to a town or region, they spend money at hotels, restaurants, and shops, which supports local businesses and creates jobs. In addition, tourism can help preserve traditional culture and historic sites, as local governments often receive funding to maintain them.
+
+On the other hand, too many tourists can cause problems. Popular tourist spots sometimes become overcrowded, which disturbs the daily lives of local residents. Furthermore, a large number of visitors can damage natural environments and historic buildings if they are not managed carefully.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Tourism plays a major role in local economies worldwide, and has grown significantly in Japan. It benefits communities by boosting local businesses, creating employment, and helping to preserve culture and historic sites. However, excessive tourism can crowd popular areas, disrupt residents' daily lives, and damage natural and historical environments if not properly managed.`,
+      sampleWordCount: 50,
+      structure: '①導入（観光の重要性・日本での増加）→ ②利点（地域経済・雇用・文化保護）→ ③問題点（混雑・住民への影響・環境破壊）',
+      keyPoints: [
+        '第1段落：「観光は世界的に重要な産業で、日本でも外国人観光客が増えている」とまとめる',
+        '第2段落：利点を3点（①地域ビジネスへの支出・雇用創出、②文化・史跡の保護）',
+        '第3段落：問題点を2点（①観光地の過密化・住民生活への支障、②環境・建物への損害）',
+        'However や On the other hand で利点と問題点を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'supports local businesses and creates jobs', alt: 'boosts the local economy / generates employment' },
+        { original: 'preserve traditional culture and historic sites', alt: 'protect local heritage / maintain cultural landmarks' },
+        { original: 'disturbs the daily lives of local residents', alt: 'disrupts residents\' everyday life / inconveniences local people' },
+        { original: 'damage natural environments', alt: 'harm nature / cause environmental damage' },
+      ],
+      usefulPhrases: [
+        'plays a major role in ~ （～において重要な役割を果たす）',
+        'excessive ~ can ~ （過度の～は～しうる）',
+        'if not properly managed （適切に管理されなければ）',
+      ],
+    },
+    {
+      id: 'g2-8', label: 'オリジナル No.8', type: '要約問題 A',
+      title: 'Libraries in the Digital Age', titleJa: 'デジタル時代の図書館',
+      passage: `Libraries have been an important part of communities for hundreds of years. They provide people with access to books and information, and they have traditionally been places of quiet study and learning.
+
+Today, many libraries are changing to meet the needs of a digital society. Some libraries now offer computers, high-speed internet, and digital collections of books and magazines that members can access online. By providing these services, libraries can attract more visitors, especially younger people who are used to finding information on the internet.
+
+However, some people worry that libraries are losing their original purpose. As more resources become available online, fewer people may visit libraries in person. This could lead to funding cuts, which might force some smaller libraries to close permanently.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Libraries have long been important community spaces for learning. To stay relevant, many now offer digital services such as computers, internet access, and online book collections, which help attract younger visitors. However, there are concerns that as more content moves online, in-person visits may decline, potentially leading to budget cuts and permanent closures of smaller libraries.`,
+      sampleWordCount: 52,
+      structure: '①導入（図書館の歴史的役割）→ ②変化・利点（デジタル化で若者を引きつける）→ ③懸念（利用者減少・資金削減・閉館リスク）',
+      keyPoints: [
+        '第1段落：「図書館は長年コミュニティの重要な学習の場だった」と導入を一文でまとめる',
+        '第2段落：図書館のデジタル化（コンピュータ・ネット・電子書籍）と若者の誘致効果',
+        '第3段落：懸念点（①ネット化で来館者減少、②資金削減、③小規模図書館の閉館リスク）',
+        'However で変化の利点と懸念をつなぐ',
+      ],
+      paraphraseTips: [
+        { original: 'meet the needs of a digital society', alt: 'adapt to modern technology / stay relevant in the digital age' },
+        { original: 'attract more visitors', alt: 'draw in more people / bring in a wider audience' },
+        { original: 'losing their original purpose', alt: 'straying from their traditional role' },
+        { original: 'force some smaller libraries to close permanently', alt: 'lead to the permanent closure of small libraries' },
+      ],
+      usefulPhrases: [
+        'To stay relevant, ~ （時代に合い続けるために）',
+        'there are concerns that ~ （～という懸念がある）',
+        'potentially leading to ~ （～につながる可能性がある）',
+      ],
+    },
   ],
   grade1: [
     {
@@ -163,6 +313,166 @@ In response to these challenges, urban planners and engineers are turning to so-
         'paradoxically worsens ~ （皮肉にも～を悪化させる）',
         'To tackle this problem, ~ （この問題に取り組むため）',
         'Unfortunately, these solutions demand ~ （残念ながら、これらの解決策は～を必要とする）',
+      ],
+    },
+    {
+      id: 'g1-3', label: 'オリジナル No.3', type: '要約問題 A',
+      title: 'Artificial Intelligence in Education', titleJa: 'AI教育の課題と可能性',
+      passage: `The rapid advancement of artificial intelligence is beginning to transform the way students learn and the way educators teach. Across a growing number of countries, AI-powered tools are being integrated into classrooms, promising to personalize instruction in ways that traditional teaching methods cannot easily achieve.
+
+Proponents of AI in education argue that intelligent tutoring systems can adapt to each student's unique pace and learning style, providing immediate feedback and targeted practice. This individualized approach has shown promise in improving academic outcomes, particularly for students who struggle in conventional classroom settings where a single teacher must simultaneously attend to the needs of many learners. Moreover, AI can relieve educators of repetitive administrative tasks such as grading and progress tracking, freeing them to focus on higher-level mentoring and creative instruction.
+
+Critics, however, raise important concerns about the widespread adoption of AI in schools. They caution that an overreliance on algorithmic systems may erode the essential human relationship between teachers and students, which many educators consider foundational to genuine learning and emotional development. Furthermore, access to sophisticated AI tools is often limited to affluent schools and regions, meaning that the technology could widen existing educational inequalities rather than bridge them.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Artificial intelligence is increasingly being integrated into education to personalize learning in ways that conventional teaching cannot match. Supporters contend that AI tutoring systems can adapt to individual learning styles, provide instant feedback, and free teachers from routine administrative work, thereby improving academic results especially for struggling students. Nevertheless, critics warn that excessive dependence on algorithmic systems risks undermining the vital human bond between teachers and students, which is regarded as central to genuine learning. Additionally, because advanced AI tools are often accessible only in well-funded institutions, the technology may deepen educational inequality rather than reduce it.`,
+      sampleWordCount: 103,
+      structure: '①現状（AIの教育への統合）→ ②支持論（個別最適化・即時フィードバック・教員負担軽減）→ ③批判論（師弟関係の希薄化・教育格差の拡大）',
+      keyPoints: [
+        '第1段落：「AIが教育に統合され、個別最適化を可能にしつつある」という現状を一文で導入',
+        '第2段落：支持論を2〜3点（①学習スタイルへの適応、②即時フィードバック、③教員の管理業務軽減）',
+        '第3段落：英検1級では2文で「師弟関係の希薄化リスク」と「教育格差の拡大リスク」の両方を論じる',
+        'Nevertheless や Furthermore など上級のディスコースマーカーを使いこなす',
+      ],
+      paraphraseTips: [
+        { original: 'personalize instruction', alt: 'tailor teaching to individual needs / provide customized learning' },
+        { original: 'adapt to each student\'s unique pace and learning style', alt: 'adjust to individual learning styles and speed' },
+        { original: 'erode the essential human relationship', alt: 'undermine the vital human bond / weaken teacher-student connections' },
+        { original: 'widen existing educational inequalities', alt: 'deepen educational gaps / increase the divide between students' },
+        { original: 'algorithmic systems', alt: 'AI-driven tools / automated systems' },
+      ],
+      usefulPhrases: [
+        'Supporters contend that ~ （支持者は～と主張する）',
+        'thereby improving ~ （それによって～を改善する）',
+        'risks undermining ~ （～を損なうリスクがある）',
+        'rather than reduce it （それを減らすどころか）',
+      ],
+    },
+    {
+      id: 'g1-4', label: 'オリジナル No.4', type: '要約問題 B',
+      title: 'Food Security and Climate Change', titleJa: '食料安全保障と気候変動',
+      passage: `Climate change is increasingly threatening global food systems, posing one of the most complex challenges humanity will face in the coming decades. Rising temperatures, more frequent extreme weather events, and shifting precipitation patterns are disrupting agricultural production across vast regions of the world, with the most severe consequences falling disproportionately on developing nations in tropical and subtropical areas.
+
+The implications for food security are profound. Crop yields for staple grains such as wheat, rice, and maize are projected to decline significantly as growing conditions deteriorate, pushing food prices higher and making adequate nutrition increasingly inaccessible for the world's most vulnerable populations. Water scarcity further compounds the problem, as irrigation-dependent agriculture struggles to function in regions experiencing prolonged droughts, and competition for limited freshwater resources is likely to intensify conflicts both within and between nations.
+
+In response, agricultural scientists and policymakers are pursuing a range of adaptation and mitigation strategies. Researchers are developing heat-resistant and drought-tolerant crop varieties through both conventional breeding techniques and genetic engineering, while governments are investing in irrigation infrastructure and early-warning systems for extreme weather. However, critics argue that these technical fixes address symptoms rather than root causes, and that meaningful progress requires a fundamental transformation of global food systems, including a significant reduction in greenhouse gas emissions from industrial agriculture and livestock production.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Climate change is severely disrupting global food production through rising temperatures, extreme weather, and water shortages, with developing nations in tropical regions bearing the greatest burden. As a result, staple crop yields are expected to fall sharply, driving up prices and threatening food security for vulnerable populations, while water scarcity risks intensifying regional conflicts. To address these challenges, researchers are developing climate-resistant crop varieties and governments are improving irrigation and early-warning systems. However, critics argue that such technical measures merely treat symptoms, insisting that reducing emissions from industrial farming and rethinking food systems as a whole are essential for lasting solutions.`,
+      sampleWordCount: 105,
+      structure: '①現状（気候変動による農業生産の混乱）→ ②影響（食料不安・水不足・紛争リスク）→ ③対策（耐性品種・インフラ整備）+ 批判（根本原因の未対処）',
+      keyPoints: [
+        '第1段落：「気候変動が農業生産を脅かし、特に発展途上国に深刻な影響」を一文でまとめる',
+        '第2段落：食料安全保障への影響（①主要作物の収穫減と価格上昇、②水不足による紛争激化）を1文で要約',
+        '第3段落：英検1級では「対策（耐性品種・灌漑・早期警戒）」と「批判（根本原因への対処不足）」の両方を2文で論じる',
+        'bearing the greatest burden / However, critics argue that などの1級表現を活用する',
+      ],
+      paraphraseTips: [
+        { original: 'disrupting agricultural production', alt: 'damaging / severely affecting food production' },
+        { original: 'falling disproportionately on developing nations', alt: 'affecting poorer countries more severely / bearing the greatest burden' },
+        { original: 'crop yields are projected to decline significantly', alt: 'harvests of key crops are expected to fall sharply' },
+        { original: 'address symptoms rather than root causes', alt: 'treat the effects rather than the underlying problems' },
+        { original: 'fundamental transformation of global food systems', alt: 'comprehensive reform of how food is produced worldwide' },
+      ],
+      usefulPhrases: [
+        'bearing the greatest burden （最大の負担を担っている）',
+        'driving up prices （価格を押し上げる）',
+        'critics argue that ~ merely treat symptoms （批評家は～は症状を治療するだけだと主張する）',
+        'essential for lasting solutions （長期的な解決策に不可欠である）',
+      ],
+    },
+    {
+      id: 'g1-5', label: 'オリジナル No.5', type: '要約問題 A',
+      title: 'Mental Health in the Workplace', titleJa: '職場のメンタルヘルス',
+      passage: `Mental health challenges among working adults have emerged as a pressing public health concern across industrialized nations, with rates of burnout, anxiety, and depression rising steadily over the past two decades. The demands of modern work environments—characterized by long hours, constant connectivity through digital devices, and intense performance pressure—have contributed significantly to this deterioration in psychological well-being.
+
+The economic costs of poor mental health in the workplace are substantial. Studies consistently show that untreated psychological conditions result in reduced productivity, elevated rates of absenteeism, and high employee turnover, all of which impose significant financial losses on businesses and governments alike. Beyond purely economic considerations, the human toll is equally serious, as individuals suffering from workplace-related mental health conditions often experience damaged personal relationships, physical health complications, and, in the most severe cases, an elevated risk of self-harm.
+
+Companies and governments are increasingly recognizing the need to address this crisis proactively. Many organizations have introduced employee assistance programs, flexible working arrangements, and mental health days to provide workers with greater support and autonomy. Nonetheless, critics point out that these measures tend to focus on individual coping strategies while leaving unchanged the structural workplace conditions—such as excessive workloads and toxic management cultures—that are the primary drivers of employee distress. True progress, they argue, demands systemic reform rather than surface-level accommodations.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Rates of burnout, anxiety, and depression are rising among working adults across industrialized countries, driven by long working hours, constant digital connectivity, and intense performance expectations in modern workplaces. This crisis carries substantial economic consequences, including reduced productivity, higher absenteeism, and increased turnover, along with serious personal costs such as damaged relationships and physical health problems. In response, many companies and governments have introduced support measures including flexible work options and mental health assistance programs. However, critics maintain that these initiatives target individual coping without reforming the structural conditions that cause distress, and that meaningful change requires systemic workplace reform.`,
+      sampleWordCount: 104,
+      structure: '①現状（職場のメンタルヘルス悪化の背景）→ ②影響（経済的損失・個人的打撃）→ ③対策（支援プログラム・柔軟な働き方）+ 批判（構造改革の欠如）',
+      keyPoints: [
+        '第1段落：「現代の職場環境（長時間労働・常時接続・高い成果圧力）がメンタルヘルス悪化を招いている」を一文で要約',
+        '第2段落：経済的・人的コスト（生産性低下・欠勤・離職、さらに個人の人間関係・健康問題）を1文でまとめる',
+        '第3段落：企業の対策と「個人対処に焦点を当てるだけで構造問題を放置している」という批判を2文で論じる',
+        'driven by / along with / Nevertheless などの上位表現を使いこなす',
+      ],
+      paraphraseTips: [
+        { original: 'characterized by long hours and constant connectivity', alt: 'driven by overwork and always-on digital culture' },
+        { original: 'elevated rates of absenteeism and high employee turnover', alt: 'more frequent absences and greater staff attrition' },
+        { original: 'leaving unchanged the structural workplace conditions', alt: 'without reforming the underlying work environment' },
+        { original: 'primary drivers of employee distress', alt: 'main causes of worker mental health problems' },
+        { original: 'surface-level accommodations', alt: 'superficial measures / band-aid solutions' },
+      ],
+      usefulPhrases: [
+        'driven by ~ （～によって引き起こされた）',
+        'along with ~ （～に加えて）',
+        'critics maintain that ~ （批評家は～と主張し続けている）',
+        'meaningful change requires ~ （意味のある変化には～が必要である）',
+      ],
+    },
+    {
+      id: 'g1-6', label: 'オリジナル No.6', type: '要約問題 B',
+      title: 'The Renewable Energy Transition', titleJa: '再生可能エネルギーへの移行',
+      passage: `The imperative to decarbonize the global economy has placed renewable energy at the center of international climate policy, with solar and wind power in particular experiencing dramatic cost reductions and rapid capacity growth over the past decade. Numerous governments have set ambitious targets for transitioning away from fossil fuels, driven both by climate commitments and by growing concerns over energy security following volatility in international energy markets.
+
+Despite this momentum, the transition to renewable energy faces significant technical and economic hurdles. Unlike conventional power plants that generate electricity continuously, solar and wind installations produce power intermittently, depending on weather conditions and time of day. This variability poses substantial challenges for grid stability, necessitating large-scale investment in energy storage technologies such as advanced batteries, as well as the modernization of transmission infrastructure to efficiently distribute electricity across regions.
+
+Socioeconomic dimensions of the energy transition further complicate the picture. Communities and workers in fossil fuel industries face the prospect of economic displacement, and without thoughtful policy intervention, the shift to clean energy risks exacerbating regional inequalities. On the geopolitical front, widespread renewable deployment shifts dependence from oil and gas to rare earth minerals and other critical materials needed for batteries and solar panels, simply transferring rather than eliminating the vulnerabilities associated with resource dependency.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Solar and wind power have expanded rapidly as governments worldwide pursue decarbonization and seek greater energy security, yet the renewable transition faces considerable technical challenges. Because solar and wind generate electricity intermittently, maintaining grid stability requires massive investment in battery storage and upgraded transmission networks. Beyond these technical obstacles, the shift away from fossil fuels threatens economic disruption for workers and communities in affected industries, demanding carefully designed policy support to avoid deepening regional inequalities. Moreover, on a geopolitical level, increased reliance on renewable technologies transfers dependency from oil and gas to rare earth minerals, replacing one form of resource vulnerability with another.`,
+      sampleWordCount: 101,
+      structure: '①現状（再エネの急成長と脱炭素化の推進）→ ②技術的課題（断続性・送電網安定・蓄電コスト）→ ③社会経済・地政学的課題（雇用・地域格差・資源依存の移行）',
+      keyPoints: [
+        '第1段落：「太陽光・風力が急成長し各国政府が野心的目標を設定しているが、課題もある」を一文でまとめる',
+        '第2段落：技術的課題（①電力の断続性による送電網の不安定化、②蓄電技術・送電インフラへの大規模投資）を1文で要約',
+        '第3段落：英検1級では「雇用・地域格差問題」と「資源依存の地政学的リスクの移行」を2文で論じる',
+        'yet / Beyond these technical obstacles / replacing one form of ~ with another などの高度な構文を使う',
+      ],
+      paraphraseTips: [
+        { original: 'dramatic cost reductions and rapid capacity growth', alt: 'falling costs and rapid expansion' },
+        { original: 'produce power intermittently', alt: 'generate electricity inconsistently / not produce power continuously' },
+        { original: 'exacerbating regional inequalities', alt: 'deepening economic disparities between regions' },
+        { original: 'simply transferring rather than eliminating the vulnerabilities', alt: 'replacing one form of dependency with another' },
+        { original: 'rare earth minerals and other critical materials', alt: 'scarce minerals needed for clean energy technologies' },
+      ],
+      usefulPhrases: [
+        'yet the ~ faces considerable ~ （しかし～には相当な～が伴う）',
+        'demands carefully designed policy support （慎重に設計された政策支援を必要とする）',
+        'on a geopolitical level （地政学的なレベルでは）',
+        'replacing one form of ~ with another （ある形態の～を別の形態に置き換えるにすぎない）',
+      ],
+    },
+    {
+      id: 'g1-7', label: 'オリジナル No.7', type: '要約問題 A',
+      title: 'Digital Privacy and Data Collection', titleJa: 'デジタルプライバシーとデータ収集',
+      passage: `The proliferation of digital services and internet-connected devices has enabled corporations to amass unprecedented quantities of personal data, fundamentally altering the relationship between individuals and the organizations that serve them. Behavioral data derived from browsing habits, purchasing patterns, location tracking, and social media activity is now harvested at a scale and granularity that would have been unimaginable even two decades ago, and this information has become the primary currency fueling the digital economy.
+
+The commercial benefits of data collection are considerable. By analyzing vast datasets, companies can personalize their offerings with remarkable precision, improving user experience and enabling targeted advertising that is substantially more effective than traditional mass-marketing approaches. Algorithmic recommendation systems, powered by personal data, have become deeply embedded in how consumers discover products, news, and entertainment, shaping preferences and behaviors in ways that users themselves rarely perceive.
+
+Nevertheless, the unchecked accumulation of personal data raises profound concerns about privacy, autonomy, and the concentration of power. High-profile data breaches have exposed millions of individuals to identity theft and financial fraud, while revelations about the use of personal data for political micro-targeting have sparked widespread alarm about the integrity of democratic processes. Regulatory responses, including the European Union's General Data Protection Regulation, represent attempts to reassert individual control over personal information, but critics argue that such frameworks remain insufficient given the sheer scale and sophistication of modern data operations.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The rapid growth of digital services has allowed corporations to collect personal data at an enormous scale, transforming behavioral information into the foundation of the modern digital economy. This data enables companies to personalize services with great accuracy and deliver highly targeted advertising, while recommendation algorithms subtly shape consumer preferences in ways that users seldom notice. However, the unchecked accumulation of such data poses serious threats to privacy and democratic integrity, as breaches expose individuals to fraud and personal data has been exploited for political micro-targeting. Although regulatory frameworks like the EU's GDPR attempt to restore individual control, critics argue these measures fall short given the vast sophistication of contemporary data operations.`,
+      sampleWordCount: 106,
+      structure: '①現状（デジタルサービスによる大規模データ収集）→ ②商業的利点（パーソナライズ広告・レコメンドシステム）→ ③懸念・規制（プライバシー侵害・民主主義リスク・規制の限界）',
+      keyPoints: [
+        '第1段落：「デジタルサービスの普及で企業が膨大な個人データを収集し、デジタル経済の基盤になっている」を一文でまとめる',
+        '第2段落：商業的利点（①精密なパーソナライズと広告効果、②レコメンドシステムによる消費者行動への影響）を1文で',
+        '第3段落：英検1級では「プライバシー・民主主義への脅威（データ漏洩・政治的マイクロターゲティング）」と「規制（GDPRなど）の限界」を2文で論じる',
+        'subtly / fall short given the vast sophistication of ~ などの高度な語彙・構文を意識する',
+      ],
+      paraphraseTips: [
+        { original: 'harvested at a scale and granularity', alt: 'collected in enormous quantities and detail' },
+        { original: 'personalize their offerings with remarkable precision', alt: 'tailor services with great accuracy' },
+        { original: 'shaping preferences and behaviors', alt: 'influencing consumer choices and habits' },
+        { original: 'unchecked accumulation of personal data', alt: 'unregulated collection of personal information' },
+        { original: 'remain insufficient given the sheer scale', alt: 'fall short given the vast scope / prove inadequate' },
+      ],
+      usefulPhrases: [
+        'transforming ~ into the foundation of ~ （～を～の基盤に変える）',
+        'in ways that users seldom notice （ユーザーがほとんど気づかない形で）',
+        'attempt to restore individual control （個人のコントロールを取り戻そうとする）',
+        'critics argue these measures fall short （批評家はこれらの対策が不十分だと主張する）',
       ],
     },
   ],
