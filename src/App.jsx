@@ -1192,7 +1192,7 @@ export default function App() {
       {/* ── アプリ間ナビゲーション ── */}
       <nav className="sticky top-0 z-20 flex items-center h-11 px-2 gap-1 text-[13px] font-semibold"
         style={{ backgroundColor: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #e2e8f0' }}>
-        <a href="https://41morinaga-glitch.github.io/eiken-portal/" target="_self"
+        <a href="https://kantanapp.github.io/eiken-portal/" target="_self"
           style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
           🎓 TOP
@@ -1203,7 +1203,7 @@ export default function App() {
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
           📚 単語
         </a>
-        <a href="https://41morinaga-glitch.github.io/eiken-mondai-app/" target="_self"
+        <a href="https://kantanapp.github.io/eiken-mondai-app/" target="_self"
           style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
           📝 長文
