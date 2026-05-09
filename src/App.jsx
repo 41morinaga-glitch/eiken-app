@@ -221,6 +221,156 @@ On the other hand, too many tourists can cause problems. Popular tourist spots s
       ],
     },
     {
+      id: 'g2-9', label: 'オリジナル No.9', type: '要約問題 A',
+      title: 'Volunteering and Community Service', titleJa: 'ボランティアと地域貢献',
+      passage: `Volunteering means giving time and effort to help others without receiving payment. In Japan, many schools encourage students to take part in volunteer activities, and local governments also organize events where residents can help their communities.
+
+There are many benefits to volunteering. First, it helps people develop useful skills such as communication, teamwork, and problem-solving. Volunteers also feel satisfied knowing they are making a positive difference in the lives of others. In addition, young people who volunteer often find it easier to understand different kinds of people and situations.
+
+However, volunteering can also be challenging. Some people find it difficult to fit volunteer activities into their busy schedules. Others may feel uncertain about what kind of help they can offer. Furthermore, some organizations face a shortage of volunteers because many people do not know about the opportunities available in their area.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Volunteering gives people a chance to help their communities without pay. It helps participants build skills like communication and teamwork, brings personal satisfaction, and increases understanding of others. However, fitting volunteering into a busy schedule can be difficult, and some people are unsure how to help. Many organizations also struggle to attract enough volunteers due to a lack of awareness about available opportunities.`,
+      sampleWordCount: 55,
+      structure: '①導入（ボランティアとは・学校や地域での推進）→ ②利点（スキル習得・満足感・他者理解）→ ③課題（時間の確保・不確実性・ボランティア不足）',
+      keyPoints: [
+        '第1段落：「ボランティアとは無償で人を助けることで、学校や地域で推進されている」という導入を一文で',
+        '第2段落：利点を3点（①スキル習得、②満足感、③他者理解）を簡潔に',
+        '第3段落：課題を3点（①スケジュールの調整困難、②不確実さ、③ボランティア不足）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'giving time and effort without receiving payment', alt: 'helping others for free / offering unpaid assistance' },
+        { original: 'feel satisfied knowing they are making a positive difference', alt: 'gain a sense of fulfillment / feel rewarded by helping others' },
+        { original: 'fit volunteer activities into their busy schedules', alt: 'find time to volunteer / manage time for volunteering' },
+        { original: 'shortage of volunteers', alt: 'not enough volunteers / lack of participants' },
+      ],
+      usefulPhrases: [
+        'gives people a chance to ~ （人々に～する機会を与える）',
+        'However, fitting ~ into a busy schedule can be difficult （しかし、忙しいスケジュールに～を組み込むのは難しい）',
+        'due to a lack of awareness （認知不足のために）',
+      ],
+    },
+    {
+      id: 'g2-10', label: 'オリジナル No.10', type: '要約問題 A',
+      title: 'Online Shopping vs Physical Stores', titleJa: 'ネットショッピングと実店舗',
+      passage: `In Japan and many other countries, more and more people are choosing to shop online instead of going to physical stores. This change has been made possible by the growth of smartphones and fast internet connections, which allow people to browse and buy products from anywhere at any time.
+
+Online shopping offers several advantages. Customers can easily compare prices across many websites and find better deals than in regular stores. Shopping online also saves time because people do not need to travel to a store or wait in long lines. In addition, online stores are open twenty-four hours a day, making it convenient for busy people.
+
+Despite these benefits, some people still prefer physical stores. Many customers like to touch and try products before buying them, which is not possible when shopping online. Moreover, physical stores provide immediate access to products without waiting for delivery. Some people also enjoy the experience of visiting a store and receiving advice from shop staff.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Online shopping has become increasingly popular as smartphones and fast internet make it easy to buy products anytime. It allows customers to compare prices, save travel time, and shop around the clock. However, many people still prefer physical stores because they can try products before purchasing, receive items immediately without waiting for delivery, and enjoy personal assistance from store staff.`,
+      sampleWordCount: 55,
+      structure: '①導入（ネットショッピングの普及と背景）→ ②利点（価格比較・時間節約・24時間営業）→ ③実店舗の利点（試着・即時入手・スタッフのアドバイス）',
+      keyPoints: [
+        '第1段落：「スマホとネットの普及でネットショッピングが増加している」という状況を一文で導入',
+        '第2段落：ネットショッピングの利点（①価格比較・お得、②移動不要・時短、③24時間営業）',
+        '第3段落：実店舗の利点（①商品を試せる、②即座に入手、③スタッフのアドバイス）',
+        'However で両者を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'compare prices across many websites', alt: 'find better deals / compare prices easily' },
+        { original: 'open twenty-four hours a day', alt: 'available at any time / accessible around the clock' },
+        { original: 'touch and try products before buying them', alt: 'test or examine products in person' },
+        { original: 'immediate access to products without waiting for delivery', alt: 'receive items right away / get products on the spot' },
+      ],
+      usefulPhrases: [
+        'has become increasingly popular （ますます人気になってきている）',
+        'around the clock （24時間）',
+        'However, many people still prefer ~ （しかし、依然として～を好む人が多い）',
+      ],
+    },
+    {
+      id: 'g2-11', label: 'オリジナル No.11', type: '要約問題 B',
+      title: 'Public Transportation and Urban Life', titleJa: '公共交通機関と都市生活',
+      passage: `In many large cities around the world, including Tokyo, Osaka, and other major Japanese cities, public transportation systems such as trains and buses play a vital role in people's daily lives. Millions of commuters rely on these services to get to work, school, and other destinations every day.
+
+Using public transportation has several important benefits. It is generally cheaper than owning and maintaining a private car, which can be expensive because of fuel costs, insurance, and parking fees. Public transportation also reduces the number of cars on the road, which helps decrease traffic congestion and lower air pollution in cities. Furthermore, trains and buses allow passengers to use their travel time for other activities such as reading or checking messages.
+
+However, public transportation also has some limitations. Trains and buses follow fixed schedules and routes, which may not always suit individual needs. During rush hours, vehicles can become extremely crowded, making the experience uncomfortable for many passengers. In rural areas or smaller towns, public transportation services may be limited or even unavailable, forcing residents to rely on private cars.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Public transportation systems such as trains and buses are essential to daily life in large cities. They are more affordable than private cars and help reduce traffic and air pollution while allowing passengers to make productive use of their travel time. However, fixed schedules and overcrowding during rush hours can make public transport inconvenient, and in rural areas, limited or absent services force residents to use private vehicles.`,
+      sampleWordCount: 62,
+      structure: '①導入（公共交通の重要性・利用者）→ ②利点（費用が安い・渋滞と大気汚染の軽減・移動時間の活用）→ ③課題（固定スケジュール・混雑・地方での不足）',
+      keyPoints: [
+        '第1段落：「電車やバスなどの公共交通機関が都市生活に不可欠な役割を果たしている」という導入',
+        '第2段落：利点を3点（①費用が安い、②渋滞・大気汚染の軽減、③移動時間の有効活用）',
+        '第3段落：課題を3点（①固定スケジュール・ルート、②ラッシュ時の混雑、③地方での不足）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'generally cheaper than owning and maintaining a private car', alt: 'more affordable than having a car / less expensive than driving' },
+        { original: 'reduces the number of cars on the road', alt: 'decreases traffic / cuts down on the number of vehicles' },
+        { original: 'follow fixed schedules and routes', alt: 'run on set timetables and predetermined paths' },
+        { original: 'extremely crowded', alt: 'very congested / packed / uncomfortably full' },
+      ],
+      usefulPhrases: [
+        'are essential to ~ （～に不可欠である）',
+        'make productive use of their travel time （移動時間を有効活用する）',
+        'force residents to ~ （住民に～を強いる）',
+      ],
+    },
+    {
+      id: 'g2-12', label: 'オリジナル No.12', type: '要約問題 A',
+      title: 'Pets and Human Well-being', titleJa: 'ペットと人の幸福',
+      passage: `Keeping pets has become a common part of life for many families in Japan. Dogs and cats are the most popular pets, but some people also keep birds, fish, and other animals. The number of pet owners has increased steadily in recent years, and the pet industry has grown into a large and profitable business.
+
+Having a pet brings many positive effects on people's lives. Studies show that spending time with animals can reduce stress and lower blood pressure. Pets also provide emotional support and help people feel less lonely, which can be especially beneficial for elderly people who live alone. In addition, dog owners often get more exercise because they walk their dogs regularly.
+
+On the other hand, owning a pet also involves responsibilities and challenges. Pets require regular feeding, medical care, and attention, which can be costly and time-consuming. Some people develop allergies to pet fur or feathers, making it impossible to keep certain animals. Furthermore, when pet owners have to travel or work long hours, they must arrange for someone to care for their animals.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Pet ownership is increasingly common in Japan, with dogs and cats being the most popular choices. Having a pet brings significant benefits, including stress reduction, emotional support, and companionship, particularly for elderly people living alone, as well as more exercise for dog owners. However, pets require consistent care and money, some people suffer from animal allergies, and owners must arrange for pet care when they travel or work long hours.`,
+      sampleWordCount: 63,
+      structure: '①導入（ペット飼育の普及・ペット産業の成長）→ ②メリット（ストレス軽減・情緒的サポート・運動）→ ③課題（費用・時間・アレルギー・世話の確保）',
+      keyPoints: [
+        '第1段落：「日本でペット飼育が増加し、ペット産業も成長している」という導入を一文で',
+        '第2段落：メリット（①ストレス・血圧の低下、②情緒的サポート・孤独感の軽減、③運動量の増加）',
+        '第3段落：課題（①費用・時間・世話の必要性、②アレルギーの問題、③不在時の預け先確保）',
+        'On the other hand で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'reduce stress and lower blood pressure', alt: 'help people relax / improve physical and mental health' },
+        { original: 'feel less lonely', alt: 'have companionship / not feel isolated' },
+        { original: 'require regular feeding, medical care, and attention', alt: 'need constant care and attention / demand time and money' },
+        { original: 'develop allergies to pet fur or feathers', alt: 'suffer from animal allergies / be allergic to pets' },
+      ],
+      usefulPhrases: [
+        'is increasingly common （ますます一般的になっている）',
+        'particularly for ~ （特に～にとって）',
+        'However, pets require consistent care and money （しかし、ペットには継続的なケアとお金が必要だ）',
+      ],
+    },
+    {
+      id: 'g2-13', label: 'オリジナル No.13', type: '要約問題 B',
+      title: 'School Uniforms', titleJa: '学校の制服',
+      passage: `School uniforms are worn by students in many countries, and Japan is well known for having a strong uniform culture in its schools. While uniforms are standard at many Japanese junior high and high schools, opinions about whether they should be required continue to be debated among students, parents, and educators.
+
+Those who support school uniforms argue that they create a sense of equality among students, since everyone wears the same clothes regardless of their family's financial situation. This can reduce bullying related to fashion and clothing brands. Uniforms also help students focus on studying rather than worrying about what to wear each day, and they make it easier to identify students in public for safety reasons.
+
+However, some people oppose mandatory uniforms. They argue that choosing one's own clothes is an important way for young people to express their individual personality and creativity. Additionally, high-quality uniforms can be expensive, which may place a financial burden on families. Some students also find uniforms uncomfortable or unsuitable for different weather conditions, which can affect their concentration and well-being at school.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `School uniforms are widespread in Japan and continue to spark debate. Supporters argue that uniforms promote equality by reducing visible economic differences, discourage fashion-related bullying, help students focus on learning, and improve safety. On the other hand, opponents claim that uniforms limit personal expression and creativity, can be costly for families, and may be uncomfortable in various weather conditions, potentially affecting students' well-being.`,
+      sampleWordCount: 57,
+      structure: '①導入（日本における制服文化と議論）→ ②賛成論（平等感・いじめ防止・学習への集中・安全性）→ ③反対論（個性の表現・費用・快適性の問題）',
+      keyPoints: [
+        '第1段落：「日本の学校では制服が一般的で、その義務化をめぐって議論が続いている」という導入',
+        '第2段落：賛成論（①平等感、②いじめ防止、③学習集中、④安全確認のしやすさ）',
+        '第3段落：反対論（①個性・創造性の表現の制限、②費用負担、③快適性の問題）',
+        'On the other hand で賛否を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'create a sense of equality among students', alt: 'promote equality / reduce visible differences between students' },
+        { original: 'reduce bullying related to fashion and clothing brands', alt: 'discourage fashion-related bullying / prevent teasing about clothes' },
+        { original: 'express their individual personality and creativity', alt: 'show their own style / develop a sense of identity' },
+        { original: 'place a financial burden on families', alt: 'be costly for families / be expensive for parents' },
+      ],
+      usefulPhrases: [
+        'continue to spark debate （議論を呼び続けている）',
+        'On the other hand, opponents claim that ~ （一方、反対論者は～と主張する）',
+        'potentially affecting ~ （～に影響を与える可能性がある）',
+      ],
+    },
+    {
       id: 'g2-8', label: 'オリジナル No.8', type: '要約問題 A',
       title: 'Libraries in the Digital Age', titleJa: 'デジタル時代の図書館',
       passage: `Libraries have been an important part of communities for hundreds of years. They provide people with access to books and information, and they have traditionally been places of quiet study and learning.
@@ -441,6 +591,166 @@ Socioeconomic dimensions of the energy transition further complicate the picture
         'demands carefully designed policy support （慎重に設計された政策支援を必要とする）',
         'on a geopolitical level （地政学的なレベルでは）',
         'replacing one form of ~ with another （ある形態の～を別の形態に置き換えるにすぎない）',
+      ],
+    },
+    {
+      id: 'g1-8', label: 'オリジナル No.8', type: '要約問題 A',
+      title: 'Globalization and Cultural Identity', titleJa: 'グローバル化と文化的アイデンティティ',
+      passage: `The accelerating pace of globalization has fundamentally transformed how cultures interact and evolve across the world. As international trade, digital communication, and mass migration have intensified, the boundaries separating distinct cultural traditions have grown increasingly porous, prompting scholars and policymakers alike to debate whether these processes foster mutual enrichment or hasten the erosion of cultural diversity.
+
+Critics of globalization's cultural dimension argue that the worldwide dominance of a small number of languages, entertainment franchises, and consumer brands—many originating in the United States—threatens to homogenize human civilization by marginalizing minority languages, indigenous artistic traditions, and locally distinctive customs. This phenomenon, sometimes labeled cultural imperialism, is seen as undermining the unique identities of smaller communities that lack the economic and institutional resources to resist the relentless penetration of globally marketed content.
+
+Defenders of cultural globalization, however, contend that the interaction of cultures has historically produced creative hybridity and innovation rather than simple erasure. Local communities have repeatedly demonstrated their capacity to selectively adopt external influences while reinterpreting them through indigenous lenses, producing vibrant new cultural forms. Furthermore, digital platforms have paradoxically empowered previously marginalized cultural producers, enabling minority-language artists and traditional craftspeople to reach global audiences and monetize their work in ways that would have been impossible in an earlier era.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The rapid spread of globalization has blurred cultural boundaries worldwide, sparking debate over whether cross-cultural exchange enriches societies or accelerates the loss of cultural diversity. Critics contend that the global dominance of a handful of languages and brands—chiefly from the United States—threatens to homogenize civilization by marginalizing minority languages, indigenous arts, and local customs, a process described as cultural imperialism. Proponents of cultural globalization counter that cultural interaction has historically generated creative hybridity, with communities selectively absorbing external influences and producing new cultural forms. Moreover, digital platforms have increasingly empowered marginalized cultural producers to reach global audiences, enabling minority-language artists and traditional craftspeople to sustain their work commercially.`,
+      sampleWordCount: 106,
+      structure: '①現状（グローバル化による文化的境界の消失）→ ②批判論（文化の均質化・文化帝国主義）→ ③擁護論（文化的混交の創造性・デジタルによる少数文化の可能性）',
+      keyPoints: [
+        '第1段落：「グローバル化が文化の相互作用を加速させ、文化多様性への影響を巡る議論を呼んでいる」を一文で導入',
+        '第2段落：批判論（①少数言語・伝統文化の周縁化、②文化帝国主義という概念）を1文で要約',
+        '第3段落：英検1級では「文化的混交・革新性」と「デジタルによる少数文化の台頭」を2文で論じる',
+        'Proponents counter that / paradoxically empowered などの高度な表現を使う',
+      ],
+      paraphraseTips: [
+        { original: 'boundaries separating distinct cultural traditions have grown increasingly porous', alt: 'cultural boundaries have blurred / cultural distinctions have faded' },
+        { original: 'marginalizing minority languages, indigenous artistic traditions', alt: 'threatening minority languages and traditional arts' },
+        { original: 'creative hybridity and innovation', alt: 'new cultural forms born from cross-cultural exchange' },
+        { original: 'empowered previously marginalized cultural producers', alt: 'given a platform to minority artists and craftspeople' },
+        { original: 'selectively adopt external influences', alt: 'absorb outside cultures while retaining their own identity' },
+      ],
+      usefulPhrases: [
+        'sparking debate over whether ~ （～をめぐる議論を呼んでいる）',
+        'Proponents counter that ~ （支持者は～と反論する）',
+        'Moreover, digital platforms have increasingly empowered ~ （さらに、デジタルプラットフォームは～を力づけてきた）',
+        'sustain their work commercially （経済的に作品を維持する）',
+      ],
+    },
+    {
+      id: 'g1-9', label: 'オリジナル No.9', type: '要約問題 B',
+      title: 'Automation and the Future of Work', titleJa: '自動化と労働の未来',
+      passage: `The rapid diffusion of automation technologies—ranging from industrial robotics to sophisticated machine learning algorithms—is reshaping the global labor market with a speed and scope that economists and policymakers are struggling to comprehend. Unlike previous waves of technological displacement, which primarily affected manual and routine cognitive tasks, contemporary automation increasingly threatens occupations requiring analytical reasoning, complex communication, and even creative judgment, blurring the boundaries that once made certain professional roles appear safe from technological substitution.
+
+The distributional consequences of automation are deeply uneven. Workers in routine, middle-skill occupations such as administrative support, logistics coordination, and basic accounting face the greatest risk of displacement, as the tasks they perform are most amenable to algorithmic execution. In contrast, both high-skill workers who design and manage automated systems and low-skill workers whose tasks still require physical dexterity and human interaction tend to be less immediately threatened, a polarization that risks hollowing out the middle class and deepening economic inequality across industrialized societies.
+
+Governments and institutions are responding to these pressures through a range of policy experiments. Some nations are expanding investment in workforce retraining programs and lifelong learning systems to help displaced workers acquire skills relevant to an automated economy. Others are exploring social protection mechanisms such as universal basic income or reduced working hours to distribute the productivity gains from automation more equitably. Critics, however, caution that retraining programs have historically struggled to deliver meaningful employment transitions for displaced workers, and that structural changes to labor markets may ultimately require more fundamental reconsideration of how societies organize and reward work.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Automation is reshaping labor markets at an unprecedented pace, with contemporary technologies threatening not only manual and routine tasks but increasingly analytical and creative roles as well. The economic impacts are highly unequal, as middle-skill workers in routine occupations face the greatest risk of displacement, while high-skill and certain low-skill workers are less immediately affected, deepening inequality and hollowing out the middle class. In response, governments are investing in retraining programs and exploring social protection measures such as universal basic income to more equitably distribute the gains from automation. Nevertheless, critics warn that retraining initiatives have historically had limited success in supporting displaced workers and that fundamental reform of how societies organize and reward labor may ultimately be necessary.`,
+      sampleWordCount: 108,
+      structure: '①現状（自動化による労働市場の再編とその範囲の拡大）→ ②不平等な影響（中スキル職の脆弱性・中間層の空洞化）→ ③政府の対応（再訓練・UBI）+ 批判（構造改革の必要性）',
+      keyPoints: [
+        '第1段落：「自動化が手作業だけでなく分析・創造的業務にも及び、労働市場を急速に再編している」を一文で導入',
+        '第2段落：「中スキル労働者の雇用喪失リスクが最大で、高スキル・低スキルは相対的に安全→中間層の空洞化」を1文で要約',
+        '第3段落：英検1級では「再訓練プログラム・UBIなどの政策対応」と「再訓練の限界・根本的改革の必要性」を2文で論じる',
+        'with a speed and scope that / hollowing out / fundamentally reconsider などの高度な表現を活用する',
+      ],
+      paraphraseTips: [
+        { original: 'rapid diffusion of automation technologies', alt: 'rapid spread of automation / the swift adoption of automated systems' },
+        { original: 'amenable to algorithmic execution', alt: 'easily performed by algorithms / replaceable by automated systems' },
+        { original: 'hollowing out the middle class', alt: 'eroding the middle class / creating a polarized workforce' },
+        { original: 'deliver meaningful employment transitions', alt: 'help workers successfully move to new jobs' },
+        { original: 'fundamental reconsideration of how societies organize work', alt: 'structural reform of labor systems' },
+      ],
+      usefulPhrases: [
+        'at an unprecedented pace （前例のないペースで）',
+        'deepening inequality and hollowing out the middle class （不平等を深め、中間層を空洞化させる）',
+        'critics warn that ~ have historically had limited success （批評家は～が歴史的に成果が限られていたと警告する）',
+        'fundamental reform of how societies organize ~ （社会が～を組織する方法の根本的改革）',
+      ],
+    },
+    {
+      id: 'g1-10', label: 'オリジナル No.10', type: '要約問題 A',
+      title: 'Ocean Pollution and Marine Ecosystems', titleJa: '海洋汚染と海洋生態系',
+      passage: `The world's oceans, which cover more than seventy percent of the Earth's surface and are home to an estimated eighty percent of all life on the planet, are under mounting pressure from human activities. Among the most pervasive and damaging forms of pollution affecting marine environments is plastic waste, which accumulates in enormous concentrations in oceanic gyres and steadily fragments into microplastics that permeate every level of the marine food web, from microscopic plankton to apex predators.
+
+The ecological consequences of marine plastic pollution are severe and multifaceted. Marine mammals, seabirds, and sea turtles face lethal entanglement in discarded fishing gear and ingestion of plastic debris that mimics prey, leading to starvation and internal injury. At the microscopic level, research increasingly demonstrates that microplastics carry toxic chemical compounds including endocrine disruptors and persistent organic pollutants that accumulate in tissues as they pass up the food chain, raising significant concerns about the long-term health implications for both marine species and the human populations who depend on seafood.
+
+International efforts to address ocean plastic pollution have accelerated in recent years, with negotiations underway for a legally binding global plastics treaty and growing adoption of policies targeting single-use plastics at the national level. However, the effectiveness of these measures remains contested. Critics argue that voluntary corporate pledges and incremental packaging reforms are insufficient given the systemic nature of plastic overproduction, and that genuinely addressing the crisis requires not merely improved waste management at the end of the supply chain but a fundamental reduction in the production of unnecessary plastics at the source.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The world's oceans face severe pressure from plastic waste, which accumulates in vast concentrations and fragments into microplastics that infiltrate the entire marine food web. These pollutants cause lethal harm to marine wildlife through entanglement and ingestion, while microplastics carry toxic compounds that accumulate in tissues as they move up the food chain, posing long-term health risks for both marine species and humans who eat seafood. International responses have included negotiations for a global plastics treaty and national bans on single-use plastics, but critics argue these measures are inadequate. They insist that addressing the crisis demands not just better waste management but a fundamental reduction in plastic production at the source.`,
+      sampleWordCount: 107,
+      structure: '①現状（プラスチック汚染による海洋への影響）→ ②生態的影響（絡まり・摂取・マイクロプラスチックの毒性・人体への懸念）→ ③国際的対応（条約・規制）+ 批判（過剰生産という根本問題）',
+      keyPoints: [
+        '第1段落：「プラスチック廃棄物が海洋に蓄積し、マイクロプラスチックが食物連鎖全体に浸透している」を一文で導入',
+        '第2段落：「海洋生物への直接被害（絡まり・摂取）と毒性物質の生物濃縮・人体への長期リスク」を1文で要約',
+        '第3段落：英検1級では「国際的対応（条約・規制）」と「批判（廃棄物管理のみでは不十分、生産削減が必要）」を2文で論じる',
+        'infiltrate / posing long-term health risks / insist that ~ demands などの高度な表現を使う',
+      ],
+      paraphraseTips: [
+        { original: 'accumulates in enormous concentrations in oceanic gyres', alt: 'builds up in vast amounts in ocean currents / forms massive garbage patches' },
+        { original: 'lethal entanglement in discarded fishing gear', alt: 'fatal entanglement in abandoned nets' },
+        { original: 'endocrine disruptors and persistent organic pollutants', alt: 'toxic chemical compounds that disrupt biological functions' },
+        { original: 'incremental packaging reforms are insufficient', alt: 'small packaging improvements are not enough' },
+        { original: 'a fundamental reduction in production at the source', alt: 'cutting plastic production at the origin / reducing plastic output fundamentally' },
+      ],
+      usefulPhrases: [
+        'infiltrate the entire marine food web （海洋食物連鎖全体に浸透する）',
+        'posing long-term health risks for both ~ （～の両方に長期的な健康リスクをもたらす）',
+        'critics argue these measures are inadequate （批評家はこれらの対策が不十分だと主張する）',
+        'demands not just ~ but a fundamental reduction in ~ （～だけでなく、～の根本的削減を求める）',
+      ],
+    },
+    {
+      id: 'g1-11', label: 'オリジナル No.11', type: '要約問題 B',
+      title: 'Universal Basic Income', titleJa: 'ユニバーサル・ベーシックインカム',
+      passage: `Universal basic income—a policy proposal in which governments provide every citizen with a regular, unconditional cash payment sufficient to cover basic living needs—has attracted growing intellectual and political interest as a potential response to rising economic insecurity, technological unemployment, and the perceived inadequacy of existing social safety nets. Pilot programs have been conducted in countries including Finland, Kenya, and Canada, generating a substantial body of empirical evidence that proponents cite as demonstrating the policy's potential.
+
+Advocates of universal basic income argue that it would provide a reliable economic floor that eliminates the bureaucratic complexity and stigma associated with means-tested welfare programs, and that the security it offers would enable individuals to pursue education, entrepreneurship, and unpaid caregiving work that conventional employment models undervalue. Furthermore, proponents contend that as automation increasingly threatens job security across many sectors, a guaranteed income could serve as a crucial buffer against technological displacement, preventing widespread poverty without restricting economic dynamism.
+
+Critics challenge these claims on several grounds. Fiscal conservatives question whether any modern economy can sustain the enormous cost of providing adequate universal payments to all citizens without raising taxes to levels that would dampen economic growth or divert resources from targeted services that the most vulnerable populations actually need. Some welfare advocates paradoxically oppose universal basic income on the grounds that universal programs may ultimately displace existing specialist services for those with complex needs, and that the distributional benefits of providing cash payments to already-affluent recipients represent poor use of limited public funds.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Universal basic income—regular, unconditional payments from the government to every citizen—has gained growing attention as a potential remedy for economic insecurity and technological unemployment, with pilot programs in multiple countries providing empirical evidence cited by supporters. Proponents argue that UBI would eliminate the bureaucratic complexity of means-tested welfare, empower individuals to pursue education and entrepreneurship, and serve as a vital buffer against job losses caused by automation. However, fiscal critics question whether economies can sustain the enormous cost without harming growth or diverting funds from targeted services that the most vulnerable genuinely need. Some welfare advocates further warn that universal programs may inadvertently displace specialist services for those with complex needs, making UBI a poor use of limited public resources.`,
+      sampleWordCount: 109,
+      structure: '①概要（UBIとは・注目の背景・パイロットプログラム）→ ②支持論（福祉の簡略化・個人の自由・自動化への緩衝）→ ③批判論（財政的持続性・脆弱層へのリスク・資源の非効率性）',
+      keyPoints: [
+        '第1段落：「UBIとは何か（無条件の定期的現金給付）、なぜ注目されているか（経済的不安・技術的失業）、実証実験が行われている」を一文で導入',
+        '第2段落：支持論（①福祉の官僚的複雑さの排除、②教育・起業への自由、③自動化による雇用喪失への緩衝）を1文で要約',
+        '第3段落：英検1級では「財政的持続性への懸念」と「脆弱層向け専門サービスの代替リスク」を2文で論じる',
+        'paradoxically / inadvertently / making UBI a poor use of ~ などの高度な表現を使う',
+      ],
+      paraphraseTips: [
+        { original: 'bureaucratic complexity and stigma of means-tested welfare', alt: 'complex and stigmatized nature of income-based welfare' },
+        { original: 'serve as a crucial buffer against technological displacement', alt: 'protect workers from job losses caused by automation' },
+        { original: 'dampen economic growth', alt: 'slow down the economy / harm economic dynamism' },
+        { original: 'divert resources from targeted services', alt: 'take funds away from services for those most in need' },
+        { original: 'inadvertently displace specialist services', alt: 'unintentionally replace specialized support programs' },
+      ],
+      usefulPhrases: [
+        'has gained growing attention as a potential remedy for ~ （～の潜在的な解決策として注目を集めてきた）',
+        'empower individuals to pursue ~ （個人が～を追求する力を与える）',
+        'fiscal critics question whether ~ （財政的批評家は～かどうかを疑問視する）',
+        'further warn that ~ may inadvertently ~ （さらに、～が意図せず～するかもしれないと警告する）',
+      ],
+    },
+    {
+      id: 'g1-12', label: 'オリジナル No.12', type: '要約問題 A',
+      title: 'Space Exploration and Scientific Progress', titleJa: '宇宙探査と科学的進歩',
+      passage: `Humanity's exploration of space, once the exclusive domain of government agencies with vast state resources, is undergoing a dramatic transformation as private commercial enterprises enter the sector with unprecedented ambition. Companies such as SpaceX and Blue Origin have dramatically reduced launch costs through the development of reusable rocket technology, opening possibilities for more frequent missions and stimulating renewed public and political interest in human expansion beyond Earth. These developments have reinvigorated long-dormant discussions about lunar colonization, Mars settlement, and the eventual exploitation of extraterrestrial mineral resources.
+
+The scientific and technological dividends of space exploration are substantial and extend well beyond the boundaries of the aerospace industry itself. Research conducted in microgravity environments has generated insights into human physiology, materials science, and pharmaceutical development with significant terrestrial applications. The satellite infrastructure deployed through space programs underpins critical civilian and military systems including GPS navigation, weather forecasting, telecommunications networks, and agricultural monitoring, making the continued health of space-based assets essential to modern economic and security infrastructure.
+
+Critics of the current trajectory of space development, however, raise important ethical and political objections. Skeptics question whether the enormous financial resources devoted to space exploration could be more effectively allocated to address urgent terrestrial problems such as climate change, pandemic preparedness, and global poverty. Additionally, the emerging framework for the commercial exploitation of space resources remains legally ambiguous and politically contentious, with developing nations raising concerns that space colonization could replicate the extractive dynamics of historical colonialism by concentrating the benefits of outer space among already-wealthy nations and corporations.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Space exploration is being transformed by private companies such as SpaceX, which have dramatically cut launch costs through reusable rockets, reopening debates about lunar colonization, Mars settlement, and the exploitation of extraterrestrial resources. The scientific and practical benefits of space exploration are extensive, including medical insights from microgravity research and the satellite infrastructure that underpins GPS, weather forecasting, and telecommunications worldwide. However, critics question whether the vast resources devoted to space could be better used to solve pressing earthly problems such as climate change and global poverty. Furthermore, concerns have been raised that the commercial exploitation of space resources may replicate colonial patterns, concentrating the benefits among wealthy nations while excluding developing countries from the gains.`,
+      sampleWordCount: 108,
+      structure: '①現状（民間企業参入による宇宙探査の変容・再燃した議論）→ ②恩恵（科学的・技術的配当、衛星インフラの重要性）→ ③批判（資源配分の問題・植民地主義的動態のリスク）',
+      keyPoints: [
+        '第1段落：「民間企業の参入とコスト削減が宇宙探査を変容させ、月・火星定住や資源開発の議論が再燃している」を一文で導入',
+        '第2段落：「微小重力研究の科学的成果と衛星インフラの重要性（GPS・天気予報・通信）」を1文で要約',
+        '第3段落：英検1級では「地球上の問題への資源配分という批判」と「宇宙資源の商業開発が植民地主義的構造を再現するリスク」を2文で論じる',
+        'underpins / critics question whether ~ could be better used / replicating colonial patterns などの高度な表現を使う',
+      ],
+      paraphraseTips: [
+        { original: 'dramatically reduced launch costs through reusable rocket technology', alt: 'significantly cut the cost of space launches with reusable rockets' },
+        { original: 'terrestrial applications', alt: 'practical uses on Earth / applications in everyday life' },
+        { original: 'underpins critical civilian and military systems', alt: 'supports essential systems / forms the backbone of key infrastructure' },
+        { original: 'replicate the extractive dynamics of historical colonialism', alt: 'reproduce colonial patterns / mirror the exploitation of historical colonialism' },
+        { original: 'concentrating the benefits among already-wealthy nations', alt: 'allowing only rich countries to profit' },
+      ],
+      usefulPhrases: [
+        'reopening debates about ~ （～に関する議論を再び開く）',
+        'the satellite infrastructure that underpins ~ （～を支える衛星インフラ）',
+        'critics question whether ~ could be better used to ~ （批評家は～を～のために使った方が良いのではと疑問視する）',
+        'concentrating the benefits among wealthy nations while excluding ~ （～を除外しながら裕福な国々に利益を集中させる）',
       ],
     },
     {
