@@ -1203,7 +1203,7 @@ export default function App() {
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
           📚 単語
         </a>
-        <a href="https://kantanapp.github.io/eiken-mondai-app/" target="_self"
+        <a href="https://kantanapp.github.io/long-passage/" target="_self"
           style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
           📝 long-passage
