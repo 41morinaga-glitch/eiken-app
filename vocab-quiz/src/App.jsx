@@ -15,7 +15,7 @@ const C = {
   border: '#E5E7EB', borderLight: '#F1F3F7',
   primary: '#6366F1', primaryBg: '#EEF2FF', primaryH: '#4F46E5',
   g2Bg: '#D1FAE5', g2Text: '#059669',
-  gp1Bg: '#FEF3C7', gp1Text: '#D97706',
+
   g1Bg: '#EDE9FE', g1Text: '#7C3AED',
   ok: '#10B981', okBg: '#ECFDF5',
   ng: '#EF4444', ngBg: '#FEF2F2',
@@ -159,7 +159,7 @@ const SEED_DATA = [
     tags: [], addedAt: 1715000008000,
   },
   {
-    id: 'seed-009', source: 'builtin', grade: 'grade-pre1',
+    id: 'seed-009', source: 'builtin', grade: 'grade1',
     dialogueLines: null,
     questionText: 'The government decided to (   ) the use of single-use plastics in order to protect the environment.',
     questionJa: '政府は環境を守るために、使い捨てプラスチックの使用を禁止することを決定した。',
@@ -174,7 +174,7 @@ const SEED_DATA = [
     tags: [], addedAt: 1715000009000,
   },
   {
-    id: 'seed-010', source: 'builtin', grade: 'grade-pre1',
+    id: 'seed-010', source: 'builtin', grade: 'grade1',
     dialogueLines: [
       { speaker: 'A', text: 'The report says the company\'s profits have been (   ) declining for three consecutive years.' },
       { speaker: 'B', text: 'That\'s concerning. They need to change their strategy soon.' },
@@ -205,12 +205,12 @@ function saveLS(key, val) {
 
 function gradeLabel(grade) {
   if (grade === 'grade1') return '1級';
-  if (grade === 'grade-pre1') return '準1級';
+
   return '2級';
 }
 function gradeStyle(grade) {
   if (grade === 'grade1') return { backgroundColor: C.g1Bg, color: C.g1Text };
-  if (grade === 'grade-pre1') return { backgroundColor: C.gp1Bg, color: C.gp1Text };
+
   return { backgroundColor: C.g2Bg, color: C.g2Text };
 }
 
@@ -410,7 +410,7 @@ function QuizCard({ q, hist, onClick }) {
           )}
           {rate !== null && (
             <span className="text-[10px] font-bold ml-auto"
-              style={{ color: rate >= 70 ? C.ok : rate >= 40 ? C.gp1Text : C.ng }}>
+              style={{ color: rate >= 70 ? C.ok : rate >= 40 ? '#D97706' : C.ng }}>
               {h.correct}/{h.attempts} 正解
             </span>
           )}
@@ -560,7 +560,6 @@ function StatsView({ questions, hist }) {
   const grades = [
     { key: 'all', label: '全て' },
     { key: 'grade2', label: '2級' },
-    { key: 'grade-pre1', label: '準1級' },
     { key: 'grade1', label: '1級' },
   ];
 
@@ -864,7 +863,7 @@ function AddView({ apiKey, onShowKeyModal, onQuestionsAdded }) {
                   className="w-full rounded-xl px-3 py-3 text-sm outline-none"
                   style={{ border: `1px solid ${C.border}`, color: C.text, backgroundColor: C.card }}>
                   <option value="grade2">2級</option>
-                  <option value="grade-pre1">準1級</option>
+
                   <option value="grade1">1級</option>
                 </select>
               </div>
@@ -1031,7 +1030,6 @@ export default function App() {
   const GRADES = [
     { k: 'all', label: '全て' },
     { k: 'grade2', label: '2級' },
-    { k: 'grade-pre1', label: '準1級' },
     { k: 'grade1', label: '1級' },
   ];
 
