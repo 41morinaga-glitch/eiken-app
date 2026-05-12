@@ -22,8 +22,9 @@ const C = {
   ai: '#8B5CF6', aiBg: '#F5F3FF', aiH: '#7C3AED',
 };
 const SH = '0 1px 3px rgba(15,23,42,0.05),0 1px 2px rgba(15,23,42,0.04)';
-const CLAUDE_MODEL = 'claude-sonnet-4-6';
-const CLAUDE_API = 'https://api.anthropic.com/v1/messages';
+const GROQ_MODEL = 'llama-3.3-70b-versatile';
+const GROQ_VISION_MODEL = 'meta-llama/llama-4-scout-17b-16e-instruct';
+const GROQ_API = 'https://api.groq.com/openai/v1/chat/completions';
 
 // ============================================================
 // 問題データ (SEED)
@@ -215,25 +216,23 @@ function gradeStyle(grade) {
 }
 
 // ============================================================
-// Claude API 呼び出し
+// Groq API 呼び出し
 // ============================================================
-async function callClaude({ apiKey, messages, maxTokens = 2000 }) {
-  const res = await fetch(CLAUDE_API, {
+async function callGroq({ apiKey, messages, maxTokens = 2000, model = GROQ_MODEL }) {
+  const res = await fetch(GROQ_API, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',
+      'Authorization': `Bearer ${apiKey}`,
     },
-    body: JSON.stringify({ model: CLAUDE_MODEL, max_tokens: maxTokens, messages }),
+    body: JSON.stringify({ model, max_tokens: maxTokens, messages }),
   });
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     throw new Error(err?.error?.message || `API error: ${res.status}`);
   }
   const data = await res.json();
-  return data.content?.[0]?.text || '';
+  return data.choices?.[0]?.message?.content || '';
 }
 
 async function extractFromImage({ base64, mediaType, apiKey }) {
@@ -255,13 +254,14 @@ async function extractFromImage({ base64, mediaType, apiKey }) {
 - 空欄は (   ) のまま残す
 - JSONのみ返答してください（コードブロック不要）`;
 
-  const raw = await callClaude({
+  const raw = await callGroq({
     apiKey,
+    model: GROQ_VISION_MODEL,
     maxTokens: 3000,
     messages: [{
       role: 'user',
       content: [
-        { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64 } },
+        { type: 'image_url', image_url: { url: `data:${mediaType};base64,${base64}` } },
         { type: 'text', text: prompt },
       ],
     }],
@@ -292,7 +292,7 @@ async function generateQuestions({ topic, grade, count, apiKey }) {
 - 選択肢は紛らわしいものを選んでください
 - JSONのみ返答してください`;
 
-  const raw = await callClaude({ apiKey, maxTokens: 3000, messages: [{ role: 'user', content: prompt }] });
+  const raw = await callGroq({ apiKey, maxTokens: 3000, messages: [{ role: 'user', content: prompt }] });
   return JSON.parse(raw.replace(/```json\n?|```/g, '').trim());
 }
 
@@ -310,7 +310,7 @@ function ApiKeyModal({ onClose, onSave }) {
             <KeyRound size={20} style={{ color: C.ai }} />
           </div>
           <div>
-            <div className="font-bold" style={{ color: C.text }}>Claude APIキー設定</div>
+            <div className="font-bold" style={{ color: C.text }}>Groq APIキー設定</div>
             <div className="text-xs" style={{ color: C.textMuted }}>画像抽出・AI生成に必要です</div>
           </div>
           <button onClick={onClose} className="ml-auto p-1 rounded-lg" style={{ color: C.textMuted }}>
@@ -319,11 +319,11 @@ function ApiKeyModal({ onClose, onSave }) {
         </div>
         <input
           type="password" value={key} onChange={e => setKey(e.target.value)}
-          placeholder="sk-ant-..."
+          placeholder="gsk_..."
           className="w-full rounded-xl px-4 py-3 text-sm mb-3 outline-none"
           style={{ border: `1px solid ${C.border}`, color: C.text }} />
         <p className="text-xs mb-4" style={{ color: C.textMuted }}>
-          キーはこのデバイスのみに保存されます。<a href="https://console.anthropic.com/" target="_blank" rel="noreferrer" style={{ color: C.ai }}>Anthropic Console</a>で取得できます。
+          キーはこのデバイスのみに保存されます。<a href="https://console.groq.com/keys" target="_blank" rel="noreferrer" style={{ color: C.ai }}>Groq Console</a>で取得できます。
         </p>
         <div className="flex gap-2">
           <button onClick={onClose} className="flex-1 py-2.5 rounded-xl text-sm font-medium"
