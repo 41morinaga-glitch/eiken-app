@@ -1521,6 +1521,11 @@ export default function App() {
         <span style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, color:'#10b981', background:'#ecfdf5', fontWeight:700, whiteSpace:'nowrap' }}>
           ✍️ 要約
         </span>
+        <a href="https://kantanapp.github.io/vocab-quiz/" target="_self"
+          style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
+          onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
+          🔤 単語クイズ
+        </a>
       </nav>
 
       {showKeyModal && <ApiKeyModal onClose={() => setShowKeyModal(false)} onSave={saveApiKey} />}
