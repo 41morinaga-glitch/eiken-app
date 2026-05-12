@@ -22,8 +22,17 @@ jobs:
         with:
           node-version: 20
           
+      # 要約アプリをビルド
       - run: npm install
       - run: npm run build
+
+      # 単語クイズアプリをビルドして dist/vocab-quiz/ に配置
+      - run: npm install
+        working-directory: vocab-quiz
+      - run: npm run build
+        working-directory: vocab-quiz
+      - run: mv vocab-quiz/dist dist/vocab-quiz
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
