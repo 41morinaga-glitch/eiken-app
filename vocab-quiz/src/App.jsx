@@ -3,7 +3,7 @@ import {
   BookOpen, BarChart3, PlusCircle, ArrowLeft,
   CheckCircle, XCircle, RotateCcw, ChevronRight,
   Upload, Sparkles, Download, FileJson, KeyRound,
-  X, AlertCircle, Eye, EyeOff, Shuffle
+  X, AlertCircle, Eye, EyeOff, Shuffle, Menu
 } from 'lucide-react';
 
 // ============================================================
@@ -672,37 +672,53 @@ function ApiKeyModal({ onClose, onSave }) {
 // クロスアプリナビゲーション
 // ============================================================
 function AppNav({ onKeyClick, hasKey }) {
-  const link = (href, label, active) => (
-    <a href={href} target="_self"
-      style={{
-        display: 'flex', alignItems: 'center', gap: 3, padding: '5px 9px', borderRadius: 8,
-        textDecoration: 'none', whiteSpace: 'nowrap', fontWeight: active ? 700 : undefined,
-        color: active ? '#6366f1' : '#64748b',
-        background: active ? '#eef2ff' : 'transparent',
-      }}
-      onMouseEnter={e => { if (!active) e.currentTarget.style.background = '#f1f5f9'; }}
-      onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}>
-      {label}
-    </a>
-  );
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const LINKS = [
+    { href: 'https://kantanapp.github.io/eiken-portal/', label: '🎓 TOP', current: false },
+    { href: 'https://eiken-vocab2026423.web.app', label: '📚 単語', current: false },
+    { href: 'https://kantanapp.github.io/long-passage/', label: '📝 長文', current: false },
+    { href: 'https://kantanapp.github.io/summary/', label: '✍️ 要約', current: false },
+    { href: '#', label: '🔤 単語クイズ', current: true },
+  ];
   return (
-    <nav className="sticky top-0 z-20 flex items-center h-11 px-2 gap-1 text-[13px] font-semibold"
+    <header className="sticky top-0 z-20 px-4 sm:px-6 py-3 flex items-center gap-3 relative"
       style={{ backgroundColor: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #e2e8f0' }}>
-      {link('https://kantanapp.github.io/eiken-portal/', '🎓 TOP', false)}
-      <span style={{ color: '#e2e8f0' }}>|</span>
-      {link('https://eiken-vocab2026423.web.app', '📚 単語', false)}
-      {link('https://kantanapp.github.io/long-passage/', '📝 長文', false)}
-      {link('https://kantanapp.github.io/summary/', '✍️ 要約', false)}
-      <span style={{
-        display: 'flex', alignItems: 'center', gap: 3, padding: '5px 9px', borderRadius: 8,
-        color: '#6366f1', background: '#eef2ff', fontWeight: 700, whiteSpace: 'nowrap',
-      }}>🔤 単語クイズ</span>
-      <button onClick={onKeyClick} className="ml-auto p-2 rounded-xl"
+      <button onClick={() => setMenuOpen(v => !v)} className="p-1.5 rounded-lg transition-colors"
+        style={{ color: C.textMuted }}>
+        {menuOpen ? <X size={20} /> : <Menu size={20} />}
+      </button>
+      <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+        style={{ backgroundColor: C.primary }}>英</div>
+      <span className="text-base font-bold" style={{ color: C.text }}>単語クイズ</span>
+      <button onClick={onKeyClick} className="ml-auto p-2 rounded-xl transition-colors"
         style={{ color: hasKey ? C.ai : C.textMuted, backgroundColor: hasKey ? C.aiBg : 'transparent' }}
         title="APIキー設定">
         <KeyRound size={18} />
       </button>
-    </nav>
+      {menuOpen && (
+        <>
+          <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
+          <div className="absolute top-full left-0 mt-1 w-48 rounded-xl shadow-lg z-20 overflow-hidden"
+            style={{ backgroundColor: C.card, border: `1px solid ${C.borderLight}` }}>
+            {LINKS.map(({ href, label, current }) =>
+              current ? (
+                <span key={label} className="flex items-center px-4 py-3 text-sm font-bold"
+                  style={{ color: '#6366f1', background: '#eef2ff' }}>{label}</span>
+              ) : (
+                <a key={label} href={href} target="_self"
+                  className="flex items-center px-4 py-3 text-sm transition-colors"
+                  style={{ color: C.text, textDecoration: 'none' }}
+                  onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
+                  onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  onClick={() => setMenuOpen(false)}>
+                  {label}
+                </a>
+              )
+            )}
+          </div>
+        </>
+      )}
+    </header>
   );
 }
 
@@ -1381,17 +1397,10 @@ export default function App() {
 
       {showKeyModal && <ApiKeyModal onClose={() => setShowKeyModal(false)} onSave={saveApiKey} />}
 
-      {/* ヘッダー（一覧・進捗・追加画面） */}
+      {/* グレードフィルター */}
       {view === 'list' && (
-        <header className="sticky top-11 z-10 px-4 sm:px-6 py-3"
+        <header className="sticky top-[60px] z-10 px-4 sm:px-6 py-3"
           style={{ backgroundColor: C.bg, borderBottom: `1px solid ${C.borderLight}` }}>
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-              style={{ backgroundColor: C.primary }}>英</div>
-            <span className="text-base font-bold" style={{ color: C.text }}>
-              {navTab === 'list' ? '問題一覧' : navTab === 'stats' ? '進捗' : '問題追加'}
-            </span>
-          </div>
           {navTab === 'list' && (
             <div className="flex gap-2 overflow-x-auto">
               {GRADES.map(g => {
