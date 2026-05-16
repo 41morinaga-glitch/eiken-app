@@ -361,7 +361,7 @@ function AppNav({ onKeyClick, hasKey }) {
       {link('https://kantanapp.github.io/eiken-portal/', '🎓 TOP', false)}
       <span style={{ color: '#e2e8f0' }}>|</span>
       {link('https://eiken-vocab2026423.web.app', '📚 単語', false)}
-      {link('https://kantanapp.github.io/long-passage/', '📝 long-passage', false)}
+      {link('https://kantanapp.github.io/long-passage/', '📝 長文', false)}
       {link('https://kantanapp.github.io/summary/', '✍️ 要約', false)}
       <span style={{
         display: 'flex', alignItems: 'center', gap: 3, padding: '5px 9px', borderRadius: 8,

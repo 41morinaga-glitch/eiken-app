@@ -1516,7 +1516,7 @@ export default function App() {
         <a href="https://kantanapp.github.io/long-passage/" target="_self"
           style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, textDecoration:'none', color:'#64748b', whiteSpace:'nowrap' }}
           onMouseEnter={e=>e.currentTarget.style.background='#f1f5f9'} onMouseLeave={e=>e.currentTarget.style.background='transparent'}>
-          📝 long-passage
+          📝 長文
         </a>
         <span style={{ display:'flex', alignItems:'center', gap:3, padding:'5px 9px', borderRadius:8, color:'#10b981', background:'#ecfdf5', fontWeight:700, whiteSpace:'nowrap' }}>
           ✍️ 要約
