@@ -522,6 +522,55 @@ const SEED_DATA = [
     explanation: '大企業から受ける「競争」の中でも顧客を確保したという対比構造だから、1 competition「競争」が正解。2 affection「愛情」3 obedience「服従」4 sympathy「同情」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000030000,
   },
+  // ---- 英検1級 補完3問（合計grade1を+10問に） ----
+  {
+    id: 'seed-031', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'International agreements are seen as the most effective way to (   ) the risks associated with climate change.',
+    questionJa: '国際協定は、気候変動に関連するリスクを緩和する最も効果的な方法と見なされている。',
+    choices: [
+      { key: '1', word: 'mitigate',  meaning: '緩和する' },
+      { key: '2', word: 'amplify',   meaning: '増幅する' },
+      { key: '3', word: 'provoke',   meaning: '引き起こす' },
+      { key: '4', word: 'overlook',  meaning: '見逃す' },
+    ],
+    answer: '1',
+    explanation: '国際協定でリスクに対処するという文脈から、1 mitigate「緩和する」が正解。2 amplify「増幅する」3 provoke「引き起こす」はリスクを増やす意味で不適。4 overlook「見逃す」も不適。',
+    tags: [], addedAt: 1715000031000,
+  },
+  {
+    id: 'seed-032', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'There was a significant (   ) between the official statistics and the figures reported by independent researchers.',
+    questionJa: '公式統計と独立した研究者が報告した数値の間には、大きな食い違いがあった。',
+    choices: [
+      { key: '1', word: 'discrepancy', meaning: '食い違い' },
+      { key: '2', word: 'similarity',  meaning: '類似性' },
+      { key: '3', word: 'consensus',   meaning: '合意' },
+      { key: '4', word: 'correlation', meaning: '相関関係' },
+    ],
+    answer: '1',
+    explanation: '公式統計と独立研究者の数値が異なるという文脈から、1 discrepancy「食い違い」が正解。2 similarity「類似性」3 consensus「合意」4 correlation「相関関係」はいずれも一致・関連を示し不適。',
+    tags: [], addedAt: 1715000032000,
+  },
+  {
+    id: 'seed-033', source: 'builtin', grade: 'grade1',
+    dialogueLines: [
+      { speaker: 'A', text: 'Critics argue that the media tends to (   ) harmful stereotypes about minority groups.' },
+      { speaker: 'B', text: 'That\'s a valid concern. Responsible reporting is crucial to changing those narratives.' },
+    ],
+    questionText: null,
+    questionJa: 'A：批評家たちは、メディアが少数派グループに関する有害なステレオタイプを永続させる傾向があると主張しています。\nB：それは正当な懸念です。ステレオタイプを変えるには責任ある報道が不可欠です。',
+    choices: [
+      { key: '1', word: 'perpetuate', meaning: '永続させる' },
+      { key: '2', word: 'challenge',  meaning: '疑問を呈する' },
+      { key: '3', word: 'eliminate',  meaning: '排除する' },
+      { key: '4', word: 'celebrate',  meaning: '称える' },
+    ],
+    answer: '1',
+    explanation: 'メディアがステレオタイプを「永続させる」という批判の文脈から、1 perpetuate「永続させる」が正解。2 challenge「疑問を呈する」3 eliminate「排除する」は改善を示し不適。4 celebrate「称える」も不適。',
+    tags: [], addedAt: 1715000033000,
+  },
 ];
 
 // ============================================================
