@@ -3,7 +3,7 @@ import {
   BookOpen, BarChart3, PlusCircle, ArrowLeft,
   CheckCircle, XCircle, RotateCcw, ChevronRight,
   Upload, Sparkles, Download, FileJson, KeyRound,
-  X, AlertCircle, Eye, EyeOff, Shuffle
+  X, AlertCircle, Eye, EyeOff, Shuffle, Menu
 } from 'lucide-react';
 
 // ============================================================
@@ -192,283 +192,369 @@ const SEED_DATA = [
     explanation: '3年連続という文脈から、1 steadily「着実に」が正解。2 randomly「ランダムに」3 cheerfully「明るく」4 accidentally「偶然に」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000010000,
   },
-  // ---- 英検2級 追加10問 ----
   {
     id: 'seed-011', source: 'builtin', grade: 'grade2',
-    dialogueLines: null,
-    questionText: 'The road construction was a major (   ) to traffic flow in the city center.',
-    questionJa: '道路工事は都市中心部の交通の流れにとって大きな障害となった。',
+    dialogueLines: [
+      { speaker: 'A', text: 'I\'ve heard the city is planning to (   ) the old bridge next year.' },
+      { speaker: 'B', text: 'Yes, it\'s been there for over 100 years, so it needs to be rebuilt.' },
+    ],
+    questionText: null,
+    questionJa: 'A：市は来年、あの古い橋を取り壊す計画だと聞きました。\nB：そうですね。100年以上経っているので、建て替えが必要です。',
     choices: [
-      { key: '1', word: 'obstacle',  meaning: '障害' },
-      { key: '2', word: 'benefit',   meaning: '利益' },
-      { key: '3', word: 'solution',  meaning: '解決策' },
-      { key: '4', word: 'resource',  meaning: '資源' },
+      { key: '1', word: 'demolish',  meaning: '取り壊す' },
+      { key: '2', word: 'celebrate', meaning: '祝う' },
+      { key: '3', word: 'purchase',  meaning: '購入する' },
+      { key: '4', word: 'classify',  meaning: '分類する' },
     ],
     answer: '1',
-    explanation: '交通の流れへの「障害」となったという文脈だから、1 obstacle「障害」が正解。2 benefit「利益」3 solution「解決策」4 resource「資源」はいずれも文意に合わない。',
+    explanation: '100年以上経った古い橋を「取り壊す」計画だから、1 demolish「取り壊す」が正解。2 celebrate「祝う」3 purchase「購入する」4 classify「分類する」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000011000,
   },
   {
     id: 'seed-012', source: 'builtin', grade: 'grade2',
-    dialogueLines: [
-      { speaker: 'A', text: 'We need to (   ) with the supplier about the delivery schedule.' },
-      { speaker: 'B', text: 'I agree. Let\'s arrange a meeting with them this week.' },
-    ],
-    questionText: null,
-    questionJa: 'A：納品スケジュールについてサプライヤーと交渉する必要があります。\nB：そうですね。今週中に彼らとの会議を設定しましょう。',
+    dialogueLines: null,
+    questionText: 'The new employee showed great (   ) in learning the company\'s systems in just one week.',
+    questionJa: '新入社員はわずか1週間で会社のシステムを習得し、非常に高い効率を示した。',
     choices: [
-      { key: '1', word: 'negotiate', meaning: '交渉する' },
-      { key: '2', word: 'compete',   meaning: '競争する' },
-      { key: '3', word: 'complain',  meaning: '不満を言う' },
-      { key: '4', word: 'hesitate',  meaning: 'ためらう' },
+      { key: '1', word: 'efficiency', meaning: '効率' },
+      { key: '2', word: 'jealousy',   meaning: '嫉妬' },
+      { key: '3', word: 'darkness',   meaning: '暗さ' },
+      { key: '4', word: 'hunger',     meaning: '空腹' },
     ],
     answer: '1',
-    explanation: '会議を設定してスケジュールを調整するという文脈から、1 negotiate「交渉する」が適切。2 compete「競争する」3 complain「不満を言う」4 hesitate「ためらう」はいずれも不適。',
+    explanation: '1週間でシステムを習得したことへの評価だから、1 efficiency「効率」が正解。2 jealousy「嫉妬」3 darkness「暗さ」4 hunger「空腹」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000012000,
   },
   {
     id: 'seed-013', source: 'builtin', grade: 'grade2',
-    dialogueLines: null,
-    questionText: 'It took years of practice, but she finally managed to (   ) her goal of becoming a professional musician.',
-    questionJa: '何年もの練習の末、彼女はついにプロの音楽家になるという目標を達成することができた。',
+    dialogueLines: [
+      { speaker: 'A', text: 'Why did you choose this (   ) neighborhood to open your restaurant?' },
+      { speaker: 'B', text: 'Because many young families live here, and there\'s not much competition.' },
+    ],
+    questionText: null,
+    questionJa: 'A：なぜこの特定の地域にレストランを開くことにしたのですか？\nB：若い家族が多く住んでいて、競合が少ないからです。',
     choices: [
-      { key: '1', word: 'accomplish', meaning: '達成する' },
-      { key: '2', word: 'abandon',    meaning: '諦める' },
-      { key: '3', word: 'postpone',   meaning: '延期する' },
-      { key: '4', word: 'ignore',     meaning: '無視する' },
+      { key: '1', word: 'particular', meaning: '特定の' },
+      { key: '2', word: 'ancient',    meaning: '古代の' },
+      { key: '3', word: 'dangerous',  meaning: '危険な' },
+      { key: '4', word: 'invisible',  meaning: '見えない' },
     ],
     answer: '1',
-    explanation: '「何年もの練習の末、ついに」という文脈から、1 accomplish「達成する」が正解。2 abandon「諦める」3 postpone「延期する」4 ignore「無視する」はいずれも文意に合わない。',
+    explanation: '「なぜこの地域を選んだか」と特定の場所を指して質問しているから、1 particular「特定の」が正解。2 ancient「古代の」3 dangerous「危険な」4 invisible「見えない」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000013000,
   },
   {
     id: 'seed-014', source: 'builtin', grade: 'grade2',
     dialogueLines: null,
-    questionText: 'The teacher asked the students to (   ) the pros and cons of the new policy before writing their essays.',
-    questionJa: '教師は生徒たちに、エッセイを書く前に新しい政策の長所と短所を評価するよう求めた。',
+    questionText: 'The drought had a severe (   ) on crop production in the region this summer.',
+    questionJa: 'その干ばつは今夏、この地域の農作物生産に深刻な影響を与えた。',
     choices: [
-      { key: '1', word: 'evaluate',  meaning: '評価する' },
-      { key: '2', word: 'memorize',  meaning: '暗記する' },
-      { key: '3', word: 'celebrate', meaning: '祝う' },
-      { key: '4', word: 'translate', meaning: '翻訳する' },
+      { key: '1', word: 'impact',  meaning: '影響' },
+      { key: '2', word: 'hobby',   meaning: '趣味' },
+      { key: '3', word: 'flavor',  meaning: '風味' },
+      { key: '4', word: 'silence', meaning: '沈黙' },
     ],
     answer: '1',
-    explanation: '長所と短所を考えてからエッセイを書くという文脈から、1 evaluate「評価する」が適切。2 memorize「暗記する」3 celebrate「祝う」4 translate「翻訳する」はいずれも不適。',
+    explanation: '干ばつが農作物生産に与えた「影響」だから、1 impact「影響」が正解。have an impact on 〜「〜に影響を与える」という熟語。2 hobby「趣味」3 flavor「風味」4 silence「沈黙」はいずれも不適。',
     tags: [], addedAt: 1715000014000,
   },
   {
     id: 'seed-015', source: 'builtin', grade: 'grade2',
     dialogueLines: [
-      { speaker: 'A', text: 'How do you (   ) such a positive attitude even when things get stressful at work?' },
-      { speaker: 'B', text: 'I try to focus on what I can control and take breaks when I need them.' },
+      { speaker: 'A', text: 'Did you manage to (   ) a hotel room for the conference next month?' },
+      { speaker: 'B', text: 'Yes, I booked one near the venue this morning.' },
     ],
     questionText: null,
-    questionJa: 'A：仕事でストレスを感じる時でも、どうやってそんなに前向きな姿勢を維持できるのですか？\nB：自分がコントロールできることに集中して、必要な時に休憩を取るようにしています。',
+    questionJa: 'A：来月の会議のためにホテルの部屋を予約できましたか？\nB：はい、今朝、会場近くのホテルを予約しました。',
     choices: [
-      { key: '1', word: 'maintain',  meaning: '維持する' },
-      { key: '2', word: 'pretend',   meaning: 'ふりをする' },
-      { key: '3', word: 'discover',  meaning: '発見する' },
-      { key: '4', word: 'decrease',  meaning: '減らす' },
+      { key: '1', word: 'reserve', meaning: '予約する' },
+      { key: '2', word: 'pretend', meaning: 'ふりをする' },
+      { key: '3', word: 'punish',  meaning: '罰する' },
+      { key: '4', word: 'exhaust', meaning: '消耗させる' },
     ],
     answer: '1',
-    explanation: 'ストレス下でもポジティブな姿勢を「保つ」という文脈から、1 maintain「維持する」が正解。2 pretend「ふりをする」3 discover「発見する」4 decrease「減らす」はいずれも不適。',
+    explanation: 'Bが「予約した」と答えていることから、1 reserve「予約する」が正解。2 pretend「ふりをする」3 punish「罰する」4 exhaust「消耗させる」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000015000,
   },
   {
     id: 'seed-016', source: 'builtin', grade: 'grade2',
     dialogueLines: null,
-    questionText: 'The researcher was able to (   ) that the new drug was effective through a series of controlled experiments.',
-    questionJa: '研究者は一連の対照実験を通じて、新薬が有効であることを実証することができた。',
+    questionText: 'She decided to (   ) her career from teaching to working in the technology industry.',
+    questionJa: '彼女は教職からテクノロジー業界へキャリアを切り替えることを決めた。',
     choices: [
-      { key: '1', word: 'demonstrate', meaning: '実証する' },
-      { key: '2', word: 'predict',     meaning: '予測する' },
-      { key: '3', word: 'imagine',     meaning: '想像する' },
-      { key: '4', word: 'suspect',     meaning: '疑う' },
+      { key: '1', word: 'switch',   meaning: '切り替える' },
+      { key: '2', word: 'freeze',   meaning: '凍らせる' },
+      { key: '3', word: 'decorate', meaning: '飾る' },
+      { key: '4', word: 'whisper',  meaning: 'ささやく' },
     ],
     answer: '1',
-    explanation: '実験を通じて有効性を「示した」という文脈から、1 demonstrate「実証する」が正解。2 predict「予測する」3 imagine「想像する」4 suspect「疑う」はいずれも不適。',
+    explanation: '教職からIT業界へキャリアを「切り替える」ことだから、1 switch「切り替える」が正解。2 freeze「凍らせる」3 decorate「飾る」4 whisper「ささやく」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000016000,
   },
   {
     id: 'seed-017', source: 'builtin', grade: 'grade2',
-    dialogueLines: [
-      { speaker: 'A', text: 'I\'m trying to (   ) my parents to let me study abroad for a year.' },
-      { speaker: 'B', text: 'That sounds challenging. Have you shown them the benefits of the program?' },
-    ],
-    questionText: null,
-    questionJa: 'A：両親に1年間の留学を許可してもらえるよう説得しようとしています。\nB：それは大変そうですね。プログラムのメリットを見せましたか？',
+    dialogueLines: null,
+    questionText: 'The mayor announced a new (   ) to improve public transportation in the city.',
+    questionJa: '市長は市内の公共交通機関を改善するための新しい取り組みを発表した。',
     choices: [
-      { key: '1', word: 'convince',  meaning: '説得する' },
-      { key: '2', word: 'forbid',    meaning: '禁じる' },
-      { key: '3', word: 'remind',    meaning: '思い出させる' },
-      { key: '4', word: 'entertain', meaning: '楽しませる' },
+      { key: '1', word: 'initiative', meaning: '取り組み' },
+      { key: '2', word: 'obstacle',   meaning: '障害' },
+      { key: '3', word: 'exception',  meaning: '例外' },
+      { key: '4', word: 'tradition',  meaning: '伝統' },
     ],
     answer: '1',
-    explanation: '留学を許可してもらうために働きかけているという文脈から、1 convince「説得する」が適切。2 forbid「禁じる」3 remind「思い出させる」4 entertain「楽しませる」はいずれも不適。',
+    explanation: '公共交通を改善するために市長が発表した新しい「取り組み」だから、1 initiative「取り組み」が正解。2 obstacle「障害」3 exception「例外」4 tradition「伝統」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000017000,
   },
   {
     id: 'seed-018', source: 'builtin', grade: 'grade2',
-    dialogueLines: null,
-    questionText: 'The two countries agreed to (   ) on the development of clean energy technologies.',
-    questionJa: '両国はクリーンエネルギー技術の開発において協力することに合意した。',
+    dialogueLines: [
+      { speaker: 'A', text: 'The professor always gives very (   ) feedback on our essays.' },
+      { speaker: 'B', text: 'I know. Her detailed comments really help me improve my writing.' },
+    ],
+    questionText: null,
+    questionJa: 'A：あの教授はいつも私たちのエッセイにとても建設的なフィードバックをくれます。\nB：そうですね。彼女の詳細なコメントは本当にライティング上達の助けになります。',
     choices: [
-      { key: '1', word: 'cooperate', meaning: '協力する' },
-      { key: '2', word: 'compete',   meaning: '競争する' },
-      { key: '3', word: 'disagree',  meaning: '反対する' },
-      { key: '4', word: 'separate',  meaning: '分離する' },
+      { key: '1', word: 'constructive', meaning: '建設的な' },
+      { key: '2', word: 'careless',     meaning: '不注意な' },
+      { key: '3', word: 'ancient',      meaning: '古代の' },
+      { key: '4', word: 'narrow',       meaning: '狭い' },
     ],
     answer: '1',
-    explanation: '「合意した」という文脈から、2国が共に取り組む1 cooperate「協力する」が正解。2 compete「競争する」3 disagree「反対する」4 separate「分離する」はいずれも不適。',
+    explanation: 'Bが「詳細なコメントが役立つ」と言っていることから、1 constructive「建設的な」フィードバックが正解。2 careless「不注意な」3 ancient「古代の」4 narrow「狭い」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000018000,
   },
   {
-    id: 'seed-019', source: 'builtin', grade: 'grade2',
+    id: 'seed-019', source: 'builtin', grade: 'grade1',
     dialogueLines: null,
-    questionText: 'The survey results (   ) that most customers were satisfied with the quality of the service.',
-    questionJa: 'アンケート結果は、ほとんどの顧客がサービスの質に満足していることを示していた。',
+    questionText: 'The politician\'s speech was criticized for being (   ), as it lacked any specific solutions to the problems discussed.',
+    questionJa: 'その政治家の演説は、議論された問題に対する具体的な解決策が欠けていたとして、漠然としていると批判された。',
     choices: [
-      { key: '1', word: 'indicated', meaning: '示した' },
-      { key: '2', word: 'prevented', meaning: '防いだ' },
-      { key: '3', word: 'demanded',  meaning: '要求した' },
-      { key: '4', word: 'wasted',    meaning: '無駄にした' },
+      { key: '1', word: 'vague',         meaning: '漠然とした' },
+      { key: '2', word: 'persuasive',    meaning: '説得力のある' },
+      { key: '3', word: 'comprehensive', meaning: '包括的な' },
+      { key: '4', word: 'diplomatic',    meaning: '外交的な' },
     ],
     answer: '1',
-    explanation: 'アンケート結果が満足度を「示した」という文脈から、1 indicated「示した」が正解。2 prevented「防いだ」3 demanded「要求した」4 wasted「無駄にした」はいずれも不適。',
+    explanation: '「具体的な解決策がない」という批判内容から、1 vague「漠然とした」が正解。2 persuasive「説得力のある」3 comprehensive「包括的な」4 diplomatic「外交的な」はいずれも批判の内容と合わない。',
     tags: [], addedAt: 1715000019000,
   },
   {
-    id: 'seed-020', source: 'builtin', grade: 'grade2',
+    id: 'seed-020', source: 'builtin', grade: 'grade1',
     dialogueLines: [
-      { speaker: 'A', text: 'The new regulations will (   ) the number of cars allowed in the city center.' },
-      { speaker: 'B', text: 'That should help reduce pollution and improve air quality.' },
+      { speaker: 'A', text: 'The new policy is expected to (   ) the economic gap between wealthy and poor regions.' },
+      { speaker: 'B', text: 'I hope so. The difference has been growing for decades.' },
     ],
     questionText: null,
-    questionJa: 'A：新しい規制により、市内中心部に入れる車の数が制限されます。\nB：それは汚染を減らし、大気質を改善するのに役立つはずです。',
+    questionJa: 'A：新しい政策は豊かな地域と貧しい地域の経済格差を緩和することが期待されています。\nB：そうだといいですね。その差は数十年にわたって広がり続けています。',
     choices: [
-      { key: '1', word: 'restrict',  meaning: '制限する' },
-      { key: '2', word: 'increase',  meaning: '増加させる' },
-      { key: '3', word: 'celebrate', meaning: '祝う' },
-      { key: '4', word: 'replace',   meaning: '取り替える' },
+      { key: '1', word: 'alleviate',   meaning: '緩和する' },
+      { key: '2', word: 'accelerate',  meaning: '加速する' },
+      { key: '3', word: 'contaminate', meaning: '汚染する' },
+      { key: '4', word: 'manipulate',  meaning: '操作する' },
     ],
     answer: '1',
-    explanation: '規制によって車の数を「制限する」という文脈から、1 restrict「制限する」が正解。汚染削減につながるというBの返答とも合う。2 increase「増加させる」3 celebrate「祝う」4 replace「取り替える」はいずれも不適。',
+    explanation: '経済格差が広がり続けている文脈で「緩和する」ことが期待されているから、1 alleviate「緩和する」が正解。2 accelerate「加速する」3 contaminate「汚染する」4 manipulate「操作する」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000020000,
   },
-  // ---- 英検1級 追加10問 ----
   {
-    id: 'seed-021', source: 'builtin', grade: 'grade1',
-    dialogueLines: null,
-    questionText: 'Doctors recommend regular exercise to (   ) the symptoms of anxiety and depression.',
-    questionJa: '医師は不安やうつの症状を和らげるために定期的な運動を勧めている。',
+    id: 'seed-021', source: 'builtin', grade: 'grade2',
+    dialogueLines: [
+      { speaker: 'A', text: 'I heard the factory had to (   ) production last month due to a shortage of materials.' },
+      { speaker: 'B', text: 'Yes, they couldn\'t get enough parts from their suppliers.' },
+    ],
+    questionText: null,
+    questionJa: 'A：先月、工場は材料不足のため生産を一時停止しなければならなかったと聞きました。\nB：はい、サプライヤーから十分な部品を調達できなかったのです。',
     choices: [
-      { key: '1', word: 'alleviate',  meaning: '和らげる' },
-      { key: '2', word: 'intensify',  meaning: '強める' },
-      { key: '3', word: 'ignore',     meaning: '無視する' },
-      { key: '4', word: 'diagnose',   meaning: '診断する' },
+      { key: '1', word: 'suspend',  meaning: '一時停止する' },
+      { key: '2', word: 'increase', meaning: '増加させる' },
+      { key: '3', word: 'announce', meaning: '発表する' },
+      { key: '4', word: 'admire',   meaning: '称賛する' },
     ],
     answer: '1',
-    explanation: '運動が症状を「和らげる」という文脈から、1 alleviate「和らげる」が正解。2 intensify「強める」は逆の意味。3 ignore「無視する」4 diagnose「診断する」はいずれも不適。',
+    explanation: '材料不足を理由にBも部品が足りなかったと述べているから、1 suspend「一時停止する」が正解。2 increase「増加させる」3 announce「発表する」4 admire「称賛する」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000021000,
   },
   {
-    id: 'seed-022', source: 'builtin', grade: 'grade1',
+    id: 'seed-022', source: 'builtin', grade: 'grade2',
     dialogueLines: null,
-    questionText: 'The new construction near the wetland could (   ) the already fragile ecosystem of the area.',
-    questionJa: '湿地近くの新しい建設工事は、その地域のすでに脆弱な生態系をさらに悪化させる可能性がある。',
+    questionText: 'The charity event raised enough money to (   ) a new community center in the town.',
+    questionJa: 'チャリティーイベントで集まった資金は、町に新しいコミュニティーセンターを建設するのに十分な額だった。',
     choices: [
-      { key: '1', word: 'exacerbate', meaning: '悪化させる' },
-      { key: '2', word: 'restore',    meaning: '回復させる' },
-      { key: '3', word: 'diversify',  meaning: '多様化する' },
-      { key: '4', word: 'stabilize',  meaning: '安定させる' },
+      { key: '1', word: 'construct', meaning: '建設する' },
+      { key: '2', word: 'abandon',   meaning: '放棄する' },
+      { key: '3', word: 'borrow',    meaning: '借りる' },
+      { key: '4', word: 'frighten',  meaning: '怖がらせる' },
     ],
     answer: '1',
-    explanation: '「すでに脆弱な」生態系への建設工事の影響だから、1 exacerbate「悪化させる」が正解。2 restore「回復させる」3 diversify「多様化する」4 stabilize「安定させる」はいずれも文意に合わない。',
+    explanation: 'チャリティーで集まった資金でコミュニティーセンターを「建設する」ことだから、1 construct「建設する」が正解。2 abandon「放棄する」3 borrow「借りる」4 frighten「怖がらせる」はいずれも不適。',
     tags: [], addedAt: 1715000022000,
   },
   {
-    id: 'seed-023', source: 'builtin', grade: 'grade1',
+    id: 'seed-023', source: 'builtin', grade: 'grade2',
     dialogueLines: [
-      { speaker: 'A', text: 'The auditors are going to (   ) every transaction record from the past five years.' },
-      { speaker: 'B', text: 'We should make sure all our documentation is in order before they arrive.' },
+      { speaker: 'A', text: 'The new traffic regulations came into (   ) starting from April 1st.' },
+      { speaker: 'B', text: 'I see. I need to read through them carefully before driving again.' },
     ],
     questionText: null,
-    questionJa: 'A：監査人が過去5年間のすべての取引記録を精査する予定です。\nB：彼らが来る前に、すべての書類が整っていることを確認しましょう。',
+    questionJa: 'A：新しい交通規制は4月1日から施行されました。\nB：なるほど。また運転する前にしっかり読まなければいけませんね。',
     choices: [
-      { key: '1', word: 'scrutinize', meaning: '精査する' },
-      { key: '2', word: 'falsify',    meaning: '改ざんする' },
-      { key: '3', word: 'overlook',   meaning: '見逃す' },
-      { key: '4', word: 'summarize',  meaning: '要約する' },
+      { key: '1', word: 'effect',   meaning: '効力' },
+      { key: '2', word: 'silence',  meaning: '沈黙' },
+      { key: '3', word: 'pressure', meaning: '圧力' },
+      { key: '4', word: 'comfort',  meaning: '快適さ' },
     ],
     answer: '1',
-    explanation: '監査人が全取引記録を詳しく調べるという文脈から、1 scrutinize「精査する」が正解。2 falsify「改ざんする」3 overlook「見逃す」4 summarize「要約する」はいずれも不適。',
+    explanation: 'come into effect で「施行される、発効する」という熟語。1 effect「効力」が正解。2 silence「沈黙」3 pressure「圧力」4 comfort「快適さ」では熟語が成立しない。',
     tags: [], addedAt: 1715000023000,
   },
   {
-    id: 'seed-024', source: 'builtin', grade: 'grade1',
+    id: 'seed-024', source: 'builtin', grade: 'grade2',
     dialogueLines: null,
-    questionText: 'The global pandemic caused (   ) disruptions to international supply chains that had never been seen before.',
-    questionJa: '世界的なパンデミックは、これまで見られたことのない前例のない国際サプライチェーンへの混乱を引き起こした。',
+    questionText: 'The project manager asked everyone to submit their reports by Friday to avoid any (   ) in the schedule.',
+    questionJa: 'プロジェクトマネージャーはスケジュールの遅れを避けるため、全員に金曜日までに報告書を提出するよう求めた。',
     choices: [
-      { key: '1', word: 'unprecedented', meaning: '前例のない' },
-      { key: '2', word: 'predictable',   meaning: '予測可能な' },
-      { key: '3', word: 'occasional',    meaning: '時折の' },
-      { key: '4', word: 'gradual',       meaning: '段階的な' },
+      { key: '1', word: 'delays',    meaning: '遅れ' },
+      { key: '2', word: 'rewards',   meaning: '報酬' },
+      { key: '3', word: 'memories',  meaning: '記憶' },
+      { key: '4', word: 'accidents', meaning: '事故' },
     ],
     answer: '1',
-    explanation: '「これまで見られたことのない」という文脈と that had never been seen before が同義であることから、1 unprecedented「前例のない」が正解。2 predictable「予測可能な」3 occasional「時折の」4 gradual「段階的な」はいずれも不適。',
+    explanation: '期限を設けてスケジュールの「遅れ」を避けようとしているから、1 delays「遅れ」が正解。2 rewards「報酬」3 memories「記憶」4 accidents「事故」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000024000,
   },
   {
-    id: 'seed-025', source: 'builtin', grade: 'grade1',
+    id: 'seed-025', source: 'builtin', grade: 'grade2',
     dialogueLines: [
-      { speaker: 'A', text: 'The patient\'s condition seems to (   ) whenever he skips his medication.' },
-      { speaker: 'B', text: 'Yes, consistent adherence to the treatment plan is absolutely essential.' },
+      { speaker: 'A', text: 'Have you read the (   ) for the new product launch event?' },
+      { speaker: 'B', text: 'Not yet. When does it start and where will it be held?' },
     ],
     questionText: null,
-    questionJa: 'A：患者が薬を飲み忘れるたびに、容態が悪化するようです。\nB：そうですね、治療計画を一貫して守ることが絶対に不可欠です。',
+    questionJa: 'A：新製品発表イベントの案内を読みましたか？\nB：まだです。いつ始まって、どこで開催されるのですか？',
     choices: [
-      { key: '1', word: 'deteriorate', meaning: '悪化する' },
-      { key: '2', word: 'improve',     meaning: '改善する' },
-      { key: '3', word: 'stabilize',   meaning: '安定する' },
-      { key: '4', word: 'fluctuate',   meaning: '変動する' },
+      { key: '1', word: 'notice',    meaning: '案内・通知' },
+      { key: '2', word: 'weakness',  meaning: '弱点' },
+      { key: '3', word: 'landscape', meaning: '景色' },
+      { key: '4', word: 'penalty',   meaning: '罰則' },
     ],
     answer: '1',
-    explanation: '薬を飲まないと容態が「悪化する」という文脈から、1 deteriorate「悪化する」が正解。治療の重要性を強調するBの発言とも一致する。2 improve「改善する」3 stabilize「安定する」4 fluctuate「変動する」はいずれも不適。',
+    explanation: 'Bが「いつ・どこで」と聞いていることから、日時・場所などが書かれた「案内・通知」だとわかるので、1 notice が正解。2 weakness「弱点」3 landscape「景色」4 penalty「罰則」はいずれも不適。',
     tags: [], addedAt: 1715000025000,
   },
   {
     id: 'seed-026', source: 'builtin', grade: 'grade1',
     dialogueLines: null,
-    questionText: 'The professor\'s instructions were so (   ) that students interpreted them in completely different ways.',
-    questionJa: '教授の指示はとても曖昧で、学生たちはそれをまったく異なる方法で解釈した。',
+    questionText: 'The researcher\'s findings were (   ) by several independent studies, strengthening confidence in the original results.',
+    questionJa: 'その研究者の発見は複数の独立した研究によって裏付けられ、元の結果への信頼が高まった。',
     choices: [
-      { key: '1', word: 'ambiguous',   meaning: '曖昧な' },
-      { key: '2', word: 'concise',     meaning: '簡潔な' },
-      { key: '3', word: 'explicit',    meaning: '明示的な' },
-      { key: '4', word: 'convincing',  meaning: '説得力のある' },
+      { key: '1', word: 'corroborated', meaning: '裏付けられた' },
+      { key: '2', word: 'undermined',   meaning: '損なわれた' },
+      { key: '3', word: 'exaggerated',  meaning: '誇張された' },
+      { key: '4', word: 'suspended',    meaning: '一時停止された' },
     ],
     answer: '1',
-    explanation: '指示を「異なる方法で解釈した」という結果から、1 ambiguous「曖昧な」が正解。2 concise「簡潔な」3 explicit「明示的な」は明確さを示し矛盾。4 convincing「説得力のある」も不適。',
+    explanation: '「信頼が高まった」とあるから、結果が「裏付けられた」ことになり、1 corroborated が正解。2 undermined「損なわれた」3 exaggerated「誇張された」4 suspended「一時停止された」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000026000,
   },
   {
     id: 'seed-027', source: 'builtin', grade: 'grade1',
-    dialogueLines: null,
-    questionText: 'International agreements are seen as the most effective way to (   ) the risks associated with climate change.',
-    questionJa: '国際協定は、気候変動に関連するリスクを緩和する最も効果的な方法と見なされている。',
+    dialogueLines: [
+      { speaker: 'A', text: 'The documentary revealed that the company had been (   ) dumping waste into the river for years.' },
+      { speaker: 'B', text: 'That\'s outrageous. There should be serious legal consequences for that.' },
+    ],
+    questionText: null,
+    questionJa: 'A：そのドキュメンタリーは、その会社が数年間にわたって密かに廃棄物を川に投棄していたことを暴露した。\nB：それはひどい。それに対して深刻な法的制裁があるべきです。',
     choices: [
-      { key: '1', word: 'mitigate',   meaning: '緩和する' },
-      { key: '2', word: 'amplify',    meaning: '増幅する' },
-      { key: '3', word: 'provoke',    meaning: '引き起こす' },
-      { key: '4', word: 'overlook',   meaning: '見逃す' },
+      { key: '1', word: 'covertly',    meaning: '密かに' },
+      { key: '2', word: 'generously',  meaning: '寛大に' },
+      { key: '3', word: 'brilliantly', meaning: '華やかに' },
+      { key: '4', word: 'casually',    meaning: '何気なく' },
     ],
     answer: '1',
-    explanation: '国際協定でリスクへの対処をするという文脈から、1 mitigate「緩和する」が正解。2 amplify「増幅する」3 provoke「引き起こす」はリスクを増やす意味で不適。4 overlook「見逃す」も不適。',
+    explanation: 'ドキュメンタリーで「暴露された」という文脈から、不正行為が「密かに」行われていたことがわかるので、1 covertly が正解。2 generously「寛大に」3 brilliantly「華やかに」4 casually「何気なく」はいずれも文意に合わない。',
     tags: [], addedAt: 1715000027000,
   },
   {
     id: 'seed-028', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'The company\'s attempt to (   ) the two rival brands under one corporate identity proved more difficult than expected.',
+    questionJa: '2つのライバルブランドを一つの企業アイデンティティに統合しようとするその会社の試みは、予想以上に困難であることが判明した。',
+    choices: [
+      { key: '1', word: 'merge',     meaning: '統合する' },
+      { key: '2', word: 'condemn',   meaning: '非難する' },
+      { key: '3', word: 'paralyze',  meaning: '麻痺させる' },
+      { key: '4', word: 'withstand', meaning: '耐える' },
+    ],
+    answer: '1',
+    explanation: '2つのブランドを「一つの企業アイデンティティに統合する」ことだから、1 merge「統合する」が正解。2 condemn「非難する」3 paralyze「麻痺させる」4 withstand「耐える」はいずれも文意に合わない。',
+    tags: [], addedAt: 1715000028000,
+  },
+  {
+    id: 'seed-029', source: 'builtin', grade: 'grade1',
+    dialogueLines: [
+      { speaker: 'A', text: 'The new tax policy has drawn (   ) criticism from economists across the political spectrum.' },
+      { speaker: 'B', text: 'Yes, it seems rare for such a wide range of experts to agree on anything.' },
+    ],
+    questionText: null,
+    questionJa: 'A：新しい税制は、政治的立場を超えた経済学者たちから幅広い批判を集めています。\nB：そうですね。これほど幅広い専門家が何かについて一致することはまれです。',
+    choices: [
+      { key: '1', word: 'widespread',  meaning: '広範な' },
+      { key: '2', word: 'trivial',     meaning: '取るに足らない' },
+      { key: '3', word: 'reluctant',   meaning: '気乗りのしない' },
+      { key: '4', word: 'anonymous',   meaning: '匿名の' },
+    ],
+    answer: '1',
+    explanation: '「政治的立場を超えた」幅広い批判という文脈から、1 widespread「広範な」が正解。2 trivial「取るに足らない」3 reluctant「気乗りのしない」4 anonymous「匿名の」はいずれも文意に合わない。',
+    tags: [], addedAt: 1715000029000,
+  },
+  {
+    id: 'seed-030', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'Despite facing intense (   ) from larger companies, the startup managed to secure a loyal customer base through innovation.',
+    questionJa: '大企業からの激しい競争にもかかわらず、そのスタートアップは革新によって忠実な顧客基盤を確保することに成功した。',
+    choices: [
+      { key: '1', word: 'competition', meaning: '競争' },
+      { key: '2', word: 'affection',   meaning: '愛情' },
+      { key: '3', word: 'obedience',   meaning: '服従' },
+      { key: '4', word: 'sympathy',    meaning: '同情' },
+    ],
+    answer: '1',
+    explanation: '大企業から受ける「競争」の中でも顧客を確保したという対比構造だから、1 competition「競争」が正解。2 affection「愛情」3 obedience「服従」4 sympathy「同情」はいずれも文意に合わない。',
+    tags: [], addedAt: 1715000030000,
+  },
+  // ---- 英検1級 補完3問（合計grade1を+10問に） ----
+  {
+    id: 'seed-031', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'International agreements are seen as the most effective way to (   ) the risks associated with climate change.',
+    questionJa: '国際協定は、気候変動に関連するリスクを緩和する最も効果的な方法と見なされている。',
+    choices: [
+      { key: '1', word: 'mitigate',  meaning: '緩和する' },
+      { key: '2', word: 'amplify',   meaning: '増幅する' },
+      { key: '3', word: 'provoke',   meaning: '引き起こす' },
+      { key: '4', word: 'overlook',  meaning: '見逃す' },
+    ],
+    answer: '1',
+    explanation: '国際協定でリスクに対処するという文脈から、1 mitigate「緩和する」が正解。2 amplify「増幅する」3 provoke「引き起こす」はリスクを増やす意味で不適。4 overlook「見逃す」も不適。',
+    tags: [], addedAt: 1715000031000,
+  },
+  {
+    id: 'seed-032', source: 'builtin', grade: 'grade1',
+    dialogueLines: null,
+    questionText: 'There was a significant (   ) between the official statistics and the figures reported by independent researchers.',
+    questionJa: '公式統計と独立した研究者が報告した数値の間には、大きな食い違いがあった。',
+    choices: [
+      { key: '1', word: 'discrepancy', meaning: '食い違い' },
+      { key: '2', word: 'similarity',  meaning: '類似性' },
+      { key: '3', word: 'consensus',   meaning: '合意' },
+      { key: '4', word: 'correlation', meaning: '相関関係' },
+    ],
+    answer: '1',
+    explanation: '公式統計と独立研究者の数値が異なるという文脈から、1 discrepancy「食い違い」が正解。2 similarity「類似性」3 consensus「合意」4 correlation「相関関係」はいずれも一致・関連を示し不適。',
+    tags: [], addedAt: 1715000032000,
+  },
+  {
+    id: 'seed-033', source: 'builtin', grade: 'grade1',
     dialogueLines: [
       { speaker: 'A', text: 'Critics argue that the media tends to (   ) harmful stereotypes about minority groups.' },
       { speaker: 'B', text: 'That\'s a valid concern. Responsible reporting is crucial to changing those narratives.' },
@@ -483,37 +569,7 @@ const SEED_DATA = [
     ],
     answer: '1',
     explanation: 'メディアがステレオタイプを「永続させる」という批判の文脈から、1 perpetuate「永続させる」が正解。2 challenge「疑問を呈する」3 eliminate「排除する」は改善を示し不適。4 celebrate「称える」も不適。',
-    tags: [], addedAt: 1715000028000,
-  },
-  {
-    id: 'seed-029', source: 'builtin', grade: 'grade1',
-    dialogueLines: null,
-    questionText: 'There was a significant (   ) between the official statistics and the figures reported by independent researchers.',
-    questionJa: '公式統計と独立した研究者が報告した数値の間には、大きな食い違いがあった。',
-    choices: [
-      { key: '1', word: 'discrepancy', meaning: '食い違い' },
-      { key: '2', word: 'similarity',  meaning: '類似性' },
-      { key: '3', word: 'consensus',   meaning: '合意' },
-      { key: '4', word: 'correlation', meaning: '相関関係' },
-    ],
-    answer: '1',
-    explanation: '公式統計と独立研究者の数値が異なるという文脈から、1 discrepancy「食い違い」が正解。2 similarity「類似性」3 consensus「合意」4 correlation「相関関係」はいずれも一致・関連を示し不適。',
-    tags: [], addedAt: 1715000029000,
-  },
-  {
-    id: 'seed-030', source: 'builtin', grade: 'grade1',
-    dialogueLines: null,
-    questionText: 'The legal team gathered extensive evidence to (   ) their client\'s claim of innocence.',
-    questionJa: '法律チームは依頼人の無実の主張を実証するために、広範な証拠を集めた。',
-    choices: [
-      { key: '1', word: 'substantiate', meaning: '実証する' },
-      { key: '2', word: 'contradict',   meaning: '反証する' },
-      { key: '3', word: 'fabricate',    meaning: '捏造する' },
-      { key: '4', word: 'undermine',    meaning: '損なう' },
-    ],
-    answer: '1',
-    explanation: '無実を「証明する」ために証拠を集めたという文脈から、1 substantiate「実証する」が正解。2 contradict「反証する」3 fabricate「捏造する」4 undermine「損なう」はいずれも無実の主張を支持しない方向で不適。',
-    tags: [], addedAt: 1715000030000,
+    tags: [], addedAt: 1715000033000,
   },
 ];
 
@@ -665,37 +721,53 @@ function ApiKeyModal({ onClose, onSave }) {
 // クロスアプリナビゲーション
 // ============================================================
 function AppNav({ onKeyClick, hasKey }) {
-  const link = (href, label, active) => (
-    <a href={href} target="_self"
-      style={{
-        display: 'flex', alignItems: 'center', gap: 3, padding: '5px 9px', borderRadius: 8,
-        textDecoration: 'none', whiteSpace: 'nowrap', fontWeight: active ? 700 : undefined,
-        color: active ? '#6366f1' : '#64748b',
-        background: active ? '#eef2ff' : 'transparent',
-      }}
-      onMouseEnter={e => { if (!active) e.currentTarget.style.background = '#f1f5f9'; }}
-      onMouseLeave={e => { if (!active) e.currentTarget.style.background = 'transparent'; }}>
-      {label}
-    </a>
-  );
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const LINKS = [
+    { href: 'https://kantanapp.github.io/eiken-portal/', label: '🎓 TOP', current: false },
+    { href: 'https://eiken-vocab2026423.web.app', label: '📚 単語', current: false },
+    { href: 'https://kantanapp.github.io/long-passage/', label: '📝 長文', current: false },
+    { href: 'https://kantanapp.github.io/summary/', label: '✍️ 要約', current: false },
+    { href: '#', label: '🔤 単語クイズ', current: true },
+  ];
   return (
-    <nav className="sticky top-0 z-20 flex items-center h-11 px-2 gap-1 text-[13px] font-semibold"
+    <header className="sticky top-0 z-20 px-4 sm:px-6 py-3 flex items-center gap-3 relative"
       style={{ backgroundColor: 'rgba(255,255,255,0.96)', backdropFilter: 'blur(8px)', borderBottom: '1px solid #e2e8f0' }}>
-      {link('https://kantanapp.github.io/eiken-portal/', '🎓 TOP', false)}
-      <span style={{ color: '#e2e8f0' }}>|</span>
-      {link('https://eiken-vocab2026423.web.app', '📚 単語', false)}
-      {link('https://kantanapp.github.io/long-passage/', '📝 long-passage', false)}
-      {link('https://kantanapp.github.io/summary/', '✍️ 要約', false)}
-      <span style={{
-        display: 'flex', alignItems: 'center', gap: 3, padding: '5px 9px', borderRadius: 8,
-        color: '#6366f1', background: '#eef2ff', fontWeight: 700, whiteSpace: 'nowrap',
-      }}>🔤 単語クイズ</span>
-      <button onClick={onKeyClick} className="ml-auto p-2 rounded-xl"
+      <button onClick={() => setMenuOpen(v => !v)} className="p-1.5 rounded-lg transition-colors"
+        style={{ color: C.textMuted }}>
+        {menuOpen ? <X size={20} /> : <Menu size={20} />}
+      </button>
+      <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
+        style={{ backgroundColor: C.primary }}>英</div>
+      <span className="text-base font-bold" style={{ color: C.text }}>単語クイズ</span>
+      <button onClick={onKeyClick} className="ml-auto p-2 rounded-xl transition-colors"
         style={{ color: hasKey ? C.ai : C.textMuted, backgroundColor: hasKey ? C.aiBg : 'transparent' }}
         title="APIキー設定">
         <KeyRound size={18} />
       </button>
-    </nav>
+      {menuOpen && (
+        <>
+          <div className="fixed inset-0 z-10" onClick={() => setMenuOpen(false)} />
+          <div className="absolute top-full left-0 mt-1 w-48 rounded-xl shadow-lg z-20 overflow-hidden"
+            style={{ backgroundColor: C.card, border: `1px solid ${C.borderLight}` }}>
+            {LINKS.map(({ href, label, current }) =>
+              current ? (
+                <span key={label} className="flex items-center px-4 py-3 text-sm font-bold"
+                  style={{ color: '#6366f1', background: '#eef2ff' }}>{label}</span>
+              ) : (
+                <a key={label} href={href} target="_self"
+                  className="flex items-center px-4 py-3 text-sm transition-colors"
+                  style={{ color: C.text, textDecoration: 'none' }}
+                  onMouseEnter={e => e.currentTarget.style.background = '#f1f5f9'}
+                  onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                  onClick={() => setMenuOpen(false)}>
+                  {label}
+                </a>
+              )
+            )}
+          </div>
+        </>
+      )}
+    </header>
   );
 }
 
@@ -1374,17 +1446,10 @@ export default function App() {
 
       {showKeyModal && <ApiKeyModal onClose={() => setShowKeyModal(false)} onSave={saveApiKey} />}
 
-      {/* ヘッダー（一覧・進捗・追加画面） */}
+      {/* グレードフィルター */}
       {view === 'list' && (
-        <header className="sticky top-11 z-10 px-4 sm:px-6 py-3"
+        <header className="sticky top-[60px] z-10 px-4 sm:px-6 py-3"
           style={{ backgroundColor: C.bg, borderBottom: `1px solid ${C.borderLight}` }}>
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm"
-              style={{ backgroundColor: C.primary }}>英</div>
-            <span className="text-base font-bold" style={{ color: C.text }}>
-              {navTab === 'list' ? '問題一覧' : navTab === 'stats' ? '進捗' : '問題追加'}
-            </span>
-          </div>
           {navTab === 'list' && (
             <div className="flex gap-2 overflow-x-auto">
               {GRADES.map(g => {
