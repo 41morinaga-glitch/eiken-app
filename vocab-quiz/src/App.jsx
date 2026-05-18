@@ -1647,7 +1647,8 @@ export default function App() {
 
   const [nextQueue, setNextQueue] = useState([]);
 
-  const filtered = gf === 'all' ? questions : questions.filter(q => q.grade === gf);
+  const filtered = (gf === 'all' ? questions : questions.filter(q => q.grade === gf))
+    .slice().sort((a, b) => b.addedAt - a.addedAt);
   const cur = questions.find(q => q.id === curId);
 
   function saveApiKey(k) {
