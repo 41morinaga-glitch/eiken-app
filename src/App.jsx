@@ -700,6 +700,456 @@ However, music education also has its challenges. Learning an instrument require
         'reducing the availability of ~ （～の利用可能性を低下させる）',
       ],
     },
+    {
+      id: 'g2-24', label: 'オリジナル No.24', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Libraries in the Digital Age', titleJa: 'デジタル時代の図書館',
+      passage: `Libraries have been important places for learning and reading for many generations. In recent years, however, more and more people are turning to the internet to find information, and fewer people are visiting libraries than in the past.
+
+Despite this, libraries still offer many advantages. They provide free access to books, computers, and the internet for people who cannot afford them at home. Libraries also offer quiet spaces to study and hold events such as reading groups and workshops that bring communities together.
+
+However, libraries face serious challenges in the digital age. Many local governments are reducing funding for libraries, which means some branches are closing or cutting their opening hours. In addition, fewer people are borrowing physical books, making it harder for libraries to justify their costs to budget committees.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Although internet use has reduced library visits, libraries continue to provide free access to books, computers, and the internet for those who cannot afford them. They also offer quiet study spaces and community events. However, reduced government funding is causing library closures and shorter opening hours, making it difficult to maintain these valuable services.`,
+      sampleWordCount: 54,
+      structure: '①導入（インターネット普及と図書館利用の減少）→ ②利点（無料アクセス・勉強スペース・地域イベント）→ ③課題（予算削減・閉館・利用減）',
+      keyPoints: [
+        '第1段落：「インターネットの普及で図書館利用が減少している」という状況を一文で導入',
+        '第2段落：利点を3点（①無料のアクセス環境、②静かな学習空間、③地域コミュニティのイベント）',
+        '第3段落：課題を2点（①政府の予算削減による閉館・時間短縮、②書籍の貸出減少によるコスト正当化の困難さ）',
+        'Although / However でコントラストを明確にする',
+      ],
+      paraphraseTips: [
+        { original: 'turning to the internet to find information', alt: 'using online resources instead / relying on digital searches' },
+        { original: 'cannot afford them at home', alt: 'do not have access at home / lack personal devices or subscriptions' },
+        { original: 'hold events such as reading groups and workshops', alt: 'organize community activities / host educational programs' },
+        { original: 'reducing funding for libraries', alt: 'cutting library budgets / decreasing financial support' },
+      ],
+      usefulPhrases: [
+        'continue to provide free access to ~ （～への無料アクセスを提供し続ける）',
+        'making it difficult to maintain ~ （～を維持することを困難にしている）',
+        'reduced government funding is causing ~ （政府の予算削減が～を引き起こしている）',
+      ],
+    },
+    {
+      id: 'g2-25', label: 'オリジナル No.25', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Keeping a Diary', titleJa: '日記をつけること',
+      passage: `Many people keep a diary to record their daily experiences and feelings. While some prefer to write in a paper notebook, others use digital apps or online platforms to keep track of their thoughts and daily activities.
+
+Writing a diary regularly has several benefits. It can help people manage their emotions by giving them a private space to express their feelings. Keeping a diary also helps people remember important events and reflect on their past experiences. Furthermore, regular writing can improve language skills and creative thinking over time.
+
+However, keeping a diary can be challenging. Many people find it difficult to write every day because of their busy schedules. Some people also worry about privacy, fearing that others may read their personal thoughts. In addition, many people stop writing after a short time because they gradually lose motivation.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Many people keep diaries to record their thoughts and experiences. Regular diary writing helps manage emotions, improve memory of important events, and develop writing skills. However, maintaining this habit is difficult due to busy daily lives, and concerns about privacy may prevent some people from writing honestly. A lack of motivation can also cause people to give up.`,
+      sampleWordCount: 55,
+      structure: '①導入（日記をつける習慣の多様なスタイル）→ ②利点（感情管理・記憶・スキル向上）→ ③課題（時間不足・プライバシーへの不安・モチベーション低下）',
+      keyPoints: [
+        '第1段落：「日記は紙・デジタルの形で多くの人に書かれている」という状況を一文で導入',
+        '第2段落：利点を3点（①感情を整理できる、②出来事を振り返れる、③語学・表現力の向上）',
+        '第3段落：課題を3点（①忙しくて毎日書けない、②プライバシーへの不安、③モチベーションの低下）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'manage their emotions', alt: 'handle their feelings / cope with stress and anxiety' },
+        { original: 'reflect on their past experiences', alt: 'look back on what has happened / review their own growth' },
+        { original: 'improve language skills and creative thinking', alt: 'develop writing ability and imagination / enhance expressive skills' },
+        { original: 'gradually lose motivation', alt: 'find it hard to continue / run out of reasons to keep writing' },
+      ],
+      usefulPhrases: [
+        'helps manage emotions by ~ （～によって感情を管理するのに役立つ）',
+        'maintaining this habit is difficult due to ~ （～のため、この習慣を続けるのは難しい）',
+        'a lack of motivation can cause ~ （モチベーションの欠如が～を引き起こすことがある）',
+      ],
+    },
+    {
+      id: 'g2-26', label: 'オリジナル No.26', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Food Waste at Home', titleJa: '家庭での食品ロス',
+      passage: `Food waste has become a growing problem in many countries. Studies show that a large amount of the food people buy is never eaten and is simply thrown away. Much of this waste occurs in households, where food is often purchased in large quantities but not fully used before it goes bad.
+
+Reducing food waste at home brings several important benefits. Wasting less food saves money, as families can buy only what they need. It also lowers the environmental impact of food production, including greenhouse gas emissions from rotting food in landfills. Additionally, donating surplus food to food banks can help support people who are struggling to afford enough to eat.
+
+However, reducing food waste is not always easy. Many people find it difficult to plan meals carefully and shop only for what they need. Busy lifestyles often lead to impulse buying or forgetting what is already in the fridge. Furthermore, unclear expiry dates on packaging can make it hard for consumers to decide when food is no longer safe to eat.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Household food waste is a serious problem, as much of the food people purchase goes uneaten. Reducing waste saves money and lowers environmental damage such as greenhouse gas emissions. However, meal planning takes time and effort, busy lifestyles encourage impulse purchases, and confusing expiry labels make it hard for consumers to use food before it spoils.`,
+      sampleWordCount: 54,
+      structure: '①導入（家庭での食品ロスの深刻さ）→ ②削減のメリット（節約・環境負荷軽減・フードバンク支援）→ ③課題（計画の難しさ・衝動買い・消費期限の分かりにくさ）',
+      keyPoints: [
+        '第1段落：「家庭で大量の食品が廃棄されており深刻な問題になっている」と一文で導入',
+        '第2段落：利点を3点（①節約、②温室効果ガス削減、③余剰食品の寄付）',
+        '第3段落：課題を3点（①食事計画の難しさ、②衝動買い、③消費期限の分かりにくさ）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'purchased in large quantities but not fully used', alt: 'bought in bulk and left unused / overstocked and wasted' },
+        { original: 'lowers the environmental impact', alt: 'reduces the ecological footprint / decreases environmental damage' },
+        { original: 'surplus food to food banks', alt: 'leftover food to charities / excess produce to community organizations' },
+        { original: 'impulse buying or forgetting what is in the fridge', alt: 'unplanned purchases / failing to check existing stock' },
+      ],
+      usefulPhrases: [
+        'much of the food ~ goes uneaten （～の食品の多くが食べられずに終わる）',
+        'lowers environmental damage such as ~ （～などの環境ダメージを低減する）',
+        'make it hard for consumers to ~ （消費者が～するのを難しくする）',
+      ],
+    },
+    {
+      id: 'g2-27', label: 'オリジナル No.27', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Learning a Second Language', titleJa: '第二言語を学ぶこと',
+      passage: `In today's globalized world, more and more people are learning a second language. English is the most widely studied language in Japan, but many people also study Chinese, Spanish, and other languages for work or personal reasons.
+
+Learning a second language offers many advantages. It opens up opportunities for international communication and can lead to better career prospects. Studies also show that speaking more than one language can improve memory and problem-solving skills. Furthermore, learning another language gives people a deeper understanding of other cultures and ways of life.
+
+However, learning a second language is demanding. It requires a significant amount of time and consistent practice over many years before reaching a good level of ability. Many learners struggle to find enough time alongside work and other responsibilities. In addition, without regular opportunities to use the language with others, people often forget what they have learned.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Learning a second language is increasingly common in today's globalized world. It offers benefits such as broader career opportunities, improved cognitive abilities, and deeper cultural understanding. However, achieving fluency requires years of consistent practice, and busy people often struggle to find enough study time. Without regular use, language skills can quickly be forgotten.`,
+      sampleWordCount: 52,
+      structure: '①導入（グローバル化による第二言語学習の広がり）→ ②利点（国際コミュニケーション・キャリア・認知力・文化理解）→ ③課題（時間・練習量・使用機会の不足）',
+      keyPoints: [
+        '第1段落：「グローバル化で第二言語学習が広まっている」という状況を一文で導入',
+        '第2段落：利点を3点（①国際コミュニケーションとキャリアの向上、②認知機能の改善、③異文化理解）',
+        '第3段落：課題を2点（①流暢さに達するには多大な練習が必要、②使う機会がないと忘れてしまう）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'opens up opportunities for international communication', alt: 'enables cross-cultural exchange / broadens global networking' },
+        { original: 'improve memory and problem-solving skills', alt: 'enhance cognitive function / sharpen mental abilities' },
+        { original: 'significant amount of time and consistent practice', alt: 'considerable effort over many years / sustained dedication' },
+        { original: 'without regular opportunities to use the language', alt: 'in the absence of practice / without real-life exposure' },
+      ],
+      usefulPhrases: [
+        'offers benefits such as ~ （～などの利点をもたらす）',
+        'achieving fluency requires ~ （流暢さを身につけるには～が必要だ）',
+        'without regular use, ~ can quickly ~ （定期的に使わないと、～はすぐに～してしまう）',
+      ],
+    },
+    {
+      id: 'g2-28', label: 'オリジナル No.28', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Community Gardens', titleJa: '地域菜園',
+      passage: `Community gardens are shared spaces where local residents can grow vegetables, fruits, and flowers together. They have become increasingly popular in cities, where many people live in apartments without access to private gardens or outdoor growing spaces.
+
+Community gardens offer a range of benefits. They give city residents the chance to grow their own fresh food, which can reduce grocery expenses and encourage healthier eating habits. Working together in a shared garden also helps build stronger bonds between neighbors and creates a sense of community. In addition, green spaces in cities improve the environment by reducing heat and providing habitats for birds and insects.
+
+However, community gardens also face challenges. Finding and maintaining suitable land in crowded cities can be difficult and expensive. Disagreements may arise between gardeners over the use of shared space and resources. Furthermore, gardens require regular care, and if members do not contribute equally, some participants may feel that the burden is unfair.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Community gardens allow city residents to grow fresh food together, helping reduce grocery costs and encouraging healthier eating. They also strengthen neighborhood relationships and improve the urban environment. However, finding suitable land is difficult and costly, conflicts over shared space can arise, and unequal contributions among members may cause feelings of unfairness.`,
+      sampleWordCount: 51,
+      structure: '①導入（都市部での地域菜園の普及）→ ②利点（食費節約・健康的食習慣・地域のつながり・環境改善）→ ③課題（土地確保の困難・利用者間の対立・負担の不均等）',
+      keyPoints: [
+        '第1段落：「都市部でアパート暮らしの人が増える中、地域菜園が人気を集めている」と導入',
+        '第2段落：利点を3点（①食費節約と健康的食習慣、②近隣との絆・コミュニティ形成、③緑地による環境改善）',
+        '第3段落：課題を3点（①都市での土地確保の難しさ、②利用者間の対立、③負担の不平等さ）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'reduce grocery expenses', alt: 'cut food costs / lower household spending on food' },
+        { original: 'build stronger bonds between neighbors', alt: 'strengthen community ties / foster closer relationships' },
+        { original: 'providing habitats for birds and insects', alt: 'supporting local wildlife / creating ecological spaces' },
+        { original: 'do not contribute equally', alt: 'fail to share the workload / participate unevenly' },
+      ],
+      usefulPhrases: [
+        'helping reduce ~ and encouraging ~ （～を減らし、～を促進する）',
+        'conflicts over ~ can arise （～をめぐる対立が生じることがある）',
+        'unequal contributions may cause feelings of ~ （不均等な貢献が～という感情を生むことがある）',
+      ],
+    },
+    {
+      id: 'g2-29', label: 'オリジナル No.29', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Screen Time for Children', titleJa: '子どもとスクリーンタイム',
+      passage: `Children today spend more time than ever in front of screens, including smartphones, tablets, computers, and televisions. Many parents and health experts are concerned about the amount of time children spend on digital devices each day.
+
+Using screens can have some positive effects for children. Educational apps and online videos can help children learn new subjects and develop skills at their own pace. Digital devices also allow children to stay connected with friends and family members who live far away. In addition, some interactive games can improve problem-solving and creative thinking abilities.
+
+However, too much screen time can be harmful. Spending long hours on devices can hurt children's eyesight and disrupt their sleep, especially if they use screens late at night. Excessive screen use may also reduce the time children spend on physical activity, leading to health issues. Furthermore, young children who rely on screens may miss opportunities to develop social skills through face-to-face interaction.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `While educational apps and digital communication offer learning and connection benefits, excessive screen time poses significant risks for children. Prolonged device use can harm eyesight, disrupt sleep patterns, and reduce physical activity. Moreover, heavy reliance on screens may hinder the development of social skills that require direct face-to-face interaction with other people.`,
+      sampleWordCount: 51,
+      structure: '①導入（子どものスクリーンタイム増加と親・専門家の懸念）→ ②利点（学習・家族との繋がり・問題解決能力）→ ③課題（視力・睡眠・運動不足・社会性の発達阻害）',
+      keyPoints: [
+        '第1段落：「子どものデジタル機器利用が増え、親や専門家が懸念している」と一文で導入',
+        '第2段落：利点を3点（①教育アプリと動画での学習、②家族や友人との繋がり、③問題解決・創造的思考の向上）',
+        '第3段落：課題を3点（①視力悪化と睡眠障害、②運動不足と健康問題、③対面での社会性発達の機会損失）',
+        'While / However でコントラストを明確にする',
+      ],
+      paraphraseTips: [
+        { original: 'learn new subjects and develop skills at their own pace', alt: 'acquire knowledge independently / study at a self-directed speed' },
+        { original: 'hurt children\'s eyesight and disrupt their sleep', alt: 'damage vision and interfere with rest / cause eye strain and sleep problems' },
+        { original: 'reduce the time children spend on physical activity', alt: 'decrease exercise opportunities / limit outdoor play' },
+        { original: 'miss opportunities to develop social skills', alt: 'lose chances to practice communication / fail to build interpersonal abilities' },
+      ],
+      usefulPhrases: [
+        'poses significant risks for ~ （～に重大なリスクをもたらす）',
+        'prolonged device use can ~ （デジタル機器の長時間使用は～する可能性がある）',
+        'may hinder the development of ~ （～の発達を妨げるかもしれない）',
+      ],
+    },
+    {
+      id: 'g2-30', label: 'オリジナル No.30', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Bicycle Commuting', titleJa: '自転車通勤',
+      passage: `In recent years, more people in Japan and around the world have been choosing to commute by bicycle instead of using cars or public transport. Many cities are building new cycling paths and bike-sharing programs to encourage more people to ride bikes to work or school.
+
+Cycling to work or school offers several advantages. It is a cheap and environmentally friendly way to travel, as it produces no greenhouse gas emissions. Regular cycling also improves physical fitness and mental health, since exercise helps reduce stress and boost energy levels. Additionally, cyclists can often avoid traffic jams, making their commute faster in busy urban areas.
+
+However, bicycle commuting also has drawbacks. Bad weather, including heavy rain and extreme heat, can make cycling uncomfortable or even dangerous. Many cities still lack safe cycling infrastructure, which puts cyclists at risk on busy roads. Furthermore, people who live far from their workplace or school may find it physically demanding to cycle long distances every day.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Bicycle commuting is growing in popularity as an affordable and eco-friendly alternative to cars and public transport. It improves physical fitness, reduces stress, and helps commuters avoid traffic congestion. However, bad weather makes cycling uncomfortable, inadequate cycling infrastructure creates safety risks, and long distances can be physically demanding for daily commuters.`,
+      sampleWordCount: 50,
+      structure: '①導入（自転車通勤の増加と都市整備）→ ②利点（低コスト・環境配慮・健康促進・渋滞回避）→ ③課題（悪天候・インフラ不足・長距離の身体的負担）',
+      keyPoints: [
+        '第1段落：「自転車通勤が増え、各都市がサイクリング環境を整備している」と一文で導入',
+        '第2段落：利点を3点（①低コストで環境にやさしい、②体力・精神的健康の改善、③渋滞回避）',
+        '第3段落：課題を3点（①悪天候のリスク、②インフラ不足による安全問題、③長距離通勤の身体的負担）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'environmentally friendly way to travel', alt: 'eco-friendly transportation / sustainable commuting option' },
+        { original: 'improve physical fitness and mental health', alt: 'boost health and well-being / enhance physical and psychological wellness' },
+        { original: 'avoid traffic jams', alt: 'bypass congestion / navigate around heavy traffic' },
+        { original: 'lack safe cycling infrastructure', alt: 'have insufficient bike lanes / fail to provide secure cycling routes' },
+      ],
+      usefulPhrases: [
+        'is growing in popularity as ~ （～として人気が高まっている）',
+        'helps commuters avoid ~ （通勤者が～を避けるのに役立つ）',
+        'inadequate ~ creates safety risks （不十分な～が安全上のリスクを生む）',
+      ],
+    },
+    {
+      id: 'g2-31', label: 'オリジナル No.31', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Part-Time Jobs for Students', titleJa: '学生のアルバイト',
+      passage: `Many students in Japan work part-time jobs while they are in high school or university. Common part-time jobs for students include working at convenience stores, restaurants, and cafes. Working part-time is widely seen as an important way for young people to gain early work experience before graduation.
+
+Having a part-time job can benefit students in many ways. Earning their own money gives students financial independence and teaches them how to manage their finances responsibly. Working alongside adults also helps students develop communication skills and a sense of responsibility. Furthermore, the experience can give students a better understanding of how the working world operates.
+
+However, working too many hours can have a negative impact on students' studies. Students who spend too much time at work may not have enough energy or time to study, which can lead to lower academic performance. Some students may also feel pressured to take extra shifts, making it difficult to maintain a healthy balance between work and study.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Part-time jobs are popular among Japanese students and offer valuable benefits, including financial independence, improved communication skills, and practical work experience. However, working too many hours can reduce study time and lower academic performance. Students must therefore carefully balance their working hours with their studies to avoid negative effects on their education.`,
+      sampleWordCount: 50,
+      structure: '①導入（学生のアルバイトの普及）→ ②利点（経済的自立・コミュニケーション能力・社会経験）→ ③課題（勉強時間の減少・成績低下・ワークスタディバランスの難しさ）',
+      keyPoints: [
+        '第1段落：「日本の学生がアルバイトを通じて社会経験を積むことが一般的になっている」と導入',
+        '第2段落：利点を3点（①経済的自立とお金の管理能力、②コミュニケーション能力と責任感、③社会の仕組みの理解）',
+        '第3段落：課題を2点（①労働時間が多いと勉強時間・成績に影響する、②シフトのプレッシャーでバランスを崩しやすい）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'gain early work experience before graduation', alt: 'acquire practical skills ahead of entering the workforce / build a professional foundation early' },
+        { original: 'financial independence and how to manage finances', alt: 'economic self-sufficiency and budgeting skills / ability to handle money independently' },
+        { original: 'lower academic performance', alt: 'declining grades / reduced study effectiveness' },
+        { original: 'balance between work and study', alt: 'work-study equilibrium / managing both responsibilities effectively' },
+      ],
+      usefulPhrases: [
+        'offer valuable benefits, including ~ （～などの貴重な利点をもたらす）',
+        'working too many hours can ~ （働きすぎると～することがある）',
+        'must carefully balance ~ with ~ （～と～を慎重にバランスさせなければならない）',
+      ],
+    },
+    {
+      id: 'g2-32', label: 'オリジナル No.32', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Cultural Festivals', titleJa: '文化祭・地域の祭り',
+      passage: `Cultural festivals are important events held in communities around Japan and the world. They celebrate local traditions, food, music, and arts, and attract people of all ages. In Japan, festivals such as summer matsuri and harvest celebrations have been held for hundreds of years and remain deeply connected to local identity.
+
+Cultural festivals bring many benefits to communities. They help preserve local traditions and pass them down to younger generations. Festivals also bring people together and strengthen social bonds within communities. In addition, large festivals can attract tourists, which boosts the local economy by bringing business to shops, restaurants, and hotels.
+
+However, organizing and maintaining cultural festivals can be challenging. Many traditional festivals rely heavily on volunteers and local groups, and finding enough participants is becoming increasingly difficult as younger generations move to cities. Large festivals can also cause problems such as traffic congestion, noise, and litter, which may trouble residents who live nearby.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Cultural festivals preserve local traditions, strengthen community bonds, and attract tourists who boost the local economy. However, organizing festivals increasingly depends on volunteers, and declining participation among younger generations threatens their continuity. Large festivals can also cause problems for nearby residents, including traffic congestion, noise, and litter.`,
+      sampleWordCount: 48,
+      structure: '①導入（地域文化祭の役割と歴史的背景）→ ②利点（伝統継承・地域のつながり・観光客誘致と経済効果）→ ③課題（担い手不足・若者の流出・近隣への迷惑）',
+      keyPoints: [
+        '第1段落：「地域の文化祭は伝統と地域のアイデンティティを守る重要な行事である」と一文で導入',
+        '第2段落：利点を3点（①伝統の継承、②地域のきずなの強化、③観光客誘致と経済効果）',
+        '第3段落：課題を3点（①ボランティア依存と担い手不足、②若者の都市流出、③渋滞・騒音・ゴミ問題）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'pass them down to younger generations', alt: 'hand traditions on to the next generation / ensure cultural continuity' },
+        { original: 'strengthen social bonds within communities', alt: 'deepen community ties / foster a sense of belonging' },
+        { original: 'boost the local economy', alt: 'stimulate local business / generate economic benefits for the area' },
+        { original: 'finding enough participants is becoming increasingly difficult', alt: 'volunteer numbers are declining / participation is shrinking' },
+      ],
+      usefulPhrases: [
+        'attract tourists who boost the local economy （地域経済を活性化する観光客を引き付ける）',
+        'increasingly depends on ~ （ますます～に依存している）',
+        'declining participation ~ threatens ~ （参加者の減少が～を脅かしている）',
+      ],
+    },
+    {
+      id: 'g2-33', label: 'オリジナル No.33', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Housework and Gender Roles', titleJa: '家事とジェンダー役割',
+      passage: `In many households, the division of housework has traditionally been unequal, with women taking on a larger share of domestic responsibilities. However, attitudes toward gender roles are gradually changing, and more couples are choosing to share household tasks more equally than previous generations did.
+
+Sharing housework more equally offers several benefits. When both partners share responsibilities, neither person becomes overburdened, which reduces stress and improves overall wellbeing. It also allows both partners to pursue careers or personal goals more effectively. Furthermore, children who grow up watching equal sharing of tasks learn that domestic work is not limited to one gender.
+
+However, achieving equal sharing of housework is not always easy. Long working hours, particularly for many male workers in Japan, can make it difficult to contribute to household tasks after work. Traditional attitudes about gender roles remain strong in many communities. In addition, a lack of affordable childcare makes balancing work and home life challenging for both parents.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Although housework has traditionally fallen on women, equal sharing between partners reduces stress, supports career development for both, and teaches children that domestic tasks are not gender-specific. However, long working hours, persistent traditional attitudes, and insufficient childcare support make achieving this balance difficult for many families in Japan.`,
+      sampleWordCount: 49,
+      structure: '①導入（家事分担の不均衡と変化する意識）→ ②利点（ストレス軽減・キャリア両立・子どもへの教育効果）→ ③課題（長時間労働・伝統的な性別観・保育インフラ不足）',
+      keyPoints: [
+        '第1段落：「家事は女性が担うことが多かったが、意識が変わりつつある」と一文で導入',
+        '第2段落：利点を3点（①どちらも過重にならず精神的健康が向上、②キャリアと家庭の両立、③子どもが性別に関係なく家事をするものだと学ぶ）',
+        '第3段落：課題を3点（①長時間労働、②根強い伝統的な性別観、③手頃な保育施設の不足）',
+        'Although / However でコントラストを明確にする',
+      ],
+      paraphraseTips: [
+        { original: 'neither person becomes overburdened', alt: 'prevents one partner from bearing too much / avoids placing unfair pressure on one person' },
+        { original: 'pursue careers or personal goals', alt: 'focus on professional development / achieve individual ambitions' },
+        { original: 'domestic work is not limited to one gender', alt: 'household chores are not gender-specific / both men and women can share home responsibilities' },
+        { original: 'traditional attitudes about gender roles remain strong', alt: 'conventional gender expectations persist / old social norms are hard to change' },
+      ],
+      usefulPhrases: [
+        'equal sharing ~ reduces stress and supports ~ （平等な分担が～を減らし、～を支える）',
+        'persistent traditional attitudes make ~ difficult （根強い伝統的な考え方が～を難しくしている）',
+        'insufficient ~ makes balancing ~ challenging （不十分な～が～のバランスを取ることを難しくしている）',
+      ],
+    },
+    {
+      id: 'g2-34', label: 'オリジナル No.34', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Reading for Pleasure', titleJa: '読書の楽しみ',
+      passage: `Reading books for pleasure has been a popular hobby for many generations. However, in recent years, many people—especially young people—are spending less time reading books and more time on digital entertainment such as social media, streaming services, and video games.
+
+Reading for enjoyment offers a range of benefits. It helps expand vocabulary and improve writing skills, which can be useful in school and at work. Regular reading also develops imagination and empathy, as readers explore the thoughts and experiences of characters from different backgrounds and cultures. In addition, reading is a relaxing activity that can help reduce stress after a long and busy day.
+
+However, encouraging a reading habit is challenging in today's digital world. Many people find it difficult to concentrate on books when they are constantly distracted by notifications on their smartphones. Physical books can also be expensive, making them inaccessible to some people. Furthermore, some readers find it hard to choose because there are simply too many titles available.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Reading for pleasure improves vocabulary, writing ability, imagination, and empathy, while also serving as an effective way to relieve stress. Despite these benefits, digital distractions make it increasingly difficult for people to concentrate on books, and the high cost of physical books can limit access for some readers.`,
+      sampleWordCount: 47,
+      structure: '①導入（読書の人気と近年のデジタル娯楽への移行）→ ②利点（語彙・表現力・想像力・共感力・ストレス解消）→ ③課題（デジタル機器の誘惑・書籍のコスト・選択肢過多）',
+      keyPoints: [
+        '第1段落：「読書は長く親しまれてきた趣味だが、デジタル娯楽に取って代わられつつある」と導入',
+        '第2段落：利点を4点（①語彙・文章力の向上、②想像力・共感力の発達、③ストレス軽減）',
+        '第3段落：課題を3点（①スマートフォンの通知による集中困難、②書籍の価格が高い、③選択肢が多すぎて選べない）',
+        'Despite / However でコントラストを明確にする',
+      ],
+      paraphraseTips: [
+        { original: 'helps expand vocabulary and improve writing skills', alt: 'builds language ability / enhances expression and word knowledge' },
+        { original: 'develops imagination and empathy', alt: 'fosters creativity and understanding of others / nurtures perspective-taking' },
+        { original: 'concentrate on books', alt: 'focus on reading / sustain attention while reading' },
+        { original: 'making them inaccessible to some people', alt: 'putting them out of reach for lower-income readers / creating financial barriers to reading' },
+      ],
+      usefulPhrases: [
+        'serves as an effective way to ~ （～の効果的な手段となっている）',
+        'digital distractions make it difficult to ~ （デジタルの誘惑が～することを難しくしている）',
+        'the high cost of ~ can limit access for ~ （～の高い費用が～のアクセスを制限することがある）',
+      ],
+    },
+    {
+      id: 'g2-35', label: 'オリジナル No.35', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Noise Pollution', titleJa: '騒音公害',
+      passage: `Noise pollution is an increasing problem in many cities and towns around the world. It is caused by various sources, including traffic, construction work, industrial machinery, and entertainment venues. As urban populations grow, the levels of noise that people are exposed to on a daily basis continue to rise.
+
+Reducing noise pollution can significantly improve people's quality of life. Excessive noise has been linked to serious health problems, including hearing loss, high blood pressure, and sleep disorders. Quieter environments also make it easier for people to concentrate and communicate, benefiting both workers and students. Furthermore, reducing noise near parks and green areas improves the wellbeing of both people and local wildlife.
+
+However, addressing noise pollution is complicated. Many noise sources, such as traffic and construction, are essential for modern society and cannot simply be stopped. Installing sound barriers and redesigning roads can be very costly, requiring significant public investment. In addition, enforcing noise regulations fairly is often difficult, particularly in densely populated areas where residents have different schedules and expectations.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Growing urbanization has intensified noise pollution, which causes health problems including hearing loss, sleep disruption, and high blood pressure. Quieter environments improve concentration and benefit both people and wildlife. However, eliminating key noise sources such as traffic and construction is impractical, and implementing sound barriers requires costly public investment.`,
+      sampleWordCount: 49,
+      structure: '①導入（都市化による騒音公害の増大）→ ②削減の効果（健康改善・集中力向上・生態系保護）→ ③課題（騒音源の除去困難・対策コスト・規制の執行困難）',
+      keyPoints: [
+        '第1段落：「都市化が進み、交通・建設・娯楽など様々な騒音源が問題化している」と一文で導入',
+        '第2段落：削減効果を3点（①健康問題の改善、②集中・コミュニケーションへの好影響、③生態系保護）',
+        '第3段落：課題を3点（①交通・建設など不可欠な騒音源の除去困難、②防音設備の高コスト、③規制の公平な執行困難）',
+        'However で効果と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'linked to serious health problems', alt: 'associated with significant health risks / connected to physical and mental illness' },
+        { original: 'make it easier to concentrate and communicate', alt: 'improve focus and conversation / enhance productivity and dialogue' },
+        { original: 'cannot simply be stopped', alt: 'are difficult to eliminate / are necessary and cannot be removed' },
+        { original: 'enforcing noise regulations fairly', alt: 'implementing anti-noise rules consistently / applying sound standards equitably' },
+      ],
+      usefulPhrases: [
+        'has intensified ~ which causes ~ （～を悪化させており、それが～を引き起こす）',
+        'eliminating ~ is impractical （～を排除することは非現実的だ）',
+        'implementing ~ requires costly public investment （～の実施には多大な公的投資が必要だ）',
+      ],
+    },
+    {
+      id: 'g2-36', label: 'オリジナル No.36', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Saving Money', titleJa: '貯金の習慣',
+      passage: `Saving money is considered an important financial habit in many countries, including Japan. However, with rising living costs and wages that have not kept pace with inflation, many people—particularly young adults—find it increasingly difficult to save a portion of their income each month.
+
+Developing a savings habit brings several important benefits. Having savings provides a financial safety net in case of unexpected expenses such as medical bills or sudden job loss. Saving also allows people to plan for future goals, such as buying a home, traveling, or retiring comfortably. Moreover, building a savings plan helps people become more aware of their spending habits and develop financial discipline.
+
+However, saving money is not easy for everyone. People with low incomes or high fixed costs such as rent may have little money left over to set aside. The temptation to spend on entertainment, shopping, and dining can also make it difficult to stick to a savings plan. In addition, some people lack the financial knowledge needed to make effective saving decisions.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Saving money provides a financial safety net for emergencies, enables planning for future goals, and builds financial discipline. However, many people find it difficult to save due to low incomes, high living costs, and the temptation to spend. A lack of financial knowledge can also prevent people from developing effective saving strategies.`,
+      sampleWordCount: 50,
+      structure: '①導入（貯金の重要性と近年の困難さ）→ ②利点（緊急時の備え・将来の目標実現・支出意識の向上）→ ③課題（低収入・高生活費・消費誘惑・金融知識の不足）',
+      keyPoints: [
+        '第1段落：「貯金は重要な習慣だが、物価上昇や賃金停滞で若い世代が困難を感じている」と導入',
+        '第2段落：利点を3点（①緊急時の備え、②将来の目標（住宅購入・旅行・老後）に向けた計画、③お金の管理意識と規律の向上）',
+        '第3段落：課題を3点（①低収入や高い固定費、②消費誘惑、③金融知識の不足）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'provides a financial safety net', alt: 'serves as an economic buffer / creates a cushion against unexpected costs' },
+        { original: 'plan for future goals', alt: 'work toward long-term objectives / prepare for upcoming needs' },
+        { original: 'the temptation to spend on entertainment', alt: 'impulses to consume / difficulty resisting discretionary spending' },
+        { original: 'lack the financial knowledge', alt: 'are unfamiliar with money management / have limited understanding of personal finance' },
+      ],
+      usefulPhrases: [
+        'provides a financial safety net for ~ （～のための経済的な備えを提供する）',
+        'enables planning for ~ （～に向けた計画を可能にする）',
+        'a lack of ~ can prevent people from ~ （～の欠如が人々が～するのを妨げることがある）',
+      ],
+    },
+    {
+      id: 'g2-37', label: 'オリジナル No.37', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Helping Elderly Neighbors', titleJa: '高齢者の近隣支援',
+      passage: `As populations age in many developed countries, including Japan, more elderly people are living alone and may need support from those around them. Neighbors can play an important role in helping elderly residents stay safe, connected, and independent within their communities.
+
+Helping elderly neighbors offers meaningful benefits. Regular check-ins can provide companionship and help prevent loneliness, which is a serious problem among elderly people who live alone. Neighbors can also assist with practical tasks such as carrying groceries or noticing unusual changes that might require emergency help. Such community support can allow elderly people to continue living independently for longer periods.
+
+However, providing consistent support to elderly neighbors is not without difficulties. People who work long hours or have young children may not have the time or energy to regularly assist their neighbors. There can also be cultural barriers, as many elderly people feel uncomfortable accepting help or do not want to trouble others. In addition, residents who do not know their neighbors well may be unsure how to offer help without seeming intrusive.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Supporting elderly neighbors reduces loneliness, enables practical assistance, and helps older residents live independently for longer. However, busy working adults may lack the time to help consistently, and elderly people themselves may feel reluctant to accept support. Social distance between neighbors can also make it difficult to offer help in an appropriate way.`,
+      sampleWordCount: 50,
+      structure: '①導入（高齢化社会における一人暮らし高齢者の増加と近隣サポートの重要性）→ ②利点（孤独解消・実際的な支援・自立生活の延長）→ ③課題（時間的余裕・高齢者の遠慮・近隣関係の希薄さ）',
+      keyPoints: [
+        '第1段落：「高齢化が進む中、独居高齢者を地域で支えることが重要になっている」と一文で導入',
+        '第2段落：利点を3点（①孤独感の解消、②買い物や緊急時など実際的な支援、③自立した生活の継続）',
+        '第3段落：課題を3点（①多忙な人が継続的に支援するのが難しい、②高齢者が遠慮する文化的障壁、③近所づきあいの希薄さによる声かけのしにくさ）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'provide companionship and help prevent loneliness', alt: 'offer social connection and reduce isolation / combat feelings of being alone' },
+        { original: 'noticing unusual changes that might require emergency help', alt: 'detecting signs of distress / identifying when professional assistance is needed' },
+        { original: 'feel uncomfortable accepting help', alt: 'hesitate to rely on others / feel reluctant to be a burden' },
+        { original: 'without seeming intrusive', alt: 'without invading privacy / in a respectful and considerate manner' },
+      ],
+      usefulPhrases: [
+        'helps older residents live independently for longer （高齢者がより長く自立した生活を続けるのに役立つ）',
+        'may feel reluctant to ~ （～することをためらうかもしれない）',
+        'social distance between ~ makes it difficult to ~ （～間の社会的距離が～することを難しくしている）',
+      ],
+    },
+    {
+      id: 'g2-38', label: 'オリジナル No.38', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'School Lunch Programs', titleJa: '学校給食プログラム',
+      passage: `School lunch programs provide meals to students during the school day and are an important part of the Japanese education system. In Japan, school lunches, known as kyushoku, are carefully prepared with nutrition in mind and eaten together in the classroom, making mealtime both a social and educational experience.
+
+School lunch programs offer valuable benefits for children. They ensure that all students receive at least one nutritious meal per day, which supports physical growth and improves concentration during classes. Sharing meals together also encourages children to try a variety of foods and develop healthy eating habits from a young age. Furthermore, eating together as a class strengthens bonds among classmates and teachers.
+
+However, school lunch programs also face challenges. Running high-quality programs requires significant funding, which can be difficult for schools with limited budgets. Some students have food allergies or special dietary requirements that make it challenging to provide suitable meals for everyone. In addition, as more parents request organic or locally sourced ingredients, meeting these expectations while keeping costs low is increasingly difficult.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `School lunch programs ensure children receive nutritious meals, improving concentration and encouraging healthy eating habits, while shared mealtimes strengthen social bonds among classmates. However, these programs require significant funding, and accommodating food allergies and special dietary needs is challenging. Meeting growing parental expectations for high-quality ingredients also adds pressure on limited school budgets.`,
+      sampleWordCount: 53,
+      structure: '①導入（日本の学校給食の特徴）→ ②利点（栄養補給・健康的食習慣・クラスの結束）→ ③課題（費用・アレルギー対応・食材の質への期待）',
+      keyPoints: [
+        '第1段落：「日本の給食は栄養バランスを考えた内容で、教室で一緒に食べる教育的経験でもある」と導入',
+        '第2段落：利点を3点（①全生徒への栄養保障と集中力向上、②様々な食品への挑戦と健康的な食習慣、③クラスの絆の強化）',
+        '第3段落：課題を3点（①十分な予算確保の困難さ、②アレルギーや食事制限への対応、③保護者の高い食材への期待）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'ensure that all students receive a nutritious meal', alt: 'guarantee healthy food for every child / provide balanced nutrition to all pupils' },
+        { original: 'develop healthy eating habits from a young age', alt: 'build good dietary practices early in life / encourage balanced food choices in childhood' },
+        { original: 'food allergies or special dietary requirements', alt: 'dietary restrictions and intolerances / individual nutritional needs' },
+        { original: 'keeping costs low', alt: 'staying within budget / maintaining affordability' },
+      ],
+      usefulPhrases: [
+        'ensure children receive ~ （子どもたちが～を受けられるようにする）',
+        'accommodating ~ is challenging （～への対応は難しい）',
+        'adds pressure on limited ~ （限られた～にプレッシャーを加える）',
+      ],
+    },
   ],
   grade1: [
     {
@@ -1383,6 +1833,456 @@ Efforts to combat antibiotic resistance require coordinated action at global and
         'revolutionized medicine by ~ （～によって医学を革命的に進歩させた）',
         'is exacerbated by ~ （～によって悪化している）',
         'without legally binding ~ and financial penalties （法的拘束力のある～と財政的制裁なしでは）',
+      ],
+    },
+    {
+      id: 'g1-23', label: 'オリジナル No.23', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'The Future of Nuclear Fusion', titleJa: '核融合エネルギーの未来',
+      passage: `Nuclear fusion, the process that powers the sun, has long been regarded as the ultimate clean energy source. Unlike nuclear fission, which splits heavy atoms and generates radioactive waste, fusion combines light hydrogen isotopes to release vast amounts of energy with minimal long-term radiation hazards. For decades, scientists have pursued controlled fusion as a means of providing humanity with an essentially limitless, low-carbon energy supply, yet technical barriers have consistently placed practical fusion power plants roughly fifty years in the future.
+
+Recent breakthroughs have renewed optimism about the timeline for commercially viable fusion energy. In December 2022, the National Ignition Facility in the United States achieved fusion ignition for the first time, producing more energy from a fusion reaction than was delivered by the lasers used to initiate it. Private companies are also investing billions of dollars in compact reactor technologies, aiming to deliver electricity to the grid within the 2030s. Advocates argue that fusion's fuel—primarily deuterium extracted from seawater—is effectively inexhaustible, and that widespread deployment could dramatically reduce dependence on fossil fuels.
+
+Nevertheless, formidable engineering and economic obstacles remain. Constructing fusion reactors requires exotic materials capable of withstanding extreme temperatures far exceeding those at the core of the sun, and no material currently exists that can fulfill all necessary criteria at acceptable cost. Critics also warn that even if fusion becomes technically feasible, the enormous capital investment required may make electricity from fusion more expensive than solar and wind power, which continue to fall in price. Without sustained public funding and international collaboration, fusion's transition from scientific achievement to commercial reality may remain elusive.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Nuclear fusion has long been pursued as a clean, limitless energy source, offering vast energy output and minimal radioactive waste compared to fission. Recent breakthroughs, including the first recorded fusion ignition in the United States, alongside growing private investment in compact reactor technologies, have raised hopes that commercial fusion power may be achievable by the 2030s. However, enormous engineering challenges remain, as no material currently withstands the extreme conditions required at acceptable cost. Critics also warn that even successful fusion may produce electricity more expensively than increasingly affordable renewables, and without sustained international investment, commercial deployment could remain indefinitely delayed.`,
+      sampleWordCount: 103,
+      structure: '①現状（核融合の可能性と技術的壁）→ ②近年の進展（米国での点火達成・民間投資・2030年代の商用化期待）→ ③残る課題＋批判（材料科学の限界・コスト競争力・国際連携の必要性）',
+      keyPoints: [
+        '第1段落：「核融合は究極のクリーンエネルギーと見なされてきたが、技術的障壁が商用化を阻んできた」と一文でまとめる',
+        '第2段落：1文で「米国での点火成功と民間投資の増大が2030年代の商用化への期待を高めている」をまとめる',
+        '第3段落：英検1級では2文で「材料科学などの工学的課題」と「コスト面での再エネとの競争・国際協力の必要性」を論じる',
+        'Nevertheless / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'essentially limitless, low-carbon energy supply', alt: 'virtually inexhaustible clean power / sustainable energy without carbon emissions' },
+        { original: 'technically barriers have consistently placed fusion fifty years in the future', alt: 'practical fusion has remained perpetually out of reach / commercial deployment has been repeatedly delayed' },
+        { original: 'no material currently exists that can fulfill all necessary criteria', alt: 'suitable materials have yet to be developed / engineering demands exceed current material science' },
+        { original: 'fusion\'s transition from scientific achievement to commercial reality', alt: 'converting laboratory success into commercial deployment / making fusion viable beyond the research stage' },
+      ],
+      usefulPhrases: [
+        'has raised hopes that ~ may be achievable by ~ （～が～までに実現できるという期待を高めている）',
+        'enormous ~ challenges remain, as ~ （～の課題が残っており、なぜなら～）',
+        'without sustained ~ investment, ~ could remain indefinitely delayed （持続的な～への投資なしには、～は無期限に遅れ続ける可能性がある）',
+      ],
+    },
+    {
+      id: 'g1-24', label: 'オリジナル No.24', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Land Degradation and Food Security', titleJa: '土地劣化と食料安全保障',
+      passage: `Land degradation—the deterioration of soil quality caused by unsustainable farming, deforestation, and overgrazing—poses one of the most pressing threats to global food security. The United Nations estimates that approximately one third of the world's agricultural land has already been degraded, reducing the capacity of ecosystems to produce food for a global population projected to reach ten billion by 2050. The problem is particularly acute in sub-Saharan Africa and South Asia, where smallholder farmers depend on fragile soils that are rapidly losing their fertility.
+
+The mechanisms driving land degradation are interconnected with broader economic and social pressures. Intensive monoculture farming, which prioritizes short-term yields over long-term soil health, depletes essential nutrients and reduces microbial diversity in ways that are difficult to reverse. The removal of native vegetation destroys natural windbreaks and root systems that hold soil in place, making it vulnerable to erosion by wind and water. Urbanization adds further pressure by converting productive farmland into housing and infrastructure, compounding the loss of available growing area at a time when food demand is rising.
+
+International efforts to address land degradation have produced notable commitments but uneven results. The Bonn Challenge, a global initiative to restore 350 million hectares of degraded land by 2030, has attracted pledges from over seventy countries, yet actual implementation lags far behind stated targets. Restoration techniques such as agroforestry and cover cropping have demonstrated significant potential for rebuilding soil fertility, but adoption among smallholder farmers remains limited by lack of access to technical knowledge and financial support. Critics argue that without enforceable international standards and adequate funding directed toward vulnerable agricultural communities, voluntary pledges will fail to reverse global land loss at the required scale.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Land degradation threatens global food security as intensive farming, deforestation, and overgrazing deplete soil fertility, with roughly one third of agricultural land already affected and demand projected to rise as the global population approaches ten billion. Intensive monoculture, vegetation removal, and urban expansion compound the problem by destroying soil structure and converting productive land. International restoration initiatives such as the Bonn Challenge have attracted broad commitments, and techniques including agroforestry and cover cropping show proven potential. However, implementation falls far short of targets, as smallholder farmers lack access to knowledge and funding, and the absence of enforceable standards undermines the effectiveness of voluntary pledges.`,
+      sampleWordCount: 104,
+      structure: '①現状（土地劣化の規模と食料安全保障への脅威）→ ②劣化のメカニズム（単作農業・植生除去・都市化の複合的影響）→ ③国際的対応＋批判（ボン・チャレンジの進捗遅れ・拘束力のある基準の欠如）',
+      keyPoints: [
+        '第1段落：「土地劣化が農地の三分の一に影響し、2050年の100億人社会の食料安全保障を脅かしている」と一文でまとめる',
+        '第2段落：1文で「単作農業・植生除去・都市化が複合的に土壌構造を破壊し農地を失わせている」をまとめる',
+        '第3段落：英検1級では2文で「ボン・チャレンジなど国際的取り組みの内容と限界」と「拘束力のある基準・資金支援なしでは自発的誓約が不十分」を論じる',
+        'However / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'depletes essential nutrients and reduces microbial diversity', alt: 'exhausts soil minerals and diminishes biological vitality / strips the ground of the nutrients needed for future crops' },
+        { original: 'lags far behind stated targets', alt: 'falls significantly short of commitments / fails to match pledged ambitions' },
+        { original: 'voluntary pledges will fail to reverse global land loss', alt: 'non-binding commitments cannot halt soil degradation / self-imposed promises are insufficient to address the crisis' },
+        { original: 'adequate funding directed toward vulnerable agricultural communities', alt: 'sufficient financial support for at-risk farming populations / targeted investment in the most exposed regions' },
+      ],
+      usefulPhrases: [
+        'compound the problem by ~ （～によって問題をさらに悪化させる）',
+        'implementation falls far short of ~ （実施状況が～には大きく及ばない）',
+        'the absence of enforceable standards undermines ~ （拘束力のある基準の欠如が～を損なっている）',
+      ],
+    },
+    {
+      id: 'g1-25', label: 'オリジナル No.25', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Global Water Scarcity', titleJa: '世界的な水資源の枯渇',
+      passage: `Fresh water is among the most essential resources on Earth, yet its supply is finite and increasingly threatened by rising demand, pollution, and the accelerating effects of climate change. The United Nations warns that by 2050, approximately five billion people could face water shortages, with regions in the Middle East, North Africa, and South Asia potentially lacking reliable access to adequate clean water for drinking, agriculture, and sanitation. Glaciers that supply river systems across Asia and South America are retreating at unprecedented rates, undermining water supplies that billions depend upon for their survival.
+
+The drivers of water scarcity are intertwined with patterns of economic development and agricultural practice. Agriculture accounts for approximately seventy percent of global fresh water use, much of it lost through inefficient irrigation systems that allow water to evaporate before reaching crop roots. Industrial processes, including mining and manufacturing, consume vast quantities of water while frequently contaminating local sources with toxic chemicals. Rapid urbanization in developing nations places additional stress on already overtaxed municipal water systems, while failures to invest in water recycling and storage infrastructure have compounded existing shortfalls.
+
+Governments and international organizations have responded with a range of water management strategies, yet progress has been inconsistent. Drip irrigation technology and water pricing mechanisms that reflect the true cost of water have demonstrated effectiveness in reducing consumption, but widespread adoption requires political will and financial investment that many resource-constrained governments cannot provide. Transboundary water agreements, essential for rivers shared by multiple countries, remain notoriously difficult to negotiate. Critics contend that without treating water access as a legally recognized human right backed by binding obligations, the most vulnerable populations will continue to bear a disproportionate burden of scarcity.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Fresh water scarcity poses a critical global threat, with the United Nations projecting that five billion people may face shortages by 2050 as climate change accelerates glacier retreat and demand continues to grow. Agriculture consumes seventy percent of global fresh water, largely through inefficient irrigation, while industrial pollution and rapid urbanization further strain limited supplies. Governments have implemented responses such as drip irrigation and water pricing, and transboundary agreements attempt to manage shared resources. However, adoption of efficient technologies is constrained by political and financial barriers, and without binding international obligations that recognize water access as a human right, the most vulnerable communities remain disproportionately exposed.`,
+      sampleWordCount: 106,
+      structure: '①現状（水不足の規模・氷河後退・2050年の予測）→ ②水不足のメカニズム（農業・工業・都市化による過剰消費と汚染）→ ③政策対応＋批判（効率化技術・国境越え協定の限界・人権としての水アクセス）',
+      keyPoints: [
+        '第1段落：「気候変動と増大する需要により2050年には50億人が水不足に直面すると国連が警告している」と一文でまとめる',
+        '第2段落：1文で「農業・工業・都市化による水の過剰使用と汚染が供給不足を深刻化させている」をまとめる',
+        '第3段落：英検1級では2文で「点滴灌漑や水の価格設定などの対応策と普及の障壁」と「拘束力のある人権的アプローチの必要性」を論じる',
+        'However / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'lost through inefficient irrigation systems', alt: 'wasted by outdated watering methods / evaporated due to poorly designed distribution' },
+        { original: 'overtaxed municipal water systems', alt: 'overburdened public infrastructure / water networks strained beyond capacity' },
+        { original: 'constrained by political and financial barriers', alt: 'limited by lack of political commitment and resources / restricted by governance failures and funding gaps' },
+        { original: 'bear a disproportionate burden of scarcity', alt: 'suffer the most from water shortages / face the heaviest consequences of limited supply' },
+      ],
+      usefulPhrases: [
+        'projecting that ~ may face ~ by ~ （～年までに～が～に直面する可能性があると予測している）',
+        'further strain limited ~ （限られた～にさらなる負担をかける）',
+        'without binding ~ that recognize ~ as ~ （～を～として認める拘束力のある～なしには）',
+      ],
+    },
+    {
+      id: 'g1-26', label: 'オリジナル No.26', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Sovereign Wealth Funds', titleJa: '政府系ファンド',
+      passage: `Sovereign wealth funds are state-owned investment vehicles funded primarily by revenues from commodity exports, particularly oil and natural gas, or from foreign currency reserves accumulated through sustained trade surpluses. Norway's Government Pension Fund Global, the world's largest with assets exceeding one trillion dollars, and the Abu Dhabi Investment Authority exemplify how resource-rich nations have sought to convert finite natural wealth into diversified financial portfolios capable of generating returns long after underlying resources have been exhausted. As global energy transitions accelerate, the strategic importance of these funds has intensified considerably.
+
+Sovereign wealth funds serve multiple economic and political functions that extend beyond simple wealth preservation. By investing in a broad range of equities, bonds, real estate, and infrastructure projects worldwide, they allow governments to smooth public spending over business cycles, shielding domestic economies from commodity price volatility—a phenomenon known as the resource curse. Some funds, notably Singapore's Temasek, have additionally been deployed as instruments of industrial policy, channeling capital into technology, healthcare, and clean energy to accelerate structural economic transformation. This dual mandate of financial return and strategic investment raises complex questions about the boundaries between state capitalism and free-market principles.
+
+The growing influence of sovereign wealth funds has attracted scrutiny from host countries and international regulators who question whether politically motivated investment decisions may undermine market integrity or national security. Several Western nations have introduced screening mechanisms to review foreign investments in critical infrastructure, reflecting concerns that state-controlled capital could acquire sensitive technology or exert geopolitical leverage. Proponents counter that sovereign wealth funds generally operate as passive, return-seeking investors rather than agents of state interference, and that restricting their market access would reduce global liquidity. Resolving this tension requires more transparent governance frameworks and clearer international norms, which currently remain absent from most multilateral financial agreements.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Sovereign wealth funds, state-owned investment vehicles funded by commodity revenues or trade surpluses, serve to preserve national wealth beyond resource exhaustion and cushion economies against commodity price volatility. Beyond wealth management, funds such as Singapore's Temasek channel capital strategically into technology and clean energy to accelerate economic transformation. However, their growing influence has prompted scrutiny from host countries concerned that politically motivated investments may compromise national security or market integrity, leading to investment screening mechanisms. Proponents argue these funds operate as passive investors, yet the absence of clear international governance standards leaves the tension between financial openness and security concerns unresolved.`,
+      sampleWordCount: 106,
+      structure: '①現状（政府系ファンドの定義・規模・戦略的重要性の高まり）→ ②機能（資源呪縛の回避・産業政策への活用・国家資本主義との境界問題）→ ③懸念＋反論（安全保障審査・透明性欠如・国際規範の不在）',
+      keyPoints: [
+        '第1段落：「資源収入や貿易黒字を原資とする政府系ファンドは、有限な天然資源を長期的な金融資産に転換する手段として拡大してきた」と一文でまとめる',
+        '第2段落：1文で「商品価格変動の緩衝装置としての機能と、テマセクのように産業政策ツールとして技術・クリーンエネルギーに投資する役割」をまとめる',
+        '第3段落：英検1級では2文で「安全保障上の懸念から導入された外資審査制度」と「受動的投資家だという反論・透明性ある国際規範の欠如」を論じる',
+        'yet / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'convert finite natural wealth into diversified financial portfolios', alt: 'transform depletable resources into long-lasting investment assets / reinvest commodity windfalls into diverse global markets' },
+        { original: 'shielding domestic economies from commodity price volatility', alt: 'buffering national finances against price shocks / protecting government revenue from market fluctuations' },
+        { original: 'acquire sensitive technology or exert geopolitical leverage', alt: 'gain strategic capabilities or political influence / exploit investments for non-commercial state objectives' },
+        { original: 'transparent governance frameworks and clearer international norms', alt: 'open accountability standards and shared regulatory rules / explicit multilateral oversight mechanisms' },
+      ],
+      usefulPhrases: [
+        'serve to ~ beyond ~ （～を超えて～するために機能する）',
+        'has prompted scrutiny from ~ concerned that ~ （～が～を懸念して精査を求めてきた）',
+        'the absence of ~ leaves ~ unresolved （～の欠如が～を未解決のままにしている）',
+      ],
+    },
+    {
+      id: 'g1-27', label: 'オリジナル No.27', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'The Digital Divide', titleJa: 'デジタルデバイド',
+      passage: `The digital divide refers to the unequal distribution of access to digital technologies, including the internet, smartphones, and computers, between different populations. While approximately two thirds of the world's population now has internet access, the remaining third—concentrated in sub-Saharan Africa, South Asia, and rural communities worldwide—remains substantially disconnected from the digital economy. Within wealthy nations, significant disparities persist along lines of age, income, and geography, with rural and low-income households consistently lagging behind in both device access and the digital literacy needed to use technology effectively.
+
+The consequences of digital exclusion are increasingly severe as governments, employers, healthcare providers, and educational institutions migrate core services to online platforms. The COVID-19 pandemic exposed these inequalities starkly, as students without internet access were unable to participate in remote learning, while workers in digitally connected sectors maintained productivity during lockdowns while those in offline occupations faced disproportionate economic hardship. Access to telemedicine, electronic government services, and digital banking creates compounding advantages for the connected that are systematically denied to excluded populations, deepening existing social and economic stratification.
+
+Efforts to bridge the digital divide span public, private, and international initiatives, with mixed results. Governments in some developing nations have invested in public wireless networks and subsidized device programs, while technology companies have launched satellite internet projects aimed at connecting remote areas. However, hardware provision and connectivity alone are insufficient without accompanying investment in digital literacy education, which remains chronically underfunded in many low-income communities. Critics emphasize that unless programs address structural causes of inequality—including poverty, inadequate infrastructure, and language barriers in technology interfaces—expanding connectivity will primarily benefit those already possessing the resources to exploit it.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The digital divide, the gap between those with and without access to digital technologies, remains significant, with one third of the global population disconnected and disparities persisting within developed nations along income, age, and geographic lines. Digital exclusion carries serious consequences, as critical services in education, employment, healthcare, and government increasingly move online, deepening existing inequalities as demonstrated by the COVID-19 pandemic's impact on remote learning. Governments and technology companies have launched connectivity programs and satellite internet projects. Nevertheless, critics argue that providing hardware and access is insufficient without tackling underlying poverty and investing in digital literacy education, which remains underfunded in the communities that need it most.`,
+      sampleWordCount: 108,
+      structure: '①現状（デジタルデバイドの規模・国内外の格差）→ ②排除の影響（コロナ禍での教育・雇用・医療格差の顕在化・不平等の深刻化）→ ③対応策＋批判（接続インフラ提供の限界・構造的原因への対処の必要性）',
+      keyPoints: [
+        '第1段落：「インターネット未接続者が世界人口の3分の1を占め、先進国内でも所得・年齢・地域格差が残る」と一文でまとめる',
+        '第2段落：1文で「コロナ禍でデジタル排除が教育・雇用・医療サービスへのアクセス格差を拡大させた」をまとめる',
+        '第3段落：英検1級では2文で「政府・民間のインフラ整備の取り組み」と「接続環境だけでなく貧困・リテラシー教育など構造的問題への対処が必要」を論じる',
+        'Nevertheless / unless でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'disparities persisting along lines of age, income, and geography', alt: 'gaps remaining across demographic and geographic boundaries / unequal access divided by socioeconomic factors' },
+        { original: 'compounding advantages for the connected', alt: 'cumulative benefits for digitally included populations / reinforcing advantages for those with technology access' },
+        { original: 'chronically underfunded in many low-income communities', alt: 'persistently under-resourced in poorer areas / receiving insufficient investment in disadvantaged communities' },
+        { original: 'language barriers in technology interfaces', alt: 'linguistic obstacles in digital platforms / exclusion caused by non-native language requirements' },
+      ],
+      usefulPhrases: [
+        'as demonstrated by ~ （～によって示されているように）',
+        'providing ~ is insufficient without ~ （～を提供するだけでは～なしには不十分だ）',
+        'unless programs address ~ expanding ~ will primarily benefit ~ （～に取り組まない限り、～の拡大は主に～を利するだけだ）',
+      ],
+    },
+    {
+      id: 'g1-28', label: 'オリジナル No.28', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Income Inequality and Social Mobility', titleJa: '所得格差と社会的流動性',
+      passage: `Income inequality has risen sharply across much of the developed and developing world since the 1980s, driven by the globalization of supply chains, skill-biased technological change, and the declining bargaining power of organized labor. In the United States, the top one percent of earners now capture more than twenty percent of national income, a concentration not seen since the 1920s, while similar trends have emerged in the United Kingdom, Germany, and across East Asia. Rising wealth inequality—where returns to capital have consistently outpaced those to labor—has deepened these divides, as ownership of financial assets and real estate is itself highly concentrated among those already wealthy.
+
+The relationship between income inequality and social mobility is particularly significant, as high levels of inequality tend to reduce the degree to which children can expect to move up or down the economic ladder relative to their parents—a pattern economists describe as the Great Gatsby Curve. Children born into low-income households face systematic disadvantages in access to quality education, healthcare, and social networks that compound over time and severely constrain lifetime earning potential. Research consistently demonstrates that investment in early childhood education and progressive taxation can narrow these gaps, yet political resistance from those who benefit from the status quo limits the scope of redistributive interventions in many countries.
+
+Policymakers have deployed a variety of strategies to address inequality, including minimum wage increases, earned income tax credits, and investment in public education. Several Nordic countries have achieved relatively low inequality through comprehensive social insurance and strong labor institutions, though critics argue these conditions may not be replicable elsewhere. Concerns have also emerged that automation and artificial intelligence could disproportionately displace low-income workers, potentially reversing recent gains unless governments proactively retrain workers and expand the social safety net. Without structural reforms addressing root causes, improvements in social mobility risk remaining superficial and temporary.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Income inequality has widened dramatically since the 1980s, driven by globalization, technological change, and weakened labor bargaining power, with the wealthiest individuals capturing a growing share of national income. High inequality suppresses social mobility through the Great Gatsby Curve, as low-income children face compounding disadvantages in education, healthcare, and social networks that limit lifetime prospects. Policy responses including minimum wages, tax credits, and public education investment have shown results, and Nordic countries demonstrate that comprehensive social insurance can reduce inequality effectively. However, automation threatens to deepen disparities further, and without structural reforms addressing root causes, mobility gains risk remaining shallow and fragile.`,
+      sampleWordCount: 102,
+      structure: '①現状（1980年代以降の格差拡大とその要因）→ ②格差と社会的流動性の関係（グレート・ギャツビー曲線・教育・医療・社会ネットワークの不平等）→ ③政策対応＋批判（北欧モデルの限界・自動化による格差拡大リスク・構造改革の必要性）',
+      keyPoints: [
+        '第1段落：「グローバル化・技術変化・労働組合の弱体化が1980年代以降の所得格差拡大を牽引し、資産格差がさらに格差を深めている」と一文でまとめる',
+        '第2段落：1文で「グレート・ギャツビー曲線が示すように、高い格差は教育・医療・人的ネットワーク格差を通じて社会的流動性を抑制する」をまとめる',
+        '第3段落：英検1級では2文で「最低賃金・税控除・教育投資などの政策効果と北欧モデルの成果」と「自動化による格差拡大リスクと構造改革なき改善の脆弱性」を論じる',
+        'yet / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'skill-biased technological change', alt: 'automation that benefits high-skilled workers disproportionately / technology that widens the gap between educated and unskilled labor' },
+        { original: 'compound over time and constrain lifetime earning potential', alt: 'accumulate and restrict long-term income prospects / build upon each other to limit economic advancement' },
+        { original: 'political resistance from those who benefit from the status quo', alt: 'opposition from privileged groups protecting existing advantages / pushback from established interests' },
+        { original: 'mobility gains risk remaining shallow and fragile', alt: 'improvements in social advancement may prove unsustainable / progress could be reversed without deep structural change' },
+      ],
+      usefulPhrases: [
+        'suppresses ~ through ~ （～を通じて～を抑制する）',
+        'demonstrate that ~ can ~ effectively （～が効果的に～できることを示している）',
+        'without structural reforms addressing ~ , ~ risk ~ （～に取り組む構造改革なしには、～は～のリスクがある）',
+      ],
+    },
+    {
+      id: 'g1-29', label: 'オリジナル No.29', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Precision Agriculture', titleJa: '精密農業',
+      passage: `Precision agriculture refers to the use of advanced technologies—including GPS-guided machinery, satellite imagery, drones, and data analytics—to monitor and manage agricultural inputs such as water, fertilizers, and pesticides at the level of individual plants or small field zones, rather than treating entire fields as uniform units. This approach, which has evolved rapidly as sensor costs have fallen and computing power has increased, promises to raise crop yields substantially while reducing the environmental footprint of farming. Advocates argue that precision agriculture is an essential component of the transition toward a sustainable food system capable of feeding a growing global population.
+
+The benefits of precision agriculture are well documented in trials and commercial deployments across North America, Europe, and East Asia. Variable-rate application technology allows farmers to apply inputs only where soil or crop conditions indicate they are needed, reducing fertilizer use by up to thirty percent and cutting pesticide runoff that contaminates waterways. Yield mapping systems enable farmers to identify and address underperforming zones, while predictive analytics powered by machine learning can anticipate pest outbreaks and moisture stress before visible damage occurs. These efficiency gains translate into cost savings for farmers and reduced pressure on land and water resources, contributing to more resilient agricultural systems.
+
+Despite its promise, widespread adoption of precision agriculture faces significant barriers, particularly in developing nations and among smallholder farmers who produce the majority of food in the Global South. The upfront capital costs of precision equipment are prohibitive for small operations, and reliable internet connectivity—essential for transmitting sensor data to cloud platforms—is absent in many rural areas. Questions have also been raised about data ownership, as the aggregated crop and soil data collected by technology platforms may be acquired by large agribusiness corporations, potentially weakening the negotiating position of individual farmers. Without targeted subsidies, extension services, and open-source technology development, precision agriculture risks exacerbating the gap between large commercial farms and smallholder producers.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Precision agriculture uses GPS, drones, sensors, and data analytics to optimize crop inputs at a fine spatial scale, offering substantial benefits including reduced fertilizer and pesticide use, improved yields, and greater resilience to climate-related risks. Commercial deployments have demonstrated efficiency gains that lower costs for farmers and reduce environmental contamination. However, widespread adoption is constrained by high equipment costs and inadequate rural internet infrastructure, particularly in developing nations where smallholder farmers predominate. Additionally, concerns over data ownership risk allowing agribusiness corporations to acquire sensitive crop information, potentially disadvantaging individual farmers. Without subsidies and open-source tools, precision agriculture may deepen inequalities between large-scale and smallholder producers.`,
+      sampleWordCount: 107,
+      structure: '①現状（精密農業の定義・技術・普及の背景）→ ②効果（投入量削減・収量マッピング・機械学習による予測・コスト削減）→ ③普及の障壁＋批判（資本コスト・農村インターネット・データ所有権問題）',
+      keyPoints: [
+        '第1段落：「精密農業はGPS・ドローン・データ分析で圃場単位の管理を実現し、持続可能な食料システムへの転換に不可欠とされる」と一文でまとめる',
+        '第2段落：1文で「可変施肥・収量マッピング・機械学習による予測分析が農業の効率を高め環境負荷を低減することを商業展開で実証している」をまとめる',
+        '第3段落：英検1級では2文で「資本コスト・農村インターネット不足による途上国・零細農家への普及障壁」と「データ所有権問題と補助金・オープンソース技術の必要性」を論じる',
+        'However / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'prohibitive for small operations', alt: 'unaffordable for smallholder farms / beyond the financial reach of family-scale producers' },
+        { original: 'aggregate crop and soil data collected by technology platforms', alt: 'consolidated agricultural information gathered by tech companies / combined farming data accumulated by digital service providers' },
+        { original: 'weakening the negotiating position of individual farmers', alt: 'undermining farmers\' bargaining power / reducing producers\' leverage with buyers and suppliers' },
+        { original: 'exacerbating the gap between large commercial farms and smallholders', alt: 'deepening the productivity divide between industrial and small-scale agriculture / widening inequality within the farming sector' },
+      ],
+      usefulPhrases: [
+        'offering substantial benefits including ~ （～などの多大な利点をもたらしている）',
+        'adoption is constrained by ~ particularly in ~ （普及は特に～において～によって制限されている）',
+        'without ~ , ~ may deepen inequalities between ~ （～なしには、～が～間の格差を深める可能性がある）',
+      ],
+    },
+    {
+      id: 'g1-30', label: 'オリジナル No.30', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Child Labor in Global Supply Chains', titleJa: 'グローバルサプライチェーンにおける児童労働',
+      passage: `Despite significant progress over the past two decades, child labor remains a pervasive problem, with the International Labour Organization estimating that approximately 160 million children worldwide are engaged in work that denies them education, endangers their health, or exposes them to psychological harm. The vast majority are concentrated in agriculture—particularly in the cocoa, coffee, tobacco, and cotton sectors—where children perform hazardous tasks including carrying heavy loads, applying pesticides, and working in extreme heat. Supply chains connecting these agricultural regions to consumer goods markets in wealthy nations are long, complex, and frequently opaque, making it difficult to trace the origins of individual components or ingredients.
+
+The persistence of child labor reflects deep structural inequalities in global economic systems. In households where adult incomes are insufficient to cover basic needs, children's earnings are perceived as a necessity rather than a choice, particularly where social protection systems are weak or absent. Competitive pressure to minimize production costs creates incentives for buyers and intermediaries to prioritize price over compliance with labor standards, while the proliferation of subcontracting layers makes accountability increasingly difficult to establish. Research consistently shows that children who work rather than attend school face lifetime earnings penalties and are more likely to remain trapped in intergenerational cycles of poverty.
+
+Efforts to eliminate child labor range from corporate due diligence programs and certification schemes to legislation requiring supply chain transparency. The introduction of mandatory supply chain reporting laws in Germany and the European Union represents a significant step toward binding accountability for global buyers. However, critics point out that compliance audits are often superficial, conducted by firms with financial incentives to issue favorable assessments, and that without robust worker voice mechanisms in producing countries, violations are systematically underreported. Effective elimination ultimately requires not only enforcement but also investment in social protection and education that addresses the economic desperation driving family reliance on children's labor.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Child labor affects approximately 160 million children globally, concentrated in agricultural supply chains for products including cocoa, coffee, and tobacco, where complex and opaque sourcing makes accountability difficult. Its persistence reflects structural poverty and insufficient social protection that make children's income contributions appear necessary for household survival. Regulatory responses have advanced, with mandatory supply chain transparency laws in Germany and the European Union creating binding obligations for global buyers. Critics argue, however, that audits are frequently superficial and worker voice in producing countries is systematically suppressed. Sustainable elimination requires combining enforceable standards with investment in social protection, education, and adequate income support for vulnerable families.`,
+      sampleWordCount: 109,
+      structure: '①現状（児童労働の規模・農業サプライチェーンへの集中・不透明な調達構造）→ ②根本原因（構造的貧困・社会保護の欠如・価格競争優先のサプライチェーン構造）→ ③規制対応＋批判（EUの透明性法・監査の形式化・実効的排除のための複合的アプローチ）',
+      keyPoints: [
+        '第1段落：「1億6000万人の子どもが農業を中心とした危険な労働に従事しており、複雑で不透明なサプライチェーンが説明責任を困難にしている」と一文でまとめる',
+        '第2段落：1文で「成人賃金の不足・社会保護の欠如・コスト削減圧力という構造的要因が児童労働の継続を生み出している」をまとめる',
+        '第3段落：英検1級では2文で「ドイツ・EUの強制サプライチェーン透明性法という前進」と「形式的監査・労働者の声の欠如という限界・社会保護・教育への投資の必要性」を論じる',
+        'however / ultimately requires でコントラストと包括的解決策の必要性を示す',
+      ],
+      paraphraseTips: [
+        { original: 'systematic inequalities in global economic systems', alt: 'structural imbalances in international trade / entrenched disparities in the global economy' },
+        { original: 'proliferation of subcontracting layers', alt: 'expansion of multi-tiered supply chain networks / increasing use of indirect production arrangements' },
+        { original: 'audits are often superficial', alt: 'compliance checks are frequently inadequate / inspections fail to uncover genuine violations' },
+        { original: 'economic desperation driving family reliance', alt: 'financial hardship compelling households to depend on / poverty forcing families to use' },
+      ],
+      usefulPhrases: [
+        'its persistence reflects ~ that make ~ appear necessary （その継続は～を必要に見せる～を反映している）',
+        'creating binding obligations for ~ （～に対する拘束力のある義務を生み出す）',
+        'requires combining ~ with investment in ~ （～と～への投資を組み合わせることを必要とする）',
+      ],
+    },
+    {
+      id: 'g1-31', label: 'オリジナル No.31', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'The Gig Economy', titleJa: 'ギグエコノミー',
+      passage: `The gig economy, characterized by the proliferation of short-term, on-demand work arrangements mediated by digital platforms such as Uber, DoorDash, and Fiverr, has fundamentally altered the structure of labor markets in many developed economies over the past decade. Millions of workers worldwide now earn income as independent contractors rather than salaried employees, performing tasks ranging from ride-hailing and food delivery to freelance software development. Proponents argue that gig platforms offer workers unprecedented flexibility to set their own hours and manage multiple income streams, while enabling consumers to access services at lower costs and greater convenience.
+
+The expansion of gig work has generated measurable economic benefits alongside significant labor market disruptions. Platform economics allow companies to scale rapidly with minimal fixed labor costs, generating returns for shareholders and reducing prices for consumers. For individuals who value schedule autonomy—including students, caregivers, and workers supplementing primary incomes—gig arrangements can provide accessible entry points into the labor market without the commitment of traditional employment. Nevertheless, independent contractor status typically excludes gig workers from employment benefits that salaried employees take for granted, including paid sick leave, unemployment insurance, workers' compensation, and employer pension contributions.
+
+The legal status of gig workers has become one of the defining employment law controversies of the twenty-first century. In 2021, the United Kingdom Supreme Court ruled that Uber drivers are workers entitled to minimum wage guarantees and holiday pay, and several other jurisdictions have moved to reclassify gig workers with expanded protections. Platform companies have vigorously opposed these measures, arguing that reclassification would undermine the flexible business model and paradoxically reduce work opportunities. Critics counter that genuine flexibility and adequate worker protections are not mutually exclusive, and that without regulatory intervention, the gig economy risks institutionalizing a two-tier labor market in which a growing class of workers lacks the social protection full employment once guaranteed.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The gig economy, characterized by platform-mediated contract work through companies such as Uber and DoorDash, has grown rapidly, offering workers scheduling flexibility and providing consumers with convenient, lower-cost services. Economic benefits include scalable platform growth, reduced consumer prices, and accessible income opportunities for students and caregivers. However, independent contractor classification systematically excludes gig workers from employment benefits such as sick pay, unemployment insurance, and pension contributions. Legal battles over worker reclassification are intensifying, with courts in several jurisdictions granting expanded protections, while platform companies argue this threatens their flexible model. Critics maintain that flexibility and adequate labor protections can coexist, and that without regulation, a two-tier labor market will deepen.`,
+      sampleWordCount: 110,
+      structure: '①現状（ギグエコノミーの拡大とプラットフォーム労働の特徴）→ ②経済的恩恵と社会的影響（コスト削減・柔軟性の価値 vs 社会保障からの排除）→ ③法的争点＋批判（再分類を巡る訴訟・プラットフォーム企業の反論・規制なき二層化リスク）',
+      keyPoints: [
+        '第1段落：「ギグエコノミーはデジタルプラットフォームを通じた短期・オンデマンドの契約労働で労働市場を大きく変えた」と一文でまとめる',
+        '第2段落：1文で「企業は低い固定コストで拡張でき消費者は利便性を得る一方、独立契約者として有給休暇・失業保険・年金などの社会保障から排除される」をまとめる',
+        '第3段落：英検1級では2文で「英国最高裁判決など各国での再分類の動きとプラットフォーム企業の反論」と「柔軟性と労働保護の両立可能性・規制なき二層化市場の固定化リスク」を論じる',
+        'however / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'on-demand work arrangements mediated by digital platforms', alt: 'app-based contract labor facilitated by technology companies / short-term jobs coordinated through digital intermediaries' },
+        { original: 'excludes gig workers from employment benefits', alt: 'denies platform workers standard job protections / prevents independent contractors from accessing workplace entitlements' },
+        { original: 'institutionalizing a two-tier labor market', alt: 'cementing an unequal workforce structure / permanently dividing workers into protected and unprotected categories' },
+        { original: 'flexibility and adequate worker protections are not mutually exclusive', alt: 'scheduling freedom and labor rights can coexist / worker autonomy does not preclude basic protections' },
+      ],
+      usefulPhrases: [
+        'offering ~ while enabling consumers to ~ （～を提供しながら消費者が～できるようにする）',
+        'systematically excludes ~ from ~ （～から～を組織的に排除する）',
+        'without regulation, ~ risks ~ （規制なしには、～は～のリスクがある）',
+      ],
+    },
+    {
+      id: 'g1-32', label: 'オリジナル No.32', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Vaccine Hesitancy', titleJa: 'ワクチン忌避',
+      passage: `Vaccine hesitancy—defined by the World Health Organization as the reluctance or refusal to vaccinate despite the availability of vaccines—has been identified as one of the top ten global health threats. While vaccines have been responsible for eliminating or drastically reducing diseases including smallpox and measles, declining confidence in vaccination programs in many wealthy nations has created pockets of under-immunized populations large enough to undermine herd immunity, creating conditions for the resurgence of previously controlled diseases. The COVID-19 pandemic dramatically amplified hesitancy debates by compressing vaccine development from years to months, intensifying public scrutiny of regulatory processes and pharmaceutical industry practices.
+
+The drivers of vaccine hesitancy are heterogeneous and cannot be attributed to a single cause. Misinformation and conspiracy theories spread through social media have created persistent false beliefs about vaccine safety that are resistant to correction through factual rebuttal alone. Structural mistrust rooted in histories of medical experimentation on marginalized communities has generated legitimate skepticism among specific demographic groups that epidemiologists must address sensitively. Religious and philosophical objections also contribute to non-compliance in certain communities, reflecting a broader tension between individual liberty and collective public health obligations.
+
+Public health authorities have responded with communication strategies and policy measures designed to improve vaccine uptake, with varying degrees of success. Positive incentive programs, community engagement through trusted local health workers, and transparent risk communication have improved vaccination rates in some contexts, while mandatory vaccination policies in France and Australia have achieved high uptake but generated political backlash and legal challenges. Researchers emphasize that heavy-handed mandates risk entrenching resistance among hesitant populations and undermining long-term trust in health authorities. A nuanced approach that acknowledges legitimate concerns and builds genuine relationships between authorities and communities is considered most likely to produce sustainable improvements in vaccine confidence.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Vaccine hesitancy poses a significant public health threat, as declining confidence in immunization has allowed preventable diseases to resurge by eroding herd immunity, a problem intensified by COVID-19's compressed development timeline and widespread misinformation. Its causes include social media conspiracy theories, historical medical abuses that fuel distrust in marginalized communities, and religious objections, making single-strategy responses insufficient. Health authorities have deployed positive incentives, community engagement, and in some countries mandatory vaccination, achieving high coverage but provoking political resistance. Researchers caution that coercive mandates entrench opposition long-term, and recommend building genuine trust with communities through transparent communication and acknowledgment of legitimate concerns.`,
+      sampleWordCount: 102,
+      structure: '①現状（ワクチン忌避の定義・規模・コロナ禍による拡大）→ ②原因の多様性（ソーシャルメディアの誤情報・歴史的医療不信・宗教的・哲学的反対）→ ③対応策＋批判（インセンティブ・強制接種の限界・信頼構築の重要性）',
+      keyPoints: [
+        '第1段落：「WHOがワクチン忌避を10大健康脅威の一つに挙げており、コロナ禍の急速な開発がさらに懸念を高めた」と一文でまとめる',
+        '第2段落：1文で「ワクチン忌避の原因はSNSの誤情報・歴史的医療不信・宗教的反対と多様であり、単一の対策では不十分」をまとめる',
+        '第3段落：英検1級では2文で「インセンティブ・地域連携・強制接種の成果と反発」と「強制的手段の逆効果リスク・信頼構築に基づくアプローチの重要性」を論じる',
+        'researchers caution / recommend でコントラストと推奨を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'eroding herd immunity', alt: 'weakening population-level protection / reducing collective immunity thresholds' },
+        { original: 'resistant to correction through factual rebuttal alone', alt: 'not easily dispelled by evidence / persistent despite counter-information' },
+        { original: 'structural mistrust rooted in histories of medical experimentation', alt: 'deep-seated skepticism stemming from past medical abuses / long-standing distrust of healthcare institutions' },
+        { original: 'heavy-handed mandates risk entrenching resistance', alt: 'coercive policies may deepen opposition / forceful measures can backfire and solidify hesitancy' },
+      ],
+      usefulPhrases: [
+        'making single-strategy responses insufficient （単一戦略での対応を不十分なものにしている）',
+        'achieving high coverage but provoking ~ （高い接種率を達成する一方で～を引き起こす）',
+        'recommend building ~ through ~ and acknowledgment of ~ （～を通じ、～を認めることで～を構築することを推奨する）',
+      ],
+    },
+    {
+      id: 'g1-33', label: 'オリジナル No.33', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Deep-Sea Mining', titleJa: '深海底鉱物資源採掘',
+      passage: `The deep seabed contains vast deposits of polymetallic nodules, seafloor massive sulfides, and cobalt-rich ferromanganese crusts that are exceptionally rich in metals critical to the clean energy transition, including cobalt, nickel, manganese, and rare earth elements. As terrestrial reserves face growing pressure from surging demand driven by electric vehicle batteries and renewable energy technologies, commercial interest in extracting deep-sea mineral resources has intensified sharply. The International Seabed Authority, established under the United Nations Convention on the Law of the Sea, has issued dozens of exploration contracts to mining companies from multiple nations, with commercial extraction potentially commencing within the next decade.
+
+Proponents of deep-sea mining argue that accessing these deposits is essential to securing the raw materials needed to decarbonize the global economy without exacerbating the environmental damage associated with conventional land-based mining. Unlike terrestrial extraction, deep-sea nodule harvesting would operate without deforestation, without displacing indigenous communities, and without the serious water pollution that characterizes many existing mines. Additionally, the concentration of metals in deep-sea deposits can be orders of magnitude higher than in typical land ore bodies, potentially reducing the total volume of material that must be processed to yield equivalent quantities of commercially useful metals.
+
+However, leading marine biologists and environmental organizations have called for a moratorium on deep-sea mining, arguing that ecological risks are far too poorly understood to permit commercial-scale extraction responsibly. The deep ocean supports ecosystems of extraordinary biodiversity that have evolved over millions of years in near-total absence of external disturbance. Sediment plumes generated by mining equipment could travel hundreds of kilometers, smothering filter-feeding organisms and disrupting food webs across vast areas. The International Union for Conservation of Nature has warned that irreversible damage to these unique ecosystems could occur before adequate regulatory frameworks are established, and that the precautionary principle demands a moratorium until comprehensive impact assessments are completed.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Deep-sea mineral deposits rich in cobalt, nickel, and rare earth elements have attracted commercial interest as demand for clean energy technologies intensifies, with proponents arguing that deep-sea mining offers a less environmentally destructive alternative to land-based extraction. Metal concentrations are exceptionally high, potentially minimizing total processing volume. However, marine biologists and conservation organizations have called for a moratorium, warning that sediment plumes could devastate poorly understood deep-ocean ecosystems harboring unique biodiversity. Critics contend the precautionary principle demands comprehensive environmental impact assessments before commercial extraction begins, as irreversible ecosystem damage could occur without adequate international regulatory safeguards.`,
+      sampleWordCount: 95,
+      structure: '①現状（深海底鉱物の種類・クリーンエネルギー転換との関係・国際海底機構の探査許可）→ ②賛成論（陸上採掘より環境負荷が低い・高濃度の金属・脱炭素に必要）→ ③反対論（海洋生態系への取り返しのつかない影響・予防原則に基づくモラトリアムの要請）',
+      keyPoints: [
+        '第1段落：「電気自動車・再エネ需要の急増により深海底のコバルト・ニッケル等の商業採掘への関心が高まり、国際海底機構が探査契約を発行している」と一文でまとめる',
+        '第2段落：1文で「深海採掘は森林破壊・先住民移住・水質汚染なしに高濃度の金属を採掘できるとする賛成論をまとめる」',
+        '第3段落：英検1級では2文で「堆積物プリュームによる生態系破壊・生物多様性への不可逆的影響」と「予防原則に基づく包括的環境影響評価の実施前に採掘を開始すべきでないという批判」を論じる',
+        'however / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'exacerbating the environmental damage associated with conventional mining', alt: 'worsening the ecological harm of traditional extraction / compounding the destruction caused by land-based mining' },
+        { original: 'near-total absence of external disturbance', alt: 'virtually undisturbed for millions of years / free from human interference throughout evolutionary history' },
+        { original: 'smothering filter-feeding organisms and disrupting food webs', alt: 'suffocating seafloor life and breaking ecological chains / burying organisms and destabilizing marine ecosystems' },
+        { original: 'the precautionary principle demands a moratorium', alt: 'the need for caution requires a temporary halt / responsible governance necessitates a pause in extraction' },
+      ],
+      usefulPhrases: [
+        'with proponents arguing that ~ offers ~ （支持者が～は～を提供すると主張している）',
+        'called for a moratorium, warning that ~ could ~ （モラトリアムを求め、～が～する可能性を警告している）',
+        'irreversible ~ could occur without adequate ~ （適切な～なしに、取り返しのつかない～が起こりうる）',
+      ],
+    },
+    {
+      id: 'g1-34', label: 'オリジナル No.34', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Cultural Heritage Preservation', titleJa: '文化遺産の保全',
+      passage: `Cultural heritage—encompassing both tangible assets such as monuments and archaeological sites, and intangible traditions including language, music, and craftsmanship—constitutes an irreplaceable record of human civilization and a source of collective identity for communities worldwide. The UNESCO World Heritage List, currently including over one thousand sites in more than 160 countries, reflects a global consensus that exceptional cultural heritage belongs not merely to individual nations but to all of humanity. Yet this shared legacy faces mounting threats from urbanization, armed conflict, climate change, and mass tourism, with dozens of sites placed on the List of World Heritage in Danger at any given time.
+
+Preservation efforts yield significant benefits that extend beyond the conservation of historical artifacts. Communities with well-preserved heritage attract substantial tourism, which generates local employment and income while incentivizing governments and private investors to maintain historical environments. The protection of intangible cultural heritage—including endangered languages and indigenous ceremonial practices—has been linked to the psychological wellbeing of communities whose identity is bound to cultural continuity, and to the preservation of biological diversity, as indigenous land stewardship practices have proven effective in maintaining local ecosystems. Academic research enabled by preserved heritage contributes to historical knowledge and understanding of ancient societies.
+
+Nevertheless, heritage preservation involves complex trade-offs that resist straightforward resolution. Restoration projects must navigate the tension between authenticity—using original materials and traditional techniques—and structural safety requirements of modern engineering. In conflict zones, the deliberate targeting of cultural heritage, as witnessed at Palmyra and Timbuktu, poses acute challenges that humanitarian funding rarely addresses promptly. The commercialization of heritage sites through mass tourism can paradoxically accelerate the very deterioration it funds, as visitor footfall and pollution degrade fragile structures. Critics also argue that international governance frameworks often reflect the priorities of wealthy donor nations rather than the communities whose living heritage is under threat.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Cultural heritage, encompassing historical monuments and intangible traditions such as language and ritual, represents an irreplaceable record of human civilization that faces intensifying threats from urbanization, climate change, armed conflict, and mass tourism. Preservation generates substantial benefits, including heritage tourism revenue, support for community wellbeing, and conservation of indigenous ecological knowledge that protects biodiversity. However, trade-offs are significant: restoration must balance authenticity against modern safety requirements, mass tourism can accelerate deterioration, and deliberate destruction in conflict zones overwhelms available funding. Critics also contend that international governance frameworks prioritize wealthy donor nation perspectives over the communities whose living cultural heritage is under threat.`,
+      sampleWordCount: 106,
+      structure: '①現状（文化遺産の定義・ユネスコ世界遺産リスト・多様な脅威）→ ②保全の利益（観光収入・コミュニティの精神的健康・生物多様性保護・学術的価値）→ ③複雑な課題（真正性と安全性のトレードオフ・紛争地での破壊・マスツーリズムの逆説・ガバナンス格差）',
+      keyPoints: [
+        '第1段落：「有形・無形の文化遺産は都市化・紛争・気候変動・マスツーリズムなど多様な脅威にさらされている」と一文でまとめる',
+        '第2段落：1文で「保全により観光収入・コミュニティの精神的健康・先住民の知識を通じた生物多様性保護・学術的研究が実現する」をまとめる',
+        '第3段落：英検1級では2文で「真正性と安全基準・マスツーリズムの逆説・紛争地での破壊という複合的課題」と「国際ガバナンスが裕福な国の優先事項を反映しがちという批判」を論じる',
+        'Nevertheless / critics also contend で段落3の複雑さを効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'irreplaceable record of human civilization', alt: 'unique testimony to human history / an unrecoverable documentation of past societies' },
+        { original: 'indigenous land stewardship practices', alt: 'traditional ecological management by indigenous peoples / native community-based conservation methods' },
+        { original: 'accelerate the very deterioration it funds', alt: 'hasten the damage that revenue is meant to prevent / undermine preservation through the very activity meant to support it' },
+        { original: 'reflect the priorities of wealthy donor nations', alt: 'favor the interests of major funding countries / mirror the preferences of economically dominant states' },
+      ],
+      usefulPhrases: [
+        'generates substantial benefits, including ~ （～を含む多大な利益をもたらす）',
+        'trade-offs are significant: ~ must balance ~ against ~ （トレードオフは重大で：～は～と～のバランスをとらねばならない）',
+        'critics contend that ~ prioritize ~ over ~ （批評家は～が～よりも～を優先していると主張する）',
+      ],
+    },
+    {
+      id: 'g1-35', label: 'オリジナル No.35', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Neurotechnology and Brain Privacy', titleJa: '神経技術と脳のプライバシー',
+      passage: `Neurotechnology refers to the broad and rapidly expanding field of devices that interface directly with the human brain and nervous system, ranging from medical implants designed to treat neurological conditions to consumer-grade electroencephalography headsets marketed for applications in meditation, gaming, and workplace productivity monitoring. Advances in machine learning have dramatically enhanced the ability to decode neural signals into interpretable information about thoughts, emotions, and subconscious cognitive states, raising profound questions about whether the contents of the human mind should be considered private. A 2023 report from the Neurorights Foundation estimated that several hundred neurotechnology products are already commercially available, with the market projected to grow exponentially over the coming decade.
+
+The medical applications of neurotechnology have produced genuinely transformative outcomes for patients with severe neurological disorders. Brain-computer interfaces have allowed paralyzed individuals to control robotic limbs, type text using imagined handwriting, and communicate through synthesized speech with unprecedented speed and accuracy, restoring autonomy previously considered unattainable. Transcranial magnetic stimulation and deep brain stimulation have become established treatments for depression and Parkinson's disease, offering relief to patients who do not respond to pharmacological therapies. Researchers are also developing neural prosthetics capable of restoring memory formation in individuals with hippocampal damage, suggesting that cognitive capabilities accessible through neurotechnology will continue to expand.
+
+The same capabilities that make neurotechnology therapeutically powerful also create unprecedented risks of privacy invasion and cognitive liberty violation that existing legal frameworks are ill-equipped to address. Neural data decoded from consumer headsets could reveal political beliefs, mental health status, and susceptibility to manipulation—information that could be exploited by insurers, employers, or authoritarian governments. Chile became the first country to enshrine neurorights in its constitution in 2021, recognizing mental privacy, personal identity, and cognitive liberty as fundamental rights. Critics warn that the pace of commercial deployment has far outstripped the development of enforceable standards, and that without proactive governance, the commercialization of brain data will become an irreversible feature of surveillance capitalism before adequate protections are established.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Neurotechnology, spanning medical brain implants and consumer neural monitoring devices, has produced transformative advances, enabling paralyzed patients to control robotic limbs and communicate, and providing effective treatments for Parkinson's disease and depression. However, the technology's capacity to decode thoughts, emotions, and subconscious states creates profound risks for mental privacy, cognitive liberty, and potential exploitation of brain data by employers, insurers, or authoritarian governments. Chile has pioneered constitutional neurorights protections, and advocates call for broader international standards. Critics warn that commercial deployment has far outpaced governance development, risking the irreversible normalization of brain data exploitation before adequate legal safeguards are established.`,
+      sampleWordCount: 105,
+      structure: '①現状（神経技術の定義・範囲・機械学習による思考解読能力の向上）→ ②医療応用の成果（麻痺患者の機能回復・うつ病・パーキンソン病の治療・記憶回復研究）→ ③プライバシーリスク＋批判（神経データの悪用リスク・チリの憲法的権利・ガバナンスの立ち遅れ）',
+      keyPoints: [
+        '第1段落：「神経技術は思考・感情・無意識の状態を解読する能力が向上し、脳のプライバシーに関する根本的な問いを提起している」と一文でまとめる',
+        '第2段落：1文で「脳コンピュータインターフェースが麻痺患者の機能を回復させ、経頭蓋磁気刺激や深部脳刺激がうつ病・パーキンソン病の確立した治療法となっている」をまとめる',
+        '第3段落：英検1級では2文で「神経データが保険・雇用・権威主義的政府に悪用されるリスク・チリの神経権保障の先例」と「商業展開がガバナンスを大幅に上回るスピードで進んでいるという批判」を論じる',
+        'critics warn that / without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'decode neural signals into interpretable information', alt: 'translate brain activity into readable data / convert neural patterns into comprehensible cognitive profiles' },
+        { original: 'restoring autonomy previously considered unattainable', alt: 'recovering independence thought to be permanently lost / reestablishing functions once deemed irreversible' },
+        { original: 'susceptibility to manipulation', alt: 'vulnerability to persuasion or influence / openness to behavioral conditioning' },
+        { original: 'commercial deployment has far outpaced governance development', alt: 'market expansion has greatly exceeded regulatory progress / technology rollout has left oversight frameworks far behind' },
+      ],
+      usefulPhrases: [
+        'has produced transformative advances, enabling ~ （変革的な進歩をもたらし、～を可能にしている）',
+        'creates profound risks for ~ and potential exploitation of ~ （～に対する深刻なリスクと～の潜在的な悪用を生み出す）',
+        'risking the irreversible normalization of ~ before ~ are established （～が確立される前に～の取り返しのつかない常態化のリスクをもたらす）',
+      ],
+    },
+    {
+      id: 'g1-36', label: 'オリジナル No.36', type: '要約問題 B', addedAt: '2026-05-19',
+      title: 'Corporate Tax Avoidance', titleJa: '企業の租税回避',
+      passage: `Corporate tax avoidance—the use of legal but aggressive tax planning strategies to minimize tax liabilities by exploiting gaps between different national tax systems—has emerged as one of the most contentious issues in international economic governance. A 2021 study estimated that multinational corporations shift more than one trillion dollars in profits annually to low- or zero-tax jurisdictions, depriving governments worldwide of approximately 240 billion dollars in corporate tax revenue that could otherwise fund public services. High-profile cases involving technology giants such as Apple, Amazon, and Google, which have historically channeled profits through subsidiaries in Ireland, Luxembourg, and the Netherlands, have driven public outrage and intensified regulatory pressure.
+
+The mechanisms through which multinationals reduce their tax exposure are technically complex but conceptually straightforward. Transfer pricing—the manipulation of intra-company transactions to shift profits from high-tax to low-tax jurisdictions—is among the most prevalent techniques, allowing a company to charge inflated prices for intellectual property licenses from its own subsidiary in a way that concentrates profits where taxation is minimal. Debt-loading structures, hybrid financial instruments, and treaty shopping through holding companies further erode the tax base of countries where actual economic activity occurs. The OECD estimates that base erosion and profit shifting costs developing countries a proportionally larger share of government revenues than it does developed nations, exacerbating global inequality.
+
+The 2021 agreement among 136 countries to implement a global minimum corporate tax rate of fifteen percent, brokered through the OECD/G20 Inclusive Framework, represents the most ambitious reform of international corporate taxation in decades. By establishing a floor below which no multinational can reduce its effective tax rate regardless of where profits are booked, the agreement aims to reduce the incentive for profit shifting. However, critics argue that fifteen percent is still too low to meaningfully curtail avoidance by the most profitable corporations, and that complex carve-outs could render the reform far less effective in practice than in principle. Developing countries have also expressed concern that the framework privileges wealthy nation interests and constrains their ability to attract investment.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Corporate tax avoidance, through which multinationals exploit mismatches between national tax systems via transfer pricing, debt-loading, and profit shifting to low-tax jurisdictions, is estimated to cost governments 240 billion dollars annually, with developing countries bearing a disproportionate share of these losses. Transfer pricing and hybrid financial instruments allow companies to concentrate profits in minimal-tax jurisdictions while inflating deductible costs elsewhere. The 2021 OECD global minimum tax agreement at fifteen percent represents a landmark reform. Critics argue the rate is insufficient to meaningfully deter avoidance by the most profitable firms, complex carve-outs weaken implementation, and developing nations warn the framework entrenches wealthy-country interests at the expense of their own fiscal capacity.`,
+      sampleWordCount: 105,
+      structure: '①現状（租税回避の定義・利益移転の規模・GAFAなどの事例）→ ②回避のメカニズム（移転価格・負債積み上げ・条約ショッピングと途上国への不均等な影響）→ ③国際的改革＋批判（OECDグローバル最低税率15%・実効性への懸念・途上国の排除感）',
+      keyPoints: [
+        '第1段落：「多国籍企業が各国税制の抜け穴を利用して年1兆ドル超の利益を低税率国に移転し、世界の法人税収を年2,400億ドル減少させている」と一文でまとめる',
+        '第2段落：1文で「移転価格・ハイブリッド金融手段・トリーティーショッピングにより実際の経済活動が行われる国の課税基盤が侵食されており、途上国により大きな打撃を与えている」をまとめる',
+        '第3段落：英検1級では2文で「OECDの15%グローバル最低税率合意の意義」と「税率の低さ・複雑な除外条項・途上国の利益軽視という批判」を論じる',
+        'critics argue / developing nations warn でコントラストを効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'exploit gaps between different national tax systems', alt: 'take advantage of mismatches in international tax rules / use inconsistencies between jurisdictions to minimize liabilities' },
+        { original: 'depriving governments of tax revenue', alt: 'denying states their rightful fiscal income / stripping public finances of legitimate corporate contributions' },
+        { original: 'complex carve-outs could render the reform less effective', alt: 'numerous exceptions may undermine the policy / extensive exemptions risk weakening the intended impact' },
+        { original: 'constrains their ability to attract investment', alt: 'limits their capacity to offer competitive tax incentives / restricts their policy tools for drawing in foreign capital' },
+      ],
+      usefulPhrases: [
+        'is estimated to cost ~ ~ annually （年間～のコストを～に課していると推定される）',
+        'represents a landmark reform （画期的な改革を示している）',
+        'critics argue ~ is insufficient to ~ ; developing nations warn ~ （批評家は～が～には不十分と主張し；途上国は～を警告する）',
+      ],
+    },
+    {
+      id: 'g1-37', label: 'オリジナル No.37', type: '要約問題 A', addedAt: '2026-05-19',
+      title: 'Pandemic Preparedness', titleJa: 'パンデミック対策と備え',
+      passage: `The COVID-19 pandemic, which caused more than seven million confirmed deaths and the most severe global economic contraction since the Second World War, exposed catastrophic deficiencies in pandemic preparedness that had been repeatedly identified in risk assessments but never adequately addressed. The 2014-2016 Ebola outbreak in West Africa, the SARS epidemic of 2003, and the 2009 influenza pandemic each generated recommendations for strengthening early warning systems, maintaining medical countermeasure stockpiles, and improving coordination between national public health agencies and the World Health Organization, yet political will and sustained funding to implement these reforms proved consistently insufficient in the years before COVID-19 emerged.
+
+Effective pandemic preparedness requires investment in a range of interconnected capabilities. Genomic surveillance networks capable of detecting novel pathogens and monitoring viral evolution are essential for early warning but remain absent or inadequate in many low- and middle-income countries that represent high-risk zones for pathogen spillover. The development of pandemic vaccines and therapeutics demands sustained research funding for platform technologies such as mRNA vaccines that can be rapidly adapted to new targets, alongside pre-established agreements with manufacturers to ensure equitable global distribution when emergencies occur. Coordination mechanisms that function across geopolitical divides are indispensable but among the most difficult governance challenges to institutionalize effectively.
+
+The COVID-19 experience has accelerated analytical understanding and political momentum for reform, but translating these into durable governance changes has proven contentious. Negotiations for a new international Pandemic Treaty under WHO auspices have stalled repeatedly over disagreements between developed and developing countries regarding intellectual property rights for vaccine technologies, obligations to share pathogen samples and genetic sequence data, and the balance between national sovereignty and binding international obligations during health emergencies. High-income countries have resisted provisions requiring compulsory licensing of pharmaceutical patents, while low-income nations argue that without guaranteed access to medical tools, preparedness frameworks benefit wealthy countries disproportionately. Without a globally equitable agreement, the risk of another devastating pandemic remains unacceptably high.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `COVID-19 exposed chronic deficiencies in pandemic preparedness, revealing that repeated recommendations following Ebola, SARS, and the 2009 influenza pandemic had not been implemented due to insufficient political will and funding. Effective preparedness requires genomic surveillance networks to detect emerging pathogens, sustained investment in adaptable vaccine platform technologies, and pre-established equitable distribution agreements. Negotiations for a WHO Pandemic Treaty have stalled over conflicts between developed and developing countries regarding intellectual property rights for vaccines, pathogen data sharing, and the scope of binding international obligations. Without an agreement ensuring equitable access to medical countermeasures regardless of economic status, future pandemics will continue to disproportionately devastate vulnerable nations.`,
+      sampleWordCount: 105,
+      structure: '①現状（コロナ禍で露呈した備えの欠陥・過去の警告が実施されなかった経緯）→ ②必要な備えの要素（ゲノム監視・mRNAプラットフォーム・公平な分配協定・地政学を超えた調整機能）→ ③パンデミック条約交渉の停滞＋批判（知的財産権・データ共有・主権と義務のバランス・高所得国への偏り）',
+      keyPoints: [
+        '第1段落：「コロナ禍はエボラ・SARSなど過去の警告が政治的意志と資金不足で実施されなかったことを露呈した」と一文でまとめる',
+        '第2段落：1文で「効果的な備えにはゲノム監視・mRNAなどのプラットフォーム技術への投資・公平な分配協定が必要」をまとめる',
+        '第3段落：英検1級では2文で「WHOパンデミック条約交渉が知的財産権・データ共有・主権と国際義務のバランスを巡り難航している現状」と「公平なアクセスが保証されなければ将来のパンデミックは脆弱な国々を不均等に直撃するという警告」を論じる',
+        'without でコントラストと条件を効果的に示す',
+      ],
+      paraphraseTips: [
+        { original: 'catastrophic deficiencies in pandemic preparedness', alt: 'severe failures in global health readiness / critical gaps in emergency response capacity' },
+        { original: 'political will and sustained funding proved consistently insufficient', alt: 'governments repeatedly failed to commit resources / commitment and investment fell short time and again' },
+        { original: 'stalled repeatedly over disagreements', alt: 'been blocked by persistent disputes / failed to progress due to unresolved conflicts' },
+        { original: 'disproportionately devastate vulnerable nations', alt: 'inflict unequal harm on less protected countries / affect low-income nations with far greater severity' },
+      ],
+      usefulPhrases: [
+        'revealing that ~ had not been implemented due to ~ （～によって実施されなかったことを明らかにする）',
+        'negotiations have stalled over ~ regarding ~ （～に関する～をめぐって交渉が停滞している）',
+        'without ~ ensuring ~, ~ will continue to ~ （～を確保する～なしには、～は～し続けるだろう）',
       ],
     },
   ],
