@@ -11,7 +11,7 @@ import {
 const problemsData = {
   grade2: [
     {
-      id: 'g2-1', label: 'オリジナル No.1', type: '要約問題 A',
+      id: 'g2-1', label: 'オリジナル No.1', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Social Media and Young People', titleJa: 'SNSと若者',
       passage: `In recent years, social media has become a major part of many young people's daily lives. Most teenagers in Japan use platforms like Instagram or X to communicate with their friends and share their interests.
 
@@ -41,7 +41,7 @@ On the other hand, there are also some problems. Some teenagers spend too many h
       ],
     },
     {
-      id: 'g2-2', label: 'オリジナル No.2', type: '要約問題 A',
+      id: 'g2-2', label: 'オリジナル No.2', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Cooking at Home vs Eating Out', titleJa: '自炊と外食',
       passage: `These days, many people in Japan have busy lives, and they often choose between cooking meals at home and eating at restaurants.
 
@@ -71,7 +71,7 @@ However, cooking at home also has some difficulties. After a long day of work, m
       ],
     },
     {
-      id: 'g2-3', label: 'オリジナル No.3', type: '要約問題 B',
+      id: 'g2-3', label: 'オリジナル No.3', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Paper Books and E-books', titleJa: '紙の本と電子書籍',
       passage: `Reading is a popular hobby for many people. Today, readers can choose between traditional paper books and electronic books, which are read on devices such as tablets or smartphones.
 
@@ -101,7 +101,7 @@ Still, paper books continue to have many fans. Some people enjoy the feeling of 
       ],
     },
     {
-      id: 'g2-4', label: 'オリジナル No.4', type: '要約問題 A',
+      id: 'g2-4', label: 'オリジナル No.4', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Working from Home', titleJa: 'テレワーク',
       passage: `In recent years, working from home, also called remote work or telework, has become more common in Japan and other countries. Many companies now allow their employees to work at home instead of coming to the office every day.
 
@@ -131,7 +131,7 @@ However, working from home also has some disadvantages. Some employees find it d
       ],
     },
     {
-      id: 'g2-5', label: 'オリジナル No.5', type: '要約問題 A',
+      id: 'g2-5', label: 'オリジナル No.5', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Sports and Health', titleJa: 'スポーツと健康',
       passage: `Playing sports is a popular activity for people of all ages in Japan. Many schools encourage students to join sports clubs, and local communities also offer a variety of sports programs.
 
@@ -161,7 +161,7 @@ However, playing sports also carries some risks. Athletes may experience injurie
       ],
     },
     {
-      id: 'g2-6', label: 'オリジナル No.6', type: '要約問題 B',
+      id: 'g2-6', label: 'オリジナル No.6', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Recycling and the Environment', titleJa: 'リサイクルと環境',
       passage: `Environmental problems such as global warming and pollution are serious concerns around the world. Many governments and organizations are encouraging people to recycle their waste in order to protect the environment.
 
@@ -191,7 +191,7 @@ Despite these benefits, recycling also faces some challenges. Sorting different 
       ],
     },
     {
-      id: 'g2-7', label: 'オリジナル No.7', type: '要約問題 B',
+      id: 'g2-7', label: 'オリジナル No.7', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Tourism and Local Communities', titleJa: '観光と地域社会',
       passage: `Tourism is one of the largest industries in the world, and it plays an important role in the economies of many countries. In Japan, the number of foreign tourists has increased greatly in recent years.
 
@@ -221,7 +221,7 @@ On the other hand, too many tourists can cause problems. Popular tourist spots s
       ],
     },
     {
-      id: 'g2-9', label: 'オリジナル No.9', type: '要約問題 A',
+      id: 'g2-9', label: 'オリジナル No.9', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Volunteering and Community Service', titleJa: 'ボランティアと地域貢献',
       passage: `Volunteering means giving time and effort to help others without receiving payment. In Japan, many schools encourage students to take part in volunteer activities, and local governments also organize events where residents can help their communities.
 
@@ -251,7 +251,7 @@ However, volunteering can also be challenging. Some people find it difficult to 
       ],
     },
     {
-      id: 'g2-10', label: 'オリジナル No.10', type: '要約問題 A',
+      id: 'g2-10', label: 'オリジナル No.10', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Online Shopping vs Physical Stores', titleJa: 'ネットショッピングと実店舗',
       passage: `In Japan and many other countries, more and more people are choosing to shop online instead of going to physical stores. This change has been made possible by the growth of smartphones and fast internet connections, which allow people to browse and buy products from anywhere at any time.
 
@@ -281,7 +281,7 @@ Despite these benefits, some people still prefer physical stores. Many customers
       ],
     },
     {
-      id: 'g2-11', label: 'オリジナル No.11', type: '要約問題 B',
+      id: 'g2-11', label: 'オリジナル No.11', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Public Transportation and Urban Life', titleJa: '公共交通機関と都市生活',
       passage: `In many large cities around the world, including Tokyo, Osaka, and other major Japanese cities, public transportation systems such as trains and buses play a vital role in people's daily lives. Millions of commuters rely on these services to get to work, school, and other destinations every day.
 
@@ -311,7 +311,7 @@ However, public transportation also has some limitations. Trains and buses follo
       ],
     },
     {
-      id: 'g2-12', label: 'オリジナル No.12', type: '要約問題 A',
+      id: 'g2-12', label: 'オリジナル No.12', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Pets and Human Well-being', titleJa: 'ペットと人の幸福',
       passage: `Keeping pets has become a common part of life for many families in Japan. Dogs and cats are the most popular pets, but some people also keep birds, fish, and other animals. The number of pet owners has increased steadily in recent years, and the pet industry has grown into a large and profitable business.
 
@@ -341,7 +341,7 @@ On the other hand, owning a pet also involves responsibilities and challenges. P
       ],
     },
     {
-      id: 'g2-13', label: 'オリジナル No.13', type: '要約問題 B',
+      id: 'g2-13', label: 'オリジナル No.13', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'School Uniforms', titleJa: '学校の制服',
       passage: `School uniforms are worn by students in many countries, and Japan is well known for having a strong uniform culture in its schools. While uniforms are standard at many Japanese junior high and high schools, opinions about whether they should be required continue to be debated among students, parents, and educators.
 
@@ -371,7 +371,7 @@ However, some people oppose mandatory uniforms. They argue that choosing one's o
       ],
     },
     {
-      id: 'g2-8', label: 'オリジナル No.8', type: '要約問題 A',
+      id: 'g2-8', label: 'オリジナル No.8', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Libraries in the Digital Age', titleJa: 'デジタル時代の図書館',
       passage: `Libraries have been an important part of communities for hundreds of years. They provide people with access to books and information, and they have traditionally been places of quiet study and learning.
 
@@ -400,10 +400,310 @@ However, some people worry that libraries are losing their original purpose. As 
         'potentially leading to ~ （～につながる可能性がある）',
       ],
     },
+    {
+      id: 'g2-14', label: 'オリジナル No.14', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Electric Vehicles', titleJa: '電気自動車',
+      passage: `In recent years, electric vehicles, or EVs, have become more popular in Japan and other countries. Instead of using gasoline, they run on electricity stored in large batteries, which means they produce no direct emissions while driving.
+
+Electric vehicles have several advantages. First, they are better for the environment because they do not release harmful gases from exhaust pipes. Owners can also save money on fuel since electricity costs less than gasoline. In addition, EVs require less maintenance because they have fewer mechanical parts than traditional cars.
+
+However, there are still some challenges. Many drivers worry about running out of battery power before reaching a charging station, especially on long trips. Charging an EV also takes much longer than filling a gas tank. Furthermore, the initial purchase price of electric vehicles is often higher than that of traditional cars.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Electric vehicles are becoming more common as a cleaner alternative to gasoline-powered cars. They produce no direct emissions, cost less to fuel, and need less maintenance. However, concerns about battery range on long journeys, the longer time needed for charging, and higher purchase prices remain obstacles to their wider adoption.`,
+      sampleWordCount: 51,
+      structure: '①導入（EVの普及）→ ②利点（環境に優しい・燃料費節約・メンテナンスが少ない）→ ③課題（航続距離・充電時間・価格）',
+      keyPoints: [
+        '第1段落：「電気自動車がガソリン車に代わる選択肢として普及している」と導入を一文で',
+        '第2段落：利点を3点（①排気ガスなし、②燃料費が安い、③メンテナンスが少ない）',
+        '第3段落：課題を3点（①航続距離への不安、②充電時間の長さ、③購入価格の高さ）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'do not release harmful gases from exhaust pipes', alt: 'produce no direct emissions / are cleaner than gasoline cars' },
+        { original: 'electricity costs less than gasoline', alt: 'are cheaper to fuel / cost less to run' },
+        { original: 'running out of battery power', alt: 'range anxiety / concern about battery life' },
+        { original: 'initial purchase price', alt: 'upfront cost / buying price' },
+      ],
+      usefulPhrases: [
+        'as a cleaner alternative to ~ （～に代わるよりクリーンな選択肢として）',
+        'concerns about ~ remain obstacles to ~ （～に関する懸念が～の障壁になっている）',
+        'wider adoption （より広い普及）',
+      ],
+    },
+    {
+      id: 'g2-15', label: 'オリジナル No.15', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Online Learning', titleJa: 'オンライン学習',
+      passage: `In recent years, online learning has grown rapidly in Japan and around the world. Students can now take lessons through the internet using computers or smartphones instead of going to a physical classroom.
+
+Online learning offers several benefits. Learners can study at their own pace and choose when and where to study, which is convenient for people with busy schedules. There is also a wide variety of courses available online, covering topics from languages to computer programming. Additionally, online courses are often cheaper than traditional classroom lessons.
+
+However, online learning also has some drawbacks. Some students find it hard to stay motivated without a teacher watching them in person. Technical problems, such as poor internet connections, can also interrupt lessons. Furthermore, online learning does not provide the same social experience as attending a real school, which may make it harder for students to build friendships.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Online learning has become increasingly popular as technology makes studying via the internet more accessible. It allows learners to study flexibly and affordably with access to a wide range of subjects. Nevertheless, staying motivated without face-to-face support, dealing with technical issues, and missing the social aspects of school life are significant challenges for many online students.`,
+      sampleWordCount: 55,
+      structure: '①導入（オンライン学習の拡大）→ ②利点（柔軟性・多様なコース・安価）→ ③課題（モチベーション維持・技術的問題・社会的経験の欠如）',
+      keyPoints: [
+        '第1段落：「インターネットを使った学習が急速に広まっている」という導入を一文で',
+        '第2段落：利点を3点（①自分のペース・柔軟なスケジュール、②豊富なコース、③費用が安い）',
+        '第3段落：課題を3点（①モチベーション維持の難しさ、②技術的トラブル、③社会的経験の不足）',
+        'Nevertheless で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'study at their own pace', alt: 'learn at a self-determined speed / progress independently' },
+        { original: 'wide variety of courses', alt: 'many different subjects / a broad range of topics' },
+        { original: 'hard to stay motivated', alt: 'difficult to maintain enthusiasm / struggle to keep studying' },
+        { original: 'social experience', alt: 'chance to interact with others / community feel' },
+      ],
+      usefulPhrases: [
+        'has become increasingly popular （ますます人気になっている）',
+        'Nevertheless, ~ （それにもかかわらず）',
+        'significant challenges for ~ （～にとって大きな課題）',
+      ],
+    },
+    {
+      id: 'g2-16', label: 'オリジナル No.16', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Healthy Eating Habits', titleJa: '健康的な食生活',
+      passage: `In recent years, more people in Japan are paying attention to what they eat. Many health experts recommend eating a balanced diet that includes vegetables, fruits, whole grains, and proteins, while reducing the amount of sugar, salt, and processed foods.
+
+Eating healthy food has many benefits. A well-balanced diet gives the body the energy and nutrients it needs to function properly. It also helps reduce the risk of serious health conditions such as diabetes, high blood pressure, and heart disease. In addition, people who eat healthily tend to feel more energetic and maintain a healthy body weight.
+
+However, eating well can be challenging for many people. Healthy food is often more expensive than fast food or processed snacks. Also, preparing home-cooked meals takes time and effort, which can be difficult for busy people. Furthermore, unhealthy food is often more readily available and can be hard to resist.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `A growing number of people are paying attention to their diet for better health. Eating a balanced diet helps the body function well, lowers the risk of diseases such as diabetes and heart disease, and supports a healthy weight. However, healthy food tends to cost more, requires time to prepare, and is often harder to choose than convenient, unhealthy options.`,
+      sampleWordCount: 61,
+      structure: '①導入（食生活への関心の高まり）→ ②利点（栄養補給・病気リスク低下・体重管理）→ ③課題（費用・時間・不健康な食品への誘惑）',
+      keyPoints: [
+        '第1段落：「健康的な食事への関心が高まっている」という状況を一文で導入',
+        '第2段落：利点を3点（①栄養と活力、②病気リスクの低下、③体重管理）',
+        '第3段落：課題を3点（①高コスト、②調理の時間・手間、③不健康な食品が手に入りやすい）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'reduce the risk of serious health conditions', alt: 'lower the chance of disease / help prevent illness' },
+        { original: 'feel more energetic', alt: 'have more energy / feel better physically' },
+        { original: 'more readily available', alt: 'easier to find / more convenient to get' },
+        { original: 'hard to resist', alt: 'difficult to avoid / tempting' },
+      ],
+      usefulPhrases: [
+        'A growing number of people are ~ （ますます多くの人々が～している）',
+        'lowers the risk of ~ （～のリスクを下げる）',
+        'is often harder to choose than ~ （～より選ぶのが難しいことが多い）',
+      ],
+    },
+    {
+      id: 'g2-17', label: 'オリジナル No.17', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Plastic Pollution', titleJa: 'プラスチック汚染',
+      passage: `Plastic pollution has become one of the most serious environmental problems in the world today. Every year, millions of tons of plastic waste end up in oceans and rivers, harming marine life and polluting ecosystems around the globe.
+
+Reducing plastic use has many important benefits. Using reusable bags, bottles, and containers instead of single-use plastics can significantly cut down on waste. This helps protect sea animals such as turtles and fish that often mistake plastic for food. In addition, producing less plastic means less demand for oil, which helps reduce carbon emissions.
+
+However, reducing plastic pollution is not easy. Many people rely on plastic because it is cheap, lightweight, and convenient. Also, some countries do not have the proper facilities to collect and recycle plastic waste effectively. Furthermore, even when people want to reduce plastic use, they often have difficulty finding affordable alternatives.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Plastic pollution is a major global environmental problem as millions of tons enter oceans annually, threatening marine wildlife. Switching to reusable products reduces waste, protects sea creatures, and lowers carbon emissions. However, plastic remains popular due to its low cost and convenience, and many regions lack the facilities needed to recycle it effectively.`,
+      sampleWordCount: 51,
+      structure: '①導入（プラスチック汚染の深刻さ）→ ②削減の利点（廃棄物削減・海洋生物保護・CO2削減）→ ③課題（利便性・インフラ不足・代替品の確保困難）',
+      keyPoints: [
+        '第1段落：「プラスチック汚染が深刻な環境問題になっている」という状況を一文でまとめる',
+        '第2段落：削減の利点を3点（①廃棄物削減、②海洋生物の保護、③炭素排出削減）',
+        '第3段落：課題を3点（①プラスチックの利便性・安さ、②リサイクルインフラの不足、③代替品確保の難しさ）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'cut down on waste', alt: 'reduce waste significantly / produce less rubbish' },
+        { original: 'mistake plastic for food', alt: 'confuse plastic with food / eat plastic by accident' },
+        { original: 'cheap, lightweight, and convenient', alt: 'affordable and easy to use / practical and inexpensive' },
+        { original: 'proper facilities to collect and recycle', alt: 'adequate infrastructure for recycling' },
+      ],
+      usefulPhrases: [
+        'is a major global ~ problem （世界的に深刻な～問題である）',
+        'Switching to ~ reduces ~ （～に切り替えることで～を減らせる）',
+        'many regions lack ~ （多くの地域では～が不足している）',
+      ],
+    },
+    {
+      id: 'g2-18', label: 'オリジナル No.18', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Studying Abroad', titleJa: '留学',
+      passage: `Studying abroad, or going to a school or university in another country, has become a popular choice for many young people in Japan. Each year, thousands of Japanese students travel to countries such as the United States, Australia, and the United Kingdom to study.
+
+Going abroad to study brings many valuable benefits. Students have the chance to improve their foreign language skills, especially English, by using the language in real-life situations every day. They also experience different cultures and ways of thinking, which broadens their perspective and makes them more open-minded. In addition, a study abroad experience often looks impressive on a job application.
+
+However, studying in another country is not without its challenges. The cost of tuition and living expenses can be very high, making it impossible for some students. Many students also feel homesick and find it hard to adjust to a new culture and environment. Language barriers can make daily life and academic study more difficult at first.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Studying abroad has become popular among young Japanese people seeking international experience. It helps students improve their language skills through daily use, gain exposure to new cultures, and strengthen their career prospects. However, high tuition and living costs exclude some students financially, and many struggle with homesickness, cultural adjustment, and language barriers when they first arrive.`,
+      sampleWordCount: 53,
+      structure: '①導入（留学の人気）→ ②利点（語学力向上・異文化理解・就職に有利）→ ③課題（費用・ホームシック・適応の困難）',
+      keyPoints: [
+        '第1段落：「留学が多くの日本の若者に選ばれるようになっている」という状況を一文で',
+        '第2段落：利点を3点（①日常での語学使用による向上、②異文化理解・視野の広がり、③就職への有利性）',
+        '第3段落：課題を3点（①学費・生活費の高さ、②ホームシック・文化的適応、③言語の壁）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'improve their foreign language skills', alt: 'develop language proficiency / get better at using English' },
+        { original: 'broadens their perspective', alt: 'widens their outlook / makes them more open-minded' },
+        { original: 'feel homesick', alt: 'miss home / find being away from family difficult' },
+        { original: 'language barriers', alt: 'difficulty with the language / communication challenges' },
+      ],
+      usefulPhrases: [
+        'seeking international experience （国際的な経験を求めて）',
+        'through daily use （日常での使用を通じて）',
+        'exclude some students financially （一部の学生を経済的に排除する）',
+      ],
+    },
+    {
+      id: 'g2-19', label: 'オリジナル No.19', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Video Games', titleJa: 'ビデオゲーム',
+      passage: `Video games have become one of the most popular forms of entertainment for young people in Japan and around the world. Modern games are played on gaming consoles, personal computers, and smartphones, allowing people to play anytime and anywhere.
+
+Playing video games can have some positive effects. Some games help players develop problem-solving skills and improve concentration, as players must think carefully and react quickly to challenges. Multiplayer online games also allow players to communicate and cooperate with people from different countries, developing social and language skills.
+
+However, there are also concerns about video games. Some people spend too many hours playing, which can lead to eye strain, lack of sleep, and poor performance at school or work. Playing video games for long periods may also reduce the time available for physical activity, which can have negative effects on health. Parents often worry about children playing violent or inappropriate games.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Video games are extremely popular among young people and can offer some educational benefits, such as improving problem-solving skills and encouraging international communication in multiplayer settings. However, excessive play can cause health problems including eye strain and sleep deprivation, reduce time for physical exercise, and expose younger players to violent or inappropriate content.`,
+      sampleWordCount: 52,
+      structure: '①導入（ゲームの普及）→ ②利点（問題解決能力・集中力・コミュニケーション）→ ③問題点（過度な使用による健康問題・運動不足・不適切コンテンツ）',
+      keyPoints: [
+        '第1段落：「ゲームが若者の人気娯楽になっている」という導入を一文で',
+        '第2段落：利点を2〜3点（①問題解決力・集中力向上、②多国籍プレイヤーとのコミュニケーション）',
+        '第3段落：問題点を3点（①健康への悪影響（目・睡眠）、②運動不足、③不適切コンテンツ）',
+        'However で利点と問題点を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'develop problem-solving skills', alt: 'improve critical thinking / become better at solving problems' },
+        { original: 'communicate and cooperate with people from different countries', alt: 'interact with international players / connect with people worldwide' },
+        { original: 'too many hours playing', alt: 'excessive gaming / spending too much time on games' },
+        { original: 'reduce the time available for physical activity', alt: 'leave less time for exercise / limit opportunities to be active' },
+      ],
+      usefulPhrases: [
+        'can offer some educational benefits （いくつかの教育的な利点をもたらす可能性がある）',
+        'excessive play can cause ~ （過度なプレイは～を引き起こす可能性がある）',
+        'expose younger players to ~ （年少プレイヤーを～にさらす）',
+      ],
+    },
+    {
+      id: 'g2-20', label: 'オリジナル No.20', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Local Farming', titleJa: '地産地消',
+      passage: `In recent years, there has been growing interest in buying locally produced food in Japan. This practice, sometimes called "local production for local consumption," encourages people to buy vegetables, fruits, and other products grown or made in their region.
+
+Buying locally produced food has several advantages. Fresh produce from nearby farms does not need to travel long distances, so it is often fresher and more nutritious than food imported from abroad. Buying local also supports local farmers and helps the regional economy grow. Furthermore, because locally grown food requires less transportation, it produces fewer carbon emissions, which is good for the environment.
+
+However, there are some challenges to buying locally. Local products are sometimes more expensive than imported goods because they are produced in smaller quantities. In addition, the variety of local products can be limited depending on the season and the region. It may also be difficult for people living in cities to access locally produced food.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Locally produced food is attracting more attention in Japan as people seek fresher and more environmentally friendly options. Buying local supports nearby farmers, provides fresher and more nutritious produce, and reduces carbon emissions from transportation. However, locally grown goods are often more expensive and less varied than imported products, and city residents may have limited access to them.`,
+      sampleWordCount: 55,
+      structure: '①導入（地産地消への関心の高まり）→ ②利点（鮮度・栄養・地元経済・環境）→ ③課題（価格・品揃えの限界・都市での入手困難）',
+      keyPoints: [
+        '第1段落：「地元産食品への関心が高まっている」という状況を導入として一文で',
+        '第2段落：利点を3〜4点（①新鮮で栄養価が高い、②地元農家と地域経済への貢献、③CO2削減）',
+        '第3段落：課題を3点（①価格が高い、②品揃えが季節・地域で限られる、③都市での入手困難）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'does not need to travel long distances', alt: 'requires less transportation / is transported over shorter distances' },
+        { original: 'fresher and more nutritious', alt: 'of better quality / retains more nutrients' },
+        { original: 'produces fewer carbon emissions', alt: 'has a smaller carbon footprint / is more eco-friendly' },
+        { original: 'limited depending on the season and the region', alt: 'vary with the season and location / not always available' },
+      ],
+      usefulPhrases: [
+        'is attracting more attention （ますます注目を集めている）',
+        'as people seek ~ （人々が～を求めるにつれて）',
+        'city residents may have limited access to ~ （都市の住民は～へのアクセスが限られる可能性がある）',
+      ],
+    },
+    {
+      id: 'g2-21', label: 'オリジナル No.21', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Sleep and Health', titleJa: '睡眠と健康',
+      passage: `Getting enough sleep is one of the most important things people can do for their health. Health experts recommend that adults sleep between seven and nine hours each night, but many people in Japan and other countries regularly sleep less than this.
+
+A good night's sleep brings many health benefits. During sleep, the body repairs itself, and the brain organizes and stores memories. People who sleep enough tend to be more focused and productive during the day, and they are less likely to make mistakes at work or school. Adequate sleep also strengthens the immune system and reduces the risk of diseases such as diabetes and heart disease.
+
+On the other hand, not getting enough sleep can have serious consequences. Chronic sleep deprivation can cause poor concentration, mood swings, and reduced physical performance. Long-term lack of sleep is linked to higher risks of obesity, high blood pressure, and mental health problems. Modern lifestyle habits, such as using smartphones at night and working long hours, make it difficult for many people to get enough rest.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Adequate sleep is essential for good health, yet many people fail to get enough. Sufficient sleep allows the body and brain to recover, improves concentration and productivity, and protects against diseases. However, chronic sleep deprivation leads to poor focus, mood swings, and increased risks of obesity and mental illness, often worsened by modern habits such as late-night smartphone use.`,
+      sampleWordCount: 57,
+      structure: '①導入（睡眠の重要性・不足の現状）→ ②十分な睡眠の利点（身体回復・集中力・免疫力向上）→ ③睡眠不足の悪影響（集中力低下・気分の変動・生活習慣病リスク）',
+      keyPoints: [
+        '第1段落：「十分な睡眠が健康に不可欠だが、多くの人が睡眠不足である」という状況を一文で導入',
+        '第2段落：十分な睡眠の利点（①身体の修復・記憶の整理、②集中力・生産性向上、③免疫力強化・病気リスク低下）',
+        '第3段落：睡眠不足の問題（①集中力低下・気分の変動、②肥満・高血圧・精神疾患リスク、③現代のライフスタイル習慣）',
+        'However で利点と問題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'repairs itself', alt: 'recovers and restores energy / heals and regenerates' },
+        { original: 'more focused and productive', alt: 'better able to concentrate / more efficient and alert' },
+        { original: 'chronic sleep deprivation', alt: 'long-term lack of sleep / consistently not sleeping enough' },
+        { original: 'mood swings', alt: 'emotional instability / changes in mood' },
+      ],
+      usefulPhrases: [
+        'is essential for ~ （～に不可欠である）',
+        'Sufficient sleep allows the body to ~ （十分な睡眠によって体は～できる）',
+        'leads to ~ including ~ （～を含む～につながる）',
+      ],
+    },
+    {
+      id: 'g2-22', label: 'オリジナル No.22', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Second-hand Shopping', titleJa: 'フリマ・中古品',
+      passage: `In recent years, buying second-hand goods has become increasingly popular among people of all ages in Japan. Online platforms and apps that connect buyers and sellers of used items have made it easier than ever to find pre-owned clothes, electronics, and household goods.
+
+Buying second-hand items has several advantages. It is usually much cheaper than buying new products, which allows people to save money or afford items they could not otherwise buy. Second-hand shopping is also good for the environment because it reduces the amount of waste sent to landfills and decreases the demand for new products to be manufactured. In addition, shoppers can sometimes find rare or unique items that are no longer sold in stores.
+
+However, there are also some drawbacks to buying used goods. The quality of second-hand items can vary greatly, and buyers may receive products that are damaged or not as described. There is also typically no warranty or return policy, which means buyers take on greater risk. Furthermore, finding the right item can take a lot of time and effort.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Second-hand shopping has grown in popularity in Japan, driven by online platforms that make buying and selling used items easy. It saves money, reduces waste and production demand, and offers access to rare or discontinued products. However, the quality of used goods is inconsistent, warranty protection is usually absent, and searching for specific items can be time-consuming.`,
+      sampleWordCount: 53,
+      structure: '①導入（フリマ・中古品購入の人気・オンラインプラットフォームの普及）→ ②利点（節約・環境への良さ・希少品の入手）→ ③課題（品質のばらつき・保証なし・時間がかかる）',
+      keyPoints: [
+        '第1段落：「フリマアプリなどの普及で中古品購入が広まっている」という状況を一文で導入',
+        '第2段落：利点を3点（①費用節約、②環境への貢献（廃棄物削減・製造需要低下）、③希少品の入手）',
+        '第3段落：課題を3点（①品質のばらつき・状態の不確実さ、②保証・返品ポリシーなし、③時間・手間）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'connect buyers and sellers of used items', alt: 'link people who want to buy and sell second-hand goods' },
+        { original: 'reduces the amount of waste sent to landfills', alt: 'cuts down on rubbish / decreases environmental waste' },
+        { original: 'vary greatly', alt: 'differ significantly / be inconsistent' },
+        { original: 'no warranty or return policy', alt: 'no guarantee or refund option / no consumer protection' },
+      ],
+      usefulPhrases: [
+        'has grown in popularity （人気が高まっている）',
+        'driven by ~ （～によって促進されて）',
+        'can be time-consuming （時間がかかる可能性がある）',
+      ],
+    },
+    {
+      id: 'g2-23', label: 'オリジナル No.23', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Music and Learning', titleJa: '音楽と学習',
+      passage: `Listening to music and learning to play a musical instrument are popular activities among people of all ages in Japan. Many schools include music in their curriculum, and music lessons outside of school are also widely available.
+
+Music education has several important benefits. Learning to play an instrument helps children develop concentration, patience, and the ability to follow instructions. Studies have shown that students who study music often perform better in other subjects, such as mathematics and languages, because music training exercises the brain. In addition, performing music in a group teaches children teamwork and helps build their confidence.
+
+However, music education also has its challenges. Learning an instrument requires a great deal of time and regular practice, which can be difficult for busy students. Private music lessons can also be expensive, making them inaccessible for some families. Furthermore, some schools are cutting back on music classes due to budget reductions, which limits opportunities for students to learn music at school.`,
+      targetMin: 45, targetMax: 55,
+      sampleAnswer: `Music education offers valuable benefits for students, including improved concentration, better performance in other subjects such as mathematics, and opportunities to develop teamwork and confidence. However, consistent practice demands considerable time, private lessons can be costly for many families, and budget cuts in schools are reducing the availability of music classes for students.`,
+      sampleWordCount: 50,
+      structure: '①導入（音楽教育の普及）→ ②利点（集中力・他教科への好影響・チームワーク・自信）→ ③課題（練習時間・費用・学校での削減）',
+      keyPoints: [
+        '第1段落：「音楽を学ぶことが学校内外で広く行われている」という導入を一文で',
+        '第2段落：利点を3〜4点（①集中力・忍耐力の向上、②数学・語学への好影響、③チームワーク・自信の育成）',
+        '第3段落：課題を3点（①多くの練習時間が必要、②個人レッスンの費用、③学校での削減）',
+        'However で利点と課題を対比する',
+      ],
+      paraphraseTips: [
+        { original: 'develop concentration, patience, and the ability to follow instructions', alt: 'improve focus, discipline, and listening skills' },
+        { original: 'often perform better in other subjects', alt: 'achieve higher grades in other areas / excel in other academic fields' },
+        { original: 'cutting back on music classes', alt: 'reducing music education / scaling back music programs' },
+        { original: 'a great deal of time and regular practice', alt: 'consistent effort and dedication / significant time commitment' },
+      ],
+      usefulPhrases: [
+        'offers valuable benefits for ~ （～に貴重な利点をもたらす）',
+        'consistent practice demands ~ （継続的な練習には～が必要だ）',
+        'reducing the availability of ~ （～の利用可能性を低下させる）',
+      ],
+    },
   ],
   grade1: [
     {
-      id: 'g1-1', label: 'オリジナル No.1', type: '要約問題 A',
+      id: 'g1-1', label: 'オリジナル No.1', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Aging Populations and the Workforce', titleJa: '高齢化社会と労働力',
       passage: `Many developed nations, including Japan and several European countries, are confronting a profound demographic shift as their populations age at an unprecedented pace. The proportion of citizens over the age of 65 is rising steadily while birthrates continue to decline, creating economic and social challenges that governments are struggling to address.
 
@@ -435,7 +735,7 @@ To address these challenges, governments are implementing various strategies. So
       ],
     },
     {
-      id: 'g1-2', label: 'オリジナル No.2', type: '要約問題 B',
+      id: 'g1-2', label: 'オリジナル No.2', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Urban Heat and Green Infrastructure', titleJa: '都市の熱と緑のインフラ',
       passage: `As global temperatures continue to climb, major cities around the world are increasingly grappling with a phenomenon known as the urban heat island effect, in which densely built-up areas become significantly hotter than the surrounding rural regions. This issue is particularly acute during summer months, when concrete buildings and asphalt roads absorb solar radiation and release it slowly, causing nighttime temperatures to remain uncomfortably high.
 
@@ -466,7 +766,7 @@ In response to these challenges, urban planners and engineers are turning to so-
       ],
     },
     {
-      id: 'g1-3', label: 'オリジナル No.3', type: '要約問題 A',
+      id: 'g1-3', label: 'オリジナル No.3', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Artificial Intelligence in Education', titleJa: 'AI教育の課題と可能性',
       passage: `The rapid advancement of artificial intelligence is beginning to transform the way students learn and the way educators teach. Across a growing number of countries, AI-powered tools are being integrated into classrooms, promising to personalize instruction in ways that traditional teaching methods cannot easily achieve.
 
@@ -498,7 +798,7 @@ Critics, however, raise important concerns about the widespread adoption of AI i
       ],
     },
     {
-      id: 'g1-4', label: 'オリジナル No.4', type: '要約問題 B',
+      id: 'g1-4', label: 'オリジナル No.4', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Food Security and Climate Change', titleJa: '食料安全保障と気候変動',
       passage: `Climate change is increasingly threatening global food systems, posing one of the most complex challenges humanity will face in the coming decades. Rising temperatures, more frequent extreme weather events, and shifting precipitation patterns are disrupting agricultural production across vast regions of the world, with the most severe consequences falling disproportionately on developing nations in tropical and subtropical areas.
 
@@ -530,7 +830,7 @@ In response, agricultural scientists and policymakers are pursuing a range of ad
       ],
     },
     {
-      id: 'g1-5', label: 'オリジナル No.5', type: '要約問題 A',
+      id: 'g1-5', label: 'オリジナル No.5', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Mental Health in the Workplace', titleJa: '職場のメンタルヘルス',
       passage: `Mental health challenges among working adults have emerged as a pressing public health concern across industrialized nations, with rates of burnout, anxiety, and depression rising steadily over the past two decades. The demands of modern work environments—characterized by long hours, constant connectivity through digital devices, and intense performance pressure—have contributed significantly to this deterioration in psychological well-being.
 
@@ -562,7 +862,7 @@ Companies and governments are increasingly recognizing the need to address this 
       ],
     },
     {
-      id: 'g1-6', label: 'オリジナル No.6', type: '要約問題 B',
+      id: 'g1-6', label: 'オリジナル No.6', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'The Renewable Energy Transition', titleJa: '再生可能エネルギーへの移行',
       passage: `The imperative to decarbonize the global economy has placed renewable energy at the center of international climate policy, with solar and wind power in particular experiencing dramatic cost reductions and rapid capacity growth over the past decade. Numerous governments have set ambitious targets for transitioning away from fossil fuels, driven both by climate commitments and by growing concerns over energy security following volatility in international energy markets.
 
@@ -594,7 +894,7 @@ Socioeconomic dimensions of the energy transition further complicate the picture
       ],
     },
     {
-      id: 'g1-8', label: 'オリジナル No.8', type: '要約問題 A',
+      id: 'g1-8', label: 'オリジナル No.8', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Globalization and Cultural Identity', titleJa: 'グローバル化と文化的アイデンティティ',
       passage: `The accelerating pace of globalization has fundamentally transformed how cultures interact and evolve across the world. As international trade, digital communication, and mass migration have intensified, the boundaries separating distinct cultural traditions have grown increasingly porous, prompting scholars and policymakers alike to debate whether these processes foster mutual enrichment or hasten the erosion of cultural diversity.
 
@@ -626,7 +926,7 @@ Defenders of cultural globalization, however, contend that the interaction of cu
       ],
     },
     {
-      id: 'g1-9', label: 'オリジナル No.9', type: '要約問題 B',
+      id: 'g1-9', label: 'オリジナル No.9', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Automation and the Future of Work', titleJa: '自動化と労働の未来',
       passage: `The rapid diffusion of automation technologies—ranging from industrial robotics to sophisticated machine learning algorithms—is reshaping the global labor market with a speed and scope that economists and policymakers are struggling to comprehend. Unlike previous waves of technological displacement, which primarily affected manual and routine cognitive tasks, contemporary automation increasingly threatens occupations requiring analytical reasoning, complex communication, and even creative judgment, blurring the boundaries that once made certain professional roles appear safe from technological substitution.
 
@@ -658,7 +958,7 @@ Governments and institutions are responding to these pressures through a range o
       ],
     },
     {
-      id: 'g1-10', label: 'オリジナル No.10', type: '要約問題 A',
+      id: 'g1-10', label: 'オリジナル No.10', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Ocean Pollution and Marine Ecosystems', titleJa: '海洋汚染と海洋生態系',
       passage: `The world's oceans, which cover more than seventy percent of the Earth's surface and are home to an estimated eighty percent of all life on the planet, are under mounting pressure from human activities. Among the most pervasive and damaging forms of pollution affecting marine environments is plastic waste, which accumulates in enormous concentrations in oceanic gyres and steadily fragments into microplastics that permeate every level of the marine food web, from microscopic plankton to apex predators.
 
@@ -690,7 +990,7 @@ International efforts to address ocean plastic pollution have accelerated in rec
       ],
     },
     {
-      id: 'g1-11', label: 'オリジナル No.11', type: '要約問題 B',
+      id: 'g1-11', label: 'オリジナル No.11', type: '要約問題 B', addedAt: '2025-01-01',
       title: 'Universal Basic Income', titleJa: 'ユニバーサル・ベーシックインカム',
       passage: `Universal basic income—a policy proposal in which governments provide every citizen with a regular, unconditional cash payment sufficient to cover basic living needs—has attracted growing intellectual and political interest as a potential response to rising economic insecurity, technological unemployment, and the perceived inadequacy of existing social safety nets. Pilot programs have been conducted in countries including Finland, Kenya, and Canada, generating a substantial body of empirical evidence that proponents cite as demonstrating the policy's potential.
 
@@ -722,7 +1022,7 @@ Critics challenge these claims on several grounds. Fiscal conservatives question
       ],
     },
     {
-      id: 'g1-12', label: 'オリジナル No.12', type: '要約問題 A',
+      id: 'g1-12', label: 'オリジナル No.12', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Space Exploration and Scientific Progress', titleJa: '宇宙探査と科学的進歩',
       passage: `Humanity's exploration of space, once the exclusive domain of government agencies with vast state resources, is undergoing a dramatic transformation as private commercial enterprises enter the sector with unprecedented ambition. Companies such as SpaceX and Blue Origin have dramatically reduced launch costs through the development of reusable rocket technology, opening possibilities for more frequent missions and stimulating renewed public and political interest in human expansion beyond Earth. These developments have reinvigorated long-dormant discussions about lunar colonization, Mars settlement, and the eventual exploitation of extraterrestrial mineral resources.
 
@@ -754,7 +1054,7 @@ Critics of the current trajectory of space development, however, raise important
       ],
     },
     {
-      id: 'g1-7', label: 'オリジナル No.7', type: '要約問題 A',
+      id: 'g1-7', label: 'オリジナル No.7', type: '要約問題 A', addedAt: '2025-01-01',
       title: 'Digital Privacy and Data Collection', titleJa: 'デジタルプライバシーとデータ収集',
       passage: `The proliferation of digital services and internet-connected devices has enabled corporations to amass unprecedented quantities of personal data, fundamentally altering the relationship between individuals and the organizations that serve them. Behavioral data derived from browsing habits, purchasing patterns, location tracking, and social media activity is now harvested at a scale and granularity that would have been unimaginable even two decades ago, and this information has become the primary currency fueling the digital economy.
 
@@ -783,6 +1083,306 @@ Nevertheless, the unchecked accumulation of personal data raises profound concer
         'in ways that users seldom notice （ユーザーがほとんど気づかない形で）',
         'attempt to restore individual control （個人のコントロールを取り戻そうとする）',
         'critics argue these measures fall short （批評家はこれらの対策が不十分だと主張する）',
+      ],
+    },
+    {
+      id: 'g1-13', label: 'オリジナル No.13', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Biodiversity and Ecosystem Services', titleJa: '生物多様性と生態系サービス',
+      passage: `The natural world provides humanity with an enormous range of services that are often overlooked or taken for granted. Scientists and environmentalists refer to these as "ecosystem services," which include everything from the purification of water and the pollination of crops to the regulation of climate and the prevention of soil erosion. These benefits, collectively worth trillions of dollars annually, depend entirely on the preservation of biodiversity—the remarkable variety of plant, animal, and microbial life that inhabits Earth's ecosystems.
+
+Despite this indispensable value, biodiversity is declining at an alarming rate. Habitat destruction driven by agricultural expansion, urban development, and deforestation is eliminating species at a pace far exceeding natural extinction rates. The loss of even a single species can trigger cascade effects throughout a food web, undermining the stability of entire ecosystems. Marine environments are particularly vulnerable, as overfishing and ocean acidification caused by rising carbon dioxide levels are devastating coral reefs and the rich communities of life they support.
+
+In response to this crisis, international bodies such as the Convention on Biological Diversity have sought to coordinate global conservation efforts, including the establishment of protected areas and the regulation of harmful industrial practices. However, translating international agreements into effective local action remains profoundly challenging. Economic pressures often lead governments in developing nations to prioritize immediate growth over environmental stewardship, and enforcement of conservation laws is frequently inadequate. Furthermore, even ambitious restoration programs cannot fully replace ecosystems once they have been irreversibly destroyed.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Biodiversity underpins a vast array of ecosystem services—from water purification and crop pollination to climate regulation—that are collectively worth trillions of dollars and essential to human civilization. However, habitat destruction, overexploitation, and ocean acidification are driving species extinction at unprecedented rates, destabilizing food webs and devastating marine environments such as coral reefs. In response, international bodies have established protected areas and regulated damaging industries, but translating these agreements into local action is deeply challenging. Economic priorities in developing countries frequently overshadow environmental concerns, enforcement is often insufficient, and irreversibly destroyed ecosystems cannot be fully restored even through the most ambitious recovery programs.`,
+      sampleWordCount: 101,
+      structure: '①現状（生態系サービスと生物多様性の価値）→ ②危機（生息地破壊・種の絶滅・海洋環境への脅威）→ ③国際的な対応＋課題（経済的圧力・執行不足・不可逆的破壊）',
+      keyPoints: [
+        '第1段落：「生態系サービスが人類に計り知れない恩恵をもたらし、それが生物多様性に依存している」と一文で導入',
+        '第2段落：危機の深刻さ（①生息地破壊による種の急速な絶滅、②食物連鎖へのカスケード効果、③海洋環境・サンゴ礁の破壊）',
+        '第3段落：2文で「国際的な保全の取り組み」と「その限界（経済的圧力・執行困難・回復不能）」を論じる',
+        'ディスコースマーカー（However, In response, frequently, even...cannot）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'declining at an alarming rate', alt: 'decreasing rapidly / deteriorating at an unprecedented pace' },
+        { original: 'trigger cascade effects', alt: 'set off chain reactions / cause knock-on effects' },
+        { original: 'translating international agreements into effective local action', alt: 'implementing global policies at the local level / turning commitments into real change' },
+        { original: 'irreversibly destroyed', alt: 'permanently lost / beyond recovery' },
+      ],
+      usefulPhrases: [
+        'underpins a vast array of ~ （膨大な数の～を支えている）',
+        'In response, ~ （これに対応して）',
+        'cannot be fully restored even through ~ （～をもってしても完全には回復できない）',
+      ],
+    },
+    {
+      id: 'g1-14', label: 'オリジナル No.14', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Remote Work and Urban Migration', titleJa: 'リモートワークと都市移住',
+      passage: `The dramatic expansion of remote work technologies, accelerated by the global pandemic that began in 2020, has fundamentally altered the relationship between employment and geographic location. For the first time in the modern era, a significant proportion of knowledge workers are no longer compelled to reside near their employers' offices, creating new possibilities for where and how people choose to live.
+
+This shift has had profound consequences for urban and rural demographics alike. Major metropolitan areas have seen some residents relocate to smaller cities, rural towns, and even overseas destinations in search of lower living costs, larger living spaces, and improved quality of life. This phenomenon has revitalized certain regions that had previously experienced population decline, injecting new economic activity into local businesses and real estate markets that struggled under decades of stagnation.
+
+Nevertheless, this transformation is not without significant complications. The concentration of high-earning remote workers in previously affordable communities has driven up housing prices, potentially displacing long-term residents who cannot afford the increased costs. Critics also question whether the productivity gains attributed to remote work are sustainable over the long term, as isolation from colleagues may hinder creativity and the spontaneous collaboration that often drives innovation. Furthermore, not all workers have equal access to remote work opportunities, meaning that the benefits of this shift are distributed unevenly across different socioeconomic groups.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The pandemic-driven expansion of remote work has severed the traditional link between employment and location, enabling knowledge workers to live far from their employers' offices. As a result, some city residents have relocated to rural or smaller communities seeking lower costs and better living conditions, reviving economically stagnant regions and stimulating local markets. However, this influx of higher-income workers has also inflated housing prices in previously affordable areas, potentially displacing existing residents. Additionally, long-term isolation from colleagues may undermine creativity and innovation, and because remote work opportunities are not equally distributed, the benefits of this transition are likely to remain concentrated among already-privileged groups.`,
+      sampleWordCount: 104,
+      structure: '①現状（リモートワークの拡大と場所の自由化）→ ②影響（地方への移住・過疎地域の再活性化）→ ③課題（住宅価格の上昇・創造性への影響・機会の格差）',
+      keyPoints: [
+        '第1段落：「パンデミックを機に拡大したリモートワークが雇用と場所の関係を変えた」と一文で導入',
+        '第2段落：1文で「都市部から地方への移住とその地域経済への好影響」をまとめる',
+        '第3段落：英検1級では2文で「住宅価格の上昇・既存住民の排除」と「創造性の阻害・機会の不平等」を論じる',
+        'ディスコースマーカー（As a result, However, Additionally）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'severed the traditional link between employment and location', alt: 'freed workers from the need to live near their offices / broken the connection between work and place' },
+        { original: 'reviving economically stagnant regions', alt: 'breathing new life into depressed areas / boosting struggling local economies' },
+        { original: 'inflated housing prices', alt: 'driven up property values / made housing more expensive' },
+        { original: 'not equally distributed', alt: 'unevenly shared / accessible only to certain groups' },
+      ],
+      usefulPhrases: [
+        'has severed the traditional link between ~ and ~ （～と～の従来のつながりを断ち切った）',
+        'As a result, ~ （その結果）',
+        'because ~ are not equally distributed （～が均等に分配されていないため）',
+      ],
+    },
+    {
+      id: 'g1-15', label: 'オリジナル No.15', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Cryptocurrency and Financial Systems', titleJa: '暗号資産と金融システム',
+      passage: `The emergence of Bitcoin in 2009 and the subsequent proliferation of cryptocurrencies have introduced a fundamentally new paradigm to global finance. Unlike traditional currencies issued and regulated by central banks, cryptocurrencies operate on decentralized blockchain networks, where transactions are verified by a distributed network of computers rather than by any single institutional authority. Proponents argue that this architecture has the potential to democratize financial services, reduce transaction costs, and provide banking access to the estimated 1.4 billion adults worldwide who currently lack it.
+
+However, the volatile and speculative nature of cryptocurrency markets has raised considerable alarm among regulators and financial stability watchdogs. The value of major cryptocurrencies has experienced dramatic fluctuations, sometimes losing or gaining more than half their value within a matter of weeks, making them unreliable as a stable medium of exchange. Moreover, cryptocurrencies have facilitated illegal activities including money laundering, ransomware attacks, and sanctions evasion, as pseudonymous transactions are difficult for law enforcement agencies to trace.
+
+Environmental concerns also loom large, as the energy-intensive consensus mechanisms used by some cryptocurrencies consume electricity on a scale comparable to that of medium-sized nations. Governments around the world have responded with a wide range of regulatory approaches, from outright bans to frameworks that attempt to harness the innovation of blockchain technology while constraining its risks. Critics, however, maintain that existing regulatory infrastructure is inadequate to address the speed at which this sector is evolving, and that excessive intervention could stifle legitimate financial innovation.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Cryptocurrencies operate on decentralized blockchain networks outside traditional banking systems and offer potential benefits including lower transaction costs and expanded financial access for unbanked populations. Nevertheless, extreme price volatility makes them unreliable as a medium of exchange, and their pseudonymous nature has enabled money laundering, ransomware, and sanctions evasion that authorities find difficult to detect. Environmental concerns are also significant, as energy-intensive mining processes consume electricity comparable to entire nations. Governments have adopted varied regulatory responses, but critics argue that existing frameworks cannot keep pace with the sector's rapid evolution, and that heavy-handed regulation risks suppressing legitimate financial innovation in blockchain technology.`,
+      sampleWordCount: 100,
+      structure: '①現状（暗号資産の仕組みと潜在的メリット）→ ②問題点（価格変動・犯罪利用）→ ③環境問題・規制の対応＋課題',
+      keyPoints: [
+        '第1段落：「暗号資産は分散型ブロックチェーン上で動作し、取引コスト削減や金融包摂の可能性がある」と一文でまとめる',
+        '第2段落：1文で「価格変動の激しさと犯罪利用（資金洗浄・ランサムウェア・制裁逃れ）」をまとめる',
+        '第3段落：英検1級では2文で「環境問題（エネルギー消費）と規制の対応」、および「規制の限界と過度な介入のリスク」を論じる',
+        'ディスコースマーカー（Nevertheless, also, however）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'democratize financial services', alt: 'make finance accessible to more people / open banking to underserved populations' },
+        { original: 'volatile and speculative nature', alt: 'extreme price fluctuations / highly unstable value' },
+        { original: 'pseudonymous transactions', alt: 'anonymous transfers / hard-to-trace payments' },
+        { original: 'stifle legitimate financial innovation', alt: 'suppress beneficial technological progress / hinder creative finance' },
+      ],
+      usefulPhrases: [
+        'outside traditional banking systems （従来の銀行システムの外で）',
+        'cannot keep pace with ~ （～に追いつけない）',
+        'risks suppressing ~ （～を抑制するリスクがある）',
+      ],
+    },
+    {
+      id: 'g1-16', label: 'オリジナル No.16', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Global Mental Health Crisis', titleJa: '世界的なメンタルヘルス危機',
+      passage: `Mental health disorders have become one of the most pressing public health challenges of the twenty-first century, affecting an estimated one billion people globally. Conditions such as depression, anxiety, and post-traumatic stress disorder impose enormous burdens not only on individuals and their families, but also on national economies through lost productivity, increased healthcare expenditure, and elevated rates of disability. The World Health Organization estimates that mental health conditions account for roughly one-third of all years lived with disability worldwide.
+
+Despite their scale and impact, mental health conditions remain severely underfunded and stigmatized relative to physical illnesses of comparable burden. In many high-income countries, mental health receives only a small fraction of overall healthcare budgets, and in lower-income nations the treatment gap—the proportion of people who need but do not receive care—can exceed ninety percent. Social stigma surrounding mental illness continues to discourage many individuals from seeking help, leading to delayed diagnoses and prolonged suffering.
+
+The COVID-19 pandemic dramatically worsened this pre-existing crisis, triggering surges in depression, anxiety, and social isolation across all demographic groups. In response, some governments have increased funding for digital mental health services, including teletherapy and AI-assisted screening tools, as a more scalable and stigma-reducing approach. Critics, however, caution that technology cannot replace the therapeutic value of human clinical relationships, and that systemic reforms to education, labor conditions, and social support networks are ultimately more important than any technological intervention.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Mental health disorders affect approximately one billion people globally, imposing massive economic costs through lost productivity and increased healthcare expenditure, yet they remain severely underfunded and heavily stigmatized compared to physical illnesses of similar burden. Treatment gaps are enormous, particularly in lower-income nations, and social stigma continues to prevent many sufferers from seeking help. The COVID-19 pandemic exacerbated this crisis, prompting some governments to expand digital mental health services such as teletherapy as a scalable solution. Nevertheless, critics argue that technology cannot substitute for genuine clinical relationships, and that meaningful progress requires systemic reforms in education, working conditions, and social support structures.`,
+      sampleWordCount: 101,
+      structure: '①現状（精神疾患の世界的規模と経済的影響）→ ②課題（資金不足・スティグマ・治療格差）→ ③コロナ禍の影響・デジタル対応＋批判',
+      keyPoints: [
+        '第1段落：「精神疾患が10億人に影響し、経済的損失も甚大だが、身体的疾患と比べて過小評価されている」と一文で導入',
+        '第2段落：1文で「治療格差の深刻さとスティグマによる治療回避」をまとめる',
+        '第3段落：英検1級では2文で「コロナ禍の悪化とデジタル対応（テレセラピー等）」と「技術の限界・構造的改革の必要性」を論じる',
+        'ディスコースマーカー（yet, particularly, Nevertheless）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'imposing massive economic costs', alt: 'placing huge financial burdens / creating enormous economic strain' },
+        { original: 'severely underfunded and heavily stigmatized', alt: 'neglected financially and socially / inadequately resourced and misunderstood' },
+        { original: 'treatment gaps', alt: 'the proportion of people who need but cannot access care / unmet needs for mental healthcare' },
+        { original: 'systemic reforms', alt: 'structural changes / fundamental improvements to the system' },
+      ],
+      usefulPhrases: [
+        'impose massive economic costs through ~ （～を通じて多大な経済的コストをもたらす）',
+        'yet they remain ~ （それにもかかわらず～のままである）',
+        'cannot substitute for ~ （～の代わりにはなれない）',
+      ],
+    },
+    {
+      id: 'g1-17', label: 'オリジナル No.17', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Food Security and Climate Change', titleJa: '食糧安全保障と気候変動',
+      passage: `The relationship between climate change and global food security represents one of the most formidable challenges confronting humanity over the coming decades. Rising temperatures, shifting precipitation patterns, and an increase in the frequency of extreme weather events such as droughts, floods, and heatwaves are already disrupting agricultural production in regions home to hundreds of millions of subsistence farmers. The Intergovernmental Panel on Climate Change has projected that without significant mitigation efforts, yields of staple foods including wheat, rice, and maize could decline by up to twenty-five percent by the end of the century.
+
+The consequences of this disruption are likely to be felt most acutely in sub-Saharan Africa, South Asia, and Southeast Asia, where agriculture forms the backbone of both national economies and individual livelihoods. Reduced agricultural productivity will not only exacerbate malnutrition and food insecurity but may also trigger political instability as communities compete for diminishing arable land and freshwater resources. Furthermore, the feedback loop between food production and climate change is particularly concerning: modern industrial agriculture is itself a major contributor to greenhouse gas emissions through livestock farming and the use of synthetic fertilizers.
+
+Governments and international organizations are responding through adaptation and mitigation strategies. Investment in drought-resistant crop varieties, precision irrigation technologies, and sustainable farming practices offers promise in reducing vulnerability. However, critics point out that the pace of these transitions is far too slow given the urgency of the crisis, and that structural inequalities in global trade continue to disadvantage smallholder farmers in developing nations, whose resilience is most essential to long-term food security.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Climate change poses a severe threat to global food security by disrupting precipitation, increasing extreme weather, and potentially reducing yields of staple crops by up to a quarter by 2100, with the most devastating effects expected in Africa and Asia. Reduced productivity risks deepening malnutrition and triggering conflict over increasingly scarce land and water, while industrial agriculture itself worsens climate change through significant greenhouse gas emissions. Governments and international bodies are investing in drought-resistant crops, precision irrigation, and sustainable practices, yet critics argue that progress is insufficient and that structural trade imbalances continue to disadvantage the smallholder farmers who are most crucial to future food security.`,
+      sampleWordCount: 104,
+      structure: '①現状（気候変動と農業生産への脅威）→ ②影響（食料安全保障・政治不安・農業のフィードバックループ）→ ③対応策（適応・緩和）＋課題（スピードの遅さ・構造的不平等）',
+      keyPoints: [
+        '第1段落：「気候変動が農業生産を脅かし、主食の収穫量が最大25%減少する恐れがある」と一文で導入',
+        '第2段落：1文で「食料不安・栄養失調・政治的不安定リスクと、農業自体が気候変動を悪化させる悪循環」をまとめる',
+        '第3段落：英検1級では2文で「耐旱性作物・精密農業などの対応策」と「移行速度の遅さ・貿易構造の不公平」の批判を論じる',
+        'ディスコースマーカー（with, while, yet, continue to）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'extreme weather events', alt: 'severe weather phenomena / destructive climatic events' },
+        { original: 'backbone of both national economies and individual livelihoods', alt: 'foundation of local economies and people\'s incomes' },
+        { original: 'feedback loop', alt: 'vicious cycle / self-reinforcing problem' },
+        { original: 'structural inequalities in global trade', alt: 'unfair global trade systems / imbalanced trading arrangements' },
+      ],
+      usefulPhrases: [
+        'poses a severe threat to ~ （～に深刻な脅威をもたらす）',
+        'risks deepening ~ and triggering ~ （～を深刻化させ、～を引き起こすリスクがある）',
+        'most crucial to ~ （～にとって最も重要な）',
+      ],
+    },
+    {
+      id: 'g1-18', label: 'オリジナル No.18', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Nuclear Energy Revival', titleJa: '原子力エネルギーの復興',
+      passage: `After decades of declining investment following high-profile accidents at Three Mile Island, Chernobyl, and Fukushima, nuclear energy is experiencing a remarkable resurgence of political and financial interest as governments grapple with the twin imperatives of decarbonizing their energy systems and ensuring reliable electricity supplies. Proponents argue that modern nuclear technology—particularly small modular reactors—represents a safe, low-carbon energy source that can generate baseload electricity consistently, unlike intermittent renewable sources such as wind and solar power that depend on weather conditions.
+
+The case for nuclear power is strengthened by the urgency of the climate crisis. Nuclear plants emit virtually no greenhouse gases during operation, and their energy density means that they can generate enormous amounts of electricity from relatively small land areas, in sharp contrast to the substantial land requirements of utility-scale solar and wind farms. Several countries, including France, which derives over seventy percent of its electricity from nuclear power, have demonstrated that a society can maintain energy security through a largely nuclear grid over many decades.
+
+However, formidable objections remain. The enormous capital costs of constructing new nuclear facilities, combined with the risk of significant construction delays, make nuclear energy financially uncertain compared to rapidly falling renewable energy costs. The unresolved problem of safely storing high-level nuclear waste for thousands of years continues to pose ethical and technical challenges. Furthermore, the threat of nuclear proliferation—the possibility that civil nuclear programs could provide cover for weapons development—remains a serious concern for international security institutions.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Nuclear energy is regaining political and financial attention as governments seek to decarbonize their energy systems while maintaining reliable electricity supplies. Modern reactor designs emit virtually no greenhouse gases during operation and can generate large amounts of baseload power from small land areas, as demonstrated by France's long-standing nuclear-dominant grid. Nevertheless, nuclear energy faces serious obstacles: construction costs are enormous and subject to delays, while rapidly improving renewables are becoming increasingly competitive. The persistent challenge of storing radioactive waste safely for millennia and the risk of civil nuclear programs enabling weapons development continue to raise profound ethical and international security concerns.`,
+      sampleWordCount: 101,
+      structure: '①現状（原子力の復興とその背景）→ ②利点（低炭素・高エネルギー密度・フランスの実例）→ ③課題（建設費・廃棄物処理・核拡散リスク）',
+      keyPoints: [
+        '第1段落：「脱炭素化の緊急性を背景に、原子力エネルギーへの関心が再燃している」と一文で導入',
+        '第2段落：1文で「運転中のCO2排出ほぼゼロ・小面積で大量発電・フランスの成功例」をまとめる',
+        '第3段落：英検1級では2文で「建設コストの巨大さと再エネの台頭」と「廃棄物処理問題と核拡散リスク」を論じる',
+        'ディスコースマーカー（Nevertheless, while, continue to）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'baseload electricity', alt: 'consistent, round-the-clock power supply / steady electricity output' },
+        { original: 'intermittent renewable sources', alt: 'weather-dependent energy sources / variable power generation' },
+        { original: 'enormous capital costs', alt: 'very high construction expenses / substantial upfront investment' },
+        { original: 'nuclear proliferation', alt: 'the spread of nuclear weapons capability / misuse of civil nuclear programs for weapons' },
+      ],
+      usefulPhrases: [
+        'is regaining political and financial attention （政治的・財政的な注目を再び集めている）',
+        'as demonstrated by ~ （～によって示されるように）',
+        'continue to raise profound ~ concerns （深刻な～懸念を引き続き提起している）',
+      ],
+    },
+    {
+      id: 'g1-19', label: 'オリジナル No.19', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Digital Privacy and Surveillance', titleJa: 'デジタルプライバシーと監視',
+      passage: `The rapid proliferation of internet-connected devices, digital platforms, and data analytics technologies has created an unprecedented capacity for both governments and corporations to monitor, record, and analyze the behaviors and movements of individuals on a scale that was unimaginable a generation ago. Proponents of pervasive data collection argue that it enables personalized services, improves public safety through crime detection, and allows governments to respond more effectively to public health crises, as was demonstrated during the COVID-19 pandemic.
+
+However, the erosion of personal privacy entailed by mass surveillance raises profound questions about civil liberties and political freedom. In authoritarian regimes, digital surveillance infrastructure has been used to identify and suppress political dissent, track minority populations, and silence journalists and activists. Even in democratic societies, revelations such as those made by whistleblower Edward Snowden in 2013 demonstrated that governments are capable of conducting sweeping surveillance programs that extend far beyond what is democratically accountable.
+
+In response to these concerns, jurisdictions such as the European Union have introduced landmark data protection legislation like the General Data Protection Regulation, which attempts to give individuals greater control over their personal data and imposes substantial fines on organizations that misuse it. Nevertheless, critics argue that regulation alone is insufficient to address the structural power imbalances inherent in the data economy, particularly as artificial intelligence enables ever more sophisticated forms of behavioral prediction and manipulation. The tension between security, convenience, and privacy is likely to remain one of the defining ethical debates of the digital age.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The explosion of internet-connected devices and data analytics has enabled governments and corporations to monitor individuals at an unprecedented scale, with claimed benefits including personalized services, improved crime prevention, and enhanced public health responses. However, mass surveillance threatens civil liberties and political freedom; authoritarian regimes have used it to suppress dissent and target minorities, while even democratic governments have conducted surveillance that exceeds democratic accountability, as Snowden's revelations showed. Legislation such as the EU's GDPR offers some protection for personal data, but critics contend that regulation cannot resolve fundamental power imbalances, especially as AI enables increasingly sophisticated behavioral prediction and manipulation.`,
+      sampleWordCount: 103,
+      structure: '①現状（デジタル監視の拡大と主張されるメリット）→ ②課題（市民的自由・権威主義的濫用・民主主義国家でも問題）→ ③法的対応（GDPR）＋批判（AI時代の限界）',
+      keyPoints: [
+        '第1段落：「インターネット接続機器とデータ分析が前例のない監視を可能にし、利便性や安全性の向上が主張されている」と一文でまとめる',
+        '第2段落：1文で「大規模監視が市民的自由を脅かし、権威主義体制と民主主義国家双方で問題が生じている」をまとめる',
+        '第3段落：英検1級では2文で「GDPRなどの規制の取り組み」と「AIによる操作の高度化・構造的格差の問題」を論じる',
+        'ディスコースマーカー（However, while, but）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'unprecedented scale', alt: 'at a level never seen before / to an extent previously unimaginable' },
+        { original: 'suppress political dissent', alt: 'silence opposition / crack down on critics' },
+        { original: 'democratically accountable', alt: 'subject to public oversight / answerable to citizens' },
+        { original: 'structural power imbalances', alt: 'fundamental inequality between individuals and institutions' },
+      ],
+      usefulPhrases: [
+        'has enabled ~ to monitor individuals at an unprecedented scale （前例のない規模で個人を監視することを可能にした）',
+        'exceeds democratic accountability （民主的な説明責任を超えている）',
+        'cannot resolve fundamental power imbalances （根本的な力の不均衡を解決できない）',
+      ],
+    },
+    {
+      id: 'g1-20', label: 'オリジナル No.20', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'The Gig Economy', titleJa: 'ギグエコノミー',
+      passage: `The gig economy—characterized by short-term contracts, freelance work, and platform-mediated employment in sectors such as ride-hailing, food delivery, and digital services—has expanded dramatically over the past decade and now encompasses tens of millions of workers worldwide. Advocates of this model highlight the unparalleled flexibility it affords workers, who can set their own hours, choose their assignments, and balance professional commitments with personal responsibilities such as childcare or study. For consumers, gig platforms offer convenient, on-demand access to services at competitive prices.
+
+From an economic perspective, the gig model has created pathways to income for populations that face barriers to traditional employment, including those with caregiving responsibilities, individuals with disabilities, and workers in regions where conventional employment opportunities are scarce. The low barriers to entry in many gig platforms also enable rapid labor market adjustment, allowing economies to more fluidly absorb shocks such as the structural unemployment caused by automation.
+
+Nevertheless, the gig economy has attracted fierce criticism for the precarious conditions it imposes on many workers. Unlike traditional employees, most gig workers are classified as independent contractors and are therefore excluded from fundamental labor protections including minimum wage guarantees, paid leave, and employer contributions to social insurance. The algorithmic management systems that platforms use to allocate work and set pay rates can be opaque and arbitrary, leaving workers with limited recourse when they feel unfairly treated. Labor movements in several countries have pushed back against this model, arguing that it effectively transfers economic risk onto individual workers while concentrating profits among a small number of platform owners.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `The gig economy, in which workers take short-term platform-mediated jobs in sectors like ride-hailing and food delivery, offers significant flexibility for individuals to set their own hours and balance personal commitments, while providing consumers with convenient on-demand services. It also creates income opportunities for those excluded from traditional employment due to caregiving duties, disabilities, or geographic constraints. However, the classification of most gig workers as independent contractors denies them basic labor rights including minimum wages, paid leave, and social insurance. Opaque algorithmic management limits workers' ability to challenge unfair treatment, and critics argue that the model systematically shifts economic risk onto workers while delivering profits to platform owners.`,
+      sampleWordCount: 107,
+      structure: '①現状（ギグエコノミーの特徴とメリット）→ ②経済的側面（参入障壁の低さ・雇用創出）→ ③課題（労働保護の欠如・アルゴリズム管理の不透明さ・経済リスクの転嫁）',
+      keyPoints: [
+        '第1段落：「ギグエコノミーがプラットフォーム型短期雇用として急拡大し、柔軟性と利便性が評価されている」と一文でまとめる',
+        '第2段落：1文で「従来の雇用から排除された人々への機会創出と労働市場の柔軟性向上」をまとめる',
+        '第3段落：英検1級では2文で「独立請負業者扱いによる労働保護の欠如」と「アルゴリズム管理の問題・プラットフォームへの利益集中」を論じる',
+        'ディスコースマーカー（while, However, and）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'platform-mediated employment', alt: 'app-based work / jobs arranged through digital platforms' },
+        { original: 'classified as independent contractors', alt: 'categorized as self-employed / not treated as regular employees' },
+        { original: 'excluded from fundamental labor protections', alt: 'denied basic worker rights / not entitled to standard employment benefits' },
+        { original: 'transfers economic risk onto individual workers', alt: 'places the financial burden on workers / shifts instability to employees' },
+      ],
+      usefulPhrases: [
+        'in which workers take ~ （労働者が～を担う）',
+        'denied them basic labor rights including ~ （～を含む基本的な労働権を剥奪する）',
+        'systematically shifts economic risk onto ~ （経済リスクを組織的に～に転嫁する）',
+      ],
+    },
+    {
+      id: 'g1-21', label: 'オリジナル No.21', type: '要約問題 A', addedAt: '2026-05-18',
+      title: 'Space Commercialization', titleJa: '宇宙の商業化',
+      passage: `The privatization of space exploration, driven by companies such as SpaceX and Blue Origin, has transformed what was once the exclusive domain of national space agencies into a rapidly expanding commercial frontier. Private investment has dramatically reduced the cost of launching payloads into orbit through innovations such as reusable rocket technology, opening possibilities for satellite-based internet services, space tourism, and ultimately the establishment of permanent human settlements beyond Earth. Proponents argue that commercial competition is accelerating technological innovation far beyond what government-funded programs could achieve within comparable budgets.
+
+The scientific and economic potential of space commercialization is substantial. Satellite constellations operated by private companies now provide high-speed internet connectivity to remote regions of the world, bridging the digital divide in ways that traditional terrestrial infrastructure cannot easily accomplish. Space-based observations contribute to climate monitoring, disaster response, and agricultural management, delivering benefits that extend far beyond the aerospace sector. Moreover, the prospect of accessing the mineral resources of the Moon and near-Earth asteroids could eventually alleviate the scarcity of rare earth elements that underpin modern technology.
+
+However, the rapid commercialization of space raises serious concerns that existing international governance frameworks are ill-equipped to address. The proliferation of satellites is generating unprecedented quantities of space debris that poses collision risks to operational spacecraft. Questions of resource ownership, territorial rights, and liability for damage caused by commercial operators remain inadequately resolved under the Outer Space Treaty of 1967, which predates the era of private space enterprise. Critics further warn that without more equitable international governance, the benefits of space commercialization may accrue disproportionately to already-wealthy nations and corporations.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Private companies such as SpaceX and Blue Origin have transformed space from a government domain into a commercial frontier, significantly reducing launch costs through reusable rockets and opening possibilities ranging from satellite internet and space tourism to asteroid mining. These advances have already delivered concrete benefits, including global internet access via satellite constellations and space-based data for climate and disaster management. However, the surge in commercial satellites is generating dangerous space debris, and fundamental questions of resource rights and liability remain inadequately addressed by the outdated Outer Space Treaty. Critics also warn that without equitable governance, the rewards of space commercialization will primarily benefit wealthy nations and corporations rather than humanity as a whole.`,
+      sampleWordCount: 105,
+      structure: '①現状（宇宙の商業化の進展・コスト削減）→ ②利点（衛星インターネット・気候観測・資源アクセス）→ ③課題（スペースデブリ・国際法の限界・格差の問題）',
+      keyPoints: [
+        '第1段落：「民間企業が宇宙開発を変革し、再利用ロケット等でコストを削減した」と一文で導入',
+        '第2段落：1文で「衛星インターネット・気候観測・希少資源へのアクセスなどの具体的メリット」をまとめる',
+        '第3段落：英検1級では2文で「スペースデブリの増加と1967年宇宙条約の限界」と「利益の不平等な分配」を論じる',
+        'ディスコースマーカー（However, also, rather than）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'reusable rocket technology', alt: 'rockets that can be recovered and relaunched / reusable launch vehicles' },
+        { original: 'bridging the digital divide', alt: 'reducing the gap in internet access / providing connectivity to underserved areas' },
+        { original: 'space debris', alt: 'orbital waste / fragments of retired satellites and rockets' },
+        { original: 'accrue disproportionately to', alt: 'benefit mainly / be concentrated among' },
+      ],
+      usefulPhrases: [
+        'has transformed ~ from ~ into ~ （～を～から～へと変えた）',
+        'remain inadequately addressed by ~ （～によって十分に対処されていない）',
+        'rather than humanity as a whole （人類全体としてではなく）',
+      ],
+    },
+    {
+      id: 'g1-22', label: 'オリジナル No.22', type: '要約問題 B', addedAt: '2026-05-18',
+      title: 'Antibiotic Resistance', titleJa: '抗生物質耐性',
+      passage: `The development of antibiotics in the twentieth century represented one of the most transformative breakthroughs in the history of medicine, enabling the successful treatment of bacterial infections that had previously caused mass mortality and rendering routine surgical procedures far safer than they had ever been. However, the overuse and misuse of antibiotics in human medicine and, particularly, in industrial livestock farming have created conditions that accelerate the evolutionary process by which bacteria develop resistance to these drugs. The World Health Organization estimates that drug-resistant infections already kill approximately 1.3 million people each year and could claim as many as ten million annual lives by 2050 if current trends continue.
+
+The mechanisms driving antibiotic resistance are deeply embedded in both medical practice and agricultural economics. In many countries, antibiotics are prescribed for viral infections against which they have no effect, partly because of patient demand and partly due to diagnostic uncertainty. In the livestock industry, antibiotics are routinely administered to healthy animals to promote growth and prevent disease in crowded factory farm conditions, resulting in antibiotic residues entering soil and water systems. These environments serve as breeding grounds for resistant bacterial strains that can transfer resistance genes across species, including to pathogens that infect humans.
+
+Efforts to combat antibiotic resistance require coordinated action at global and national levels. New antibiotic discovery has slowed dramatically because pharmaceutical companies find it economically unattractive to develop drugs intended to be used sparingly to preserve their efficacy. International bodies are pushing for surveillance of antibiotic use, restrictions on over-the-counter sales, incentives for pharmaceutical investment, and global commitments to reduce agricultural use. Critics, however, argue that without legally binding international agreements and stronger financial penalties for non-compliance, voluntary measures will fail to overcome the structural economic incentives that currently drive overuse.`,
+      targetMin: 90, targetMax: 110,
+      sampleAnswer: `Antibiotics revolutionized medicine by enabling treatment of previously fatal bacterial infections, but their overuse in human healthcare and industrial livestock farming has driven the evolution of drug-resistant bacteria, which already kill over one million people annually and could cause ten million deaths per year by 2050. Resistance is exacerbated by inappropriate prescribing for viral illnesses and the routine use of antibiotics in factory farming, which spreads resistant strains through soil and water. International efforts focus on surveillance, restricting sales, incentivizing drug development, and reducing agricultural use, yet critics contend that without legally binding global commitments and financial penalties, structural economic incentives will continue to drive dangerous overuse.`,
+      sampleWordCount: 105,
+      structure: '①現状（抗生物質の歴史的貢献と耐性の危機）→ ②耐性の深刻化（医療・畜産業での過剰使用のメカニズム）→ ③国際的な対応＋課題（拘束力のある合意の必要性）',
+      keyPoints: [
+        '第1段落：「抗生物質は医学を革命的に進歩させたが、過剰・誤用により薬剤耐性菌が急増し、2050年には年1,000万人死亡の恐れがある」と一文でまとめる',
+        '第2段落：1文で「医療での不適切な処方と畜産業での予防的使用が耐性拡散を加速させるメカニズム」をまとめる',
+        '第3段落：英検1級では2文で「国際的な監視・販売規制・農業での削減などの取り組み」と「拘束力のある合意がなければ経済的誘因に勝てないという批判」を論じる',
+        'ディスコースマーカー（yet, without, continue to）を効果的に使う',
+      ],
+      paraphraseTips: [
+        { original: 'overuse and misuse', alt: 'excessive and inappropriate use / unnecessary administration' },
+        { original: 'economically unattractive to develop', alt: 'not financially viable / unprofitable to research' },
+        { original: 'legally binding international agreements', alt: 'enforceable global treaties / mandatory international commitments' },
+        { original: 'structural economic incentives', alt: 'built-in financial pressures / underlying economic motivations' },
+      ],
+      usefulPhrases: [
+        'revolutionized medicine by ~ （～によって医学を革命的に進歩させた）',
+        'is exacerbated by ~ （～によって悪化している）',
+        'without legally binding ~ and financial penalties （法的拘束力のある～と財政的制裁なしでは）',
       ],
     },
   ],
@@ -1419,7 +2019,7 @@ export default function App() {
   const all = useMemo(() => [
     ...problemsData.grade2.map(p => ({ ...p, grade: 'grade2' })),
     ...problemsData.grade1.map(p => ({ ...p, grade: 'grade1' })),
-  ], []);
+  ].sort((a, b) => (b.addedAt || '').localeCompare(a.addedAt || '')), []);
 
   const filtered = useMemo(() => {
     let list = all;
